@@ -1,0 +1,1762 @@
+{
+  "Ash Plantain": {
+    "best_model": "residual",
+    "best_cv": 32.30284947142483,
+    "forecast": 346.1782308806245,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 32.30284947142483
+    }
+  },
+  "Ash Pumpkin": {
+    "best_model": "residual",
+    "best_cv": 26.36781617492876,
+    "forecast": 329.3125311035568,
+    "confidence": "High",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 26.36781617492876
+    }
+  },
+  "Bandakka": {
+    "best_model": "residual",
+    "best_cv": 41.19900155934874,
+    "forecast": 410.63238064069253,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 41.19900155934874
+    }
+  },
+  "Brinjal": {
+    "best_model": "residual",
+    "best_cv": 46.508463020390934,
+    "forecast": 558.9189201850246,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 46.508463020390934
+    }
+  },
+  "Bitter Guard": {
+    "best_model": "residual",
+    "best_cv": 33.84666133079238,
+    "forecast": 689.9907457532952,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 33.84666133079238
+    }
+  },
+  "Cucumber": {
+    "best_model": "residual",
+    "best_cv": 38.43195900634326,
+    "forecast": 273.61850367293243,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 38.43195900634326
+    }
+  },
+  "Red Pumpkin": {
+    "best_model": "residual",
+    "best_cv": 27.779662615302964,
+    "forecast": 271.15804141234935,
+    "confidence": "Medium",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 27.779662615302964
+    }
+  },
+  "Snake Gourd": {
+    "best_model": "residual",
+    "best_cv": 29.34961397234222,
+    "forecast": 497.0284704124975,
+    "confidence": "Medium",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 29.34961397234222
+    }
+  },
+  "Gotukola": {
+    "best_model": "residual",
+    "best_cv": 32.77308825577349,
+    "forecast": 70.95403842166262,
+    "confidence": "Medium",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 32.77308825577349
+    }
+  },
+  "Kankun": {
+    "best_model": "residual",
+    "best_cv": 24.370752582537776,
+    "forecast": 82.47379124110122,
+    "confidence": "High",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 24.370752582537776
+    }
+  },
+  "Kathurumurunga": {
+    "best_model": "residual",
+    "best_cv": 23.801832541411912,
+    "forecast": 90.68030035167271,
+    "confidence": "High",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 23.801832541411912
+    }
+  },
+  "Kohila": {
+    "best_model": "residual",
+    "best_cv": 39.07040894119738,
+    "forecast": 101.29280228533841,
+    "confidence": "Medium",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 39.07040894119738
+    }
+  },
+  "Kohila Yams": {
+    "best_model": "residual",
+    "best_cv": 24.47877640773703,
+    "forecast": 357.88294939530977,
+    "confidence": "High",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 24.47877640773703
+    }
+  },
+  "Vetakolu": {
+    "best_model": "residual",
+    "best_cv": 43.10356576195204,
+    "forecast": 532.2734931729815,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 43.10356576195204
+    }
+  },
+  "Green Chillies": {
+    "best_model": "residual",
+    "best_cv": 48.14187120479952,
+    "forecast": 952.3068092918437,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 48.14187120479952
+    }
+  },
+  "Cap Chillies": {
+    "best_model": "residual",
+    "best_cv": 17.349723642355265,
+    "forecast": 516.8871533830394,
+    "confidence": "High",
+    "inflation": 64.4,
+    "all_cv": {
+      "residual": 17.349723642355265
+    }
+  },
+  "Leeks": {
+    "best_model": "residual",
+    "best_cv": 45.35590814599519,
+    "forecast": 481.8906660128866,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 45.35590814599519
+    }
+  },
+  "Limes": {
+    "best_model": "residual",
+    "best_cv": 81.07366534047684,
+    "forecast": 1072.8232537409422,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 81.07366534047684
+    }
+  },
+  "Coconut": {
+    "best_model": "residual",
+    "best_cv": 48.41642434105138,
+    "forecast": 161.08083237348797,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 48.41642434105138
+    }
+  },
+  "Betel Leaves ( Average )": {
+    "best_model": "residual",
+    "best_cv": 32.75025168714352,
+    "forecast": 607.2869222557543,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 32.75025168714352
+    }
+  },
+  "Betel Leaves ( Medium)": {
+    "best_model": "residual",
+    "best_cv": 32.10626594378561,
+    "forecast": 729.4234511322481,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 32.10626594378561
+    }
+  },
+  "Betel Leaves ( Small)": {
+    "best_model": "residual",
+    "best_cv": 34.65267153462738,
+    "forecast": 484.95624909794725,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 34.65267153462738
+    }
+  },
+  "Arecanuts ( Average )": {
+    "best_model": "residual",
+    "best_cv": 43.18602017784532,
+    "forecast": 1372.5679691656524,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 43.18602017784532
+    }
+  },
+  "Arecanuts ( Medium )": {
+    "best_model": "residual",
+    "best_cv": 40.77330963919663,
+    "forecast": 1623.5790540422913,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 40.77330963919663
+    }
+  },
+  "Arecanuts ( Small )": {
+    "best_model": "residual",
+    "best_cv": 46.251176963447705,
+    "forecast": 1150.3837690160233,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 46.251176963447705
+    }
+  },
+  "Potatoes - Local": {
+    "best_model": "residual",
+    "best_cv": 23.798260695419273,
+    "forecast": 444.1656118885982,
+    "confidence": "Medium",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 23.798260695419273
+    }
+  },
+  "Imported": {
+    "best_model": "residual",
+    "best_cv": 37.12231225742856,
+    "forecast": 252.77889876804375,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 37.12231225742856
+    }
+  },
+  "Coconut Oil": {
+    "best_model": "residual",
+    "best_cv": 22.010230003298435,
+    "forecast": 683.1971541036116,
+    "confidence": "High",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 22.010230003298435
+    }
+  },
+  "Mukunuwenna": {
+    "best_model": "residual",
+    "best_cv": 24.228908941618858,
+    "forecast": 82.43906740399711,
+    "confidence": "High",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 24.228908941618858
+    }
+  },
+  "Nivithi": {
+    "best_model": "residual",
+    "best_cv": 69.1379046019121,
+    "forecast": 126.75769133711708,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 69.1379046019121
+    }
+  },
+  "Sarana": {
+    "best_model": "residual",
+    "best_cv": 27.836825182154097,
+    "forecast": 110.95594184217157,
+    "confidence": "High",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 27.836825182154097
+    }
+  },
+  "Thampala": {
+    "best_model": "residual",
+    "best_cv": 30.03844868386879,
+    "forecast": 120.89328303577979,
+    "confidence": "High",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 30.03844868386879
+    }
+  },
+  "Beans - Butter": {
+    "best_model": "residual",
+    "best_cv": 39.29223489653271,
+    "forecast": 858.2801745818044,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 39.29223489653271
+    }
+  },
+  "Beans - Green": {
+    "best_model": "residual",
+    "best_cv": 38.322024312256524,
+    "forecast": 698.3988110312032,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 38.322024312256524
+    }
+  },
+  "Long Beans": {
+    "best_model": "residual",
+    "best_cv": 30.768447300667056,
+    "forecast": 475.78916229465676,
+    "confidence": "Medium",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 30.768447300667056
+    }
+  },
+  "BeetRoot": {
+    "best_model": "residual",
+    "best_cv": 54.855023420401984,
+    "forecast": 554.1238922885393,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 54.855023420401984
+    }
+  },
+  "Cabbagge Seed": {
+    "best_model": "residual",
+    "best_cv": 38.57602877524049,
+    "forecast": 453.4471485292612,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 38.57602877524049
+    }
+  },
+  "Carrot": {
+    "best_model": "residual",
+    "best_cv": 58.23252222284704,
+    "forecast": 571.6927179763491,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 58.23252222284704
+    }
+  },
+  "Drumstick": {
+    "best_model": "residual",
+    "best_cv": 83.29253813185667,
+    "forecast": 996.8264082173275,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 83.29253813185667
+    }
+  },
+  "Knol Khol": {
+    "best_model": "residual",
+    "best_cv": 32.38460713596156,
+    "forecast": 458.0539480424099,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 32.38460713596156
+    }
+  },
+  "Raddish": {
+    "best_model": "residual",
+    "best_cv": 40.9121493126028,
+    "forecast": 353.24831690474764,
+    "confidence": "Medium",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 40.9121493126028
+    }
+  },
+  "Tomatoe - No 1.": {
+    "best_model": "residual",
+    "best_cv": 52.59479949318197,
+    "forecast": 515.2493115039256,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 52.59479949318197
+    }
+  },
+  "Dried Chillies - No 1.": {
+    "best_model": "residual",
+    "best_cv": 36.47834715883157,
+    "forecast": 1203.7500695666226,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 36.47834715883157
+    }
+  },
+  "Corriander": {
+    "best_model": "residual",
+    "best_cv": 35.90674173858635,
+    "forecast": 752.3865997601472,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 35.90674173858635
+    }
+  },
+  "Pepper - Powder": {
+    "best_model": "residual",
+    "best_cv": 26.827431852184507,
+    "forecast": 3299.9598124307977,
+    "confidence": "Medium",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 26.827431852184507
+    }
+  },
+  "Turmeric -Powder": {
+    "best_model": "residual",
+    "best_cv": 20.624251520350533,
+    "forecast": 3561.4240977152067,
+    "confidence": "Medium",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 20.624251520350533
+    }
+  },
+  "Garlic": {
+    "best_model": "residual",
+    "best_cv": 34.3390478672388,
+    "forecast": 702.3059869831804,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 34.3390478672388
+    }
+  },
+  "Cummin Seed": {
+    "best_model": "residual",
+    "best_cv": 36.13455245870271,
+    "forecast": 2363.5279903838673,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 36.13455245870271
+    }
+  },
+  "Fennel Seed": {
+    "best_model": "residual",
+    "best_cv": 34.22399082554965,
+    "forecast": 1957.214166225514,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 34.22399082554965
+    }
+  },
+  "Mustard": {
+    "best_model": "residual",
+    "best_cv": 37.4562467601607,
+    "forecast": 899.6607073898931,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 37.4562467601607
+    }
+  },
+  "Mathe Seed": {
+    "best_model": "residual",
+    "best_cv": 23.955049808830104,
+    "forecast": 838.562409898146,
+    "confidence": "Medium",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 23.955049808830104
+    }
+  },
+  "Cinnamon": {
+    "best_model": "residual",
+    "best_cv": 36.62747778432764,
+    "forecast": 7576.417765939848,
+    "confidence": "Medium",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 36.62747778432764
+    }
+  },
+  "Gorakka": {
+    "best_model": "residual",
+    "best_cv": 29.266463396149028,
+    "forecast": 786.0293731509577,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 29.266463396149028
+    }
+  },
+  "Maldive Fish": {
+    "best_model": "residual",
+    "best_cv": 20.858022464123017,
+    "forecast": 3479.2739277414703,
+    "confidence": "Medium",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 20.858022464123017
+    }
+  },
+  "Salt": {
+    "best_model": "residual",
+    "best_cv": 54.838356409439,
+    "forecast": 175.5343218056314,
+    "confidence": "Medium",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 54.838356409439
+    }
+  },
+  "Tamarind": {
+    "best_model": "residual",
+    "best_cv": 59.498156170885785,
+    "forecast": 1338.221948905315,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 59.498156170885785
+    }
+  },
+  "Red Onions - Average": {
+    "best_model": "residual",
+    "best_cv": 22.558187545556518,
+    "forecast": 470.63650913495945,
+    "confidence": "Medium",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 22.558187545556518
+    }
+  },
+  "B.Onions": {
+    "best_model": "residual",
+    "best_cv": 0.0,
+    "forecast": 1.0,
+    "confidence": "High",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 0.0
+    }
+  },
+  "Raw Red - ( Average )": {
+    "best_model": "residual",
+    "best_cv": 27.315498101305774,
+    "forecast": 241.1959366748444,
+    "confidence": "Medium",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 27.315498101305774
+    }
+  },
+  "Raw Red - No 1.": {
+    "best_model": "residual",
+    "best_cv": 26.159474435590585,
+    "forecast": 247.28376763184707,
+    "confidence": "Medium",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 26.159474435590585
+    }
+  },
+  "No 2.": {
+    "best_model": "residual",
+    "best_cv": 19.44195237053899,
+    "forecast": 169.21412580080198,
+    "confidence": "High",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 19.44195237053899
+    }
+  },
+  "Raw White - Average": {
+    "best_model": "residual",
+    "best_cv": 8.636166616585518,
+    "forecast": 116.2446185323802,
+    "confidence": "High",
+    "inflation": 22.1,
+    "all_cv": {
+      "residual": 8.636166616585518
+    }
+  },
+  "Nadu - Red": {
+    "best_model": "residual",
+    "best_cv": 26.186371591039375,
+    "forecast": 272.9074465239732,
+    "confidence": "Medium",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 26.186371591039375
+    }
+  },
+  "Nadu - White": {
+    "best_model": "residual",
+    "best_cv": 30.188583449862822,
+    "forecast": 263.54175095906805,
+    "confidence": "High",
+    "inflation": 3.0,
+    "all_cv": {
+      "residual": 30.188583449862822
+    }
+  },
+  "Samba - ( Average )": {
+    "best_model": "residual",
+    "best_cv": 27.06230229804481,
+    "forecast": 297.9434800571414,
+    "confidence": "Medium",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 27.06230229804481
+    }
+  },
+  "Samba - No 1.": {
+    "best_model": "residual",
+    "best_cv": 23.450522295409044,
+    "forecast": 283.36618135542426,
+    "confidence": "Medium",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 23.450522295409044
+    }
+  },
+  "Wheat Flour": {
+    "best_model": "residual",
+    "best_cv": 35.09662128152971,
+    "forecast": 226.36880924085682,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 35.09662128152971
+    }
+  },
+  "Mysore Dhall - ( Average )": {
+    "best_model": "residual",
+    "best_cv": 29.029923007638008,
+    "forecast": 397.5156576545378,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 29.029923007638008
+    }
+  },
+  "Mysore Dhall - No 1.(Large)": {
+    "best_model": "residual",
+    "best_cv": 27.658476675217504,
+    "forecast": 523.5837196741267,
+    "confidence": "Medium",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 27.658476675217504
+    }
+  },
+  "No 2.(Medium)": {
+    "best_model": "residual",
+    "best_cv": 30.353450076653715,
+    "forecast": 349.69370603115993,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 30.353450076653715
+    }
+  },
+  "No 3.(Small)": {
+    "best_model": "residual",
+    "best_cv": 30.85103505626649,
+    "forecast": 317.477406819074,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 30.85103505626649
+    }
+  },
+  "Cowpea Whole - Average": {
+    "best_model": "residual",
+    "best_cv": 29.85146654942478,
+    "forecast": 1124.2507888529449,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 29.85146654942478
+    }
+  },
+  "Green Gram - Average": {
+    "best_model": "residual",
+    "best_cv": 34.05047589716991,
+    "forecast": 1124.5955014472165,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 34.05047589716991
+    }
+  },
+  "Kadalai - Average": {
+    "best_model": "residual",
+    "best_cv": 32.030885474962176,
+    "forecast": 670.2704750783829,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 32.030885474962176
+    }
+  },
+  "Sugar": {
+    "best_model": "residual",
+    "best_cv": 40.75843940371583,
+    "forecast": 300.06783988655974,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 40.75843940371583
+    }
+  },
+  "Fresh Fish - Paraw": {
+    "best_model": "residual",
+    "best_cv": 28.415174178287756,
+    "forecast": 3065.4481628599615,
+    "confidence": "Medium",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 28.415174178287756
+    }
+  },
+  "Mullet": {
+    "best_model": "residual",
+    "best_cv": 42.91333036179095,
+    "forecast": 3149.1057852653257,
+    "confidence": "Medium",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 42.91333036179095
+    }
+  },
+  "Thalapath": {
+    "best_model": "residual",
+    "best_cv": 40.81129618021981,
+    "forecast": 3493.519135400613,
+    "confidence": "Medium",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 40.81129618021981
+    }
+  },
+  "Balaya": {
+    "best_model": "residual",
+    "best_cv": 49.411252047497754,
+    "forecast": 1825.8228944199434,
+    "confidence": "Medium",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 49.411252047497754
+    }
+  },
+  "Kelewella": {
+    "best_model": "residual",
+    "best_cv": 41.65943902598049,
+    "forecast": 2939.05459998422,
+    "confidence": "Medium",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 41.65943902598049
+    }
+  },
+  "Mora": {
+    "best_model": "residual",
+    "best_cv": 41.935907715069085,
+    "forecast": 2307.0093662311683,
+    "confidence": "Medium",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 41.935907715069085
+    }
+  },
+  "Salaya": {
+    "best_model": "residual",
+    "best_cv": 58.36556832858536,
+    "forecast": 773.505348101771,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 58.36556832858536
+    }
+  },
+  "Parati": {
+    "best_model": "residual",
+    "best_cv": 42.903176667509655,
+    "forecast": 1872.1375979644176,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 42.903176667509655
+    }
+  },
+  "Small Mullet": {
+    "best_model": "residual",
+    "best_cv": 26.2246439179124,
+    "forecast": 1710.2506955935337,
+    "confidence": "Medium",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 26.2246439179124
+    }
+  },
+  "Hurulla": {
+    "best_model": "residual",
+    "best_cv": 47.07908033006951,
+    "forecast": 1328.3282690019505,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 47.07908033006951
+    }
+  },
+  "Linna": {
+    "best_model": "residual",
+    "best_cv": 45.19040875148834,
+    "forecast": 1132.4834303101716,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 45.19040875148834
+    }
+  },
+  "Prawns": {
+    "best_model": "residual",
+    "best_cv": 40.49515178560558,
+    "forecast": 2568.9519654963788,
+    "confidence": "Medium",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 40.49515178560558
+    }
+  },
+  "Dried Fish - Katta": {
+    "best_model": "residual",
+    "best_cv": 22.144182898622052,
+    "forecast": 2868.25119665019,
+    "confidence": "Medium",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 22.144182898622052
+    }
+  },
+  "Spratts": {
+    "best_model": "residual",
+    "best_cv": 41.81875897587183,
+    "forecast": 1703.6548671008861,
+    "confidence": "Medium",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 41.81875897587183
+    }
+  },
+  "Salaya - Average": {
+    "best_model": "residual",
+    "best_cv": 27.223861089576467,
+    "forecast": 1513.5369360124807,
+    "confidence": "Medium",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 27.223861089576467
+    }
+  },
+  "Beef": {
+    "best_model": "residual",
+    "best_cv": 44.0848854452208,
+    "forecast": 3309.811895741389,
+    "confidence": "Medium",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 44.0848854452208
+    }
+  },
+  "Mutton": {
+    "best_model": "residual",
+    "best_cv": 39.81010590774564,
+    "forecast": 4512.993641174472,
+    "confidence": "Medium",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 39.81010590774564
+    }
+  },
+  "Chicken - Fresh": {
+    "best_model": "residual",
+    "best_cv": 27.29490660021548,
+    "forecast": 1481.9702966678615,
+    "confidence": "Medium",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 27.29490660021548
+    }
+  },
+  "Broiler": {
+    "best_model": "residual",
+    "best_cv": 44.526867121229834,
+    "forecast": 1481.4045552318667,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 44.526867121229834
+    }
+  },
+  "Pork": {
+    "best_model": "residual",
+    "best_cv": 63.74665836766242,
+    "forecast": 2744.843275106246,
+    "confidence": "Medium",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 63.74665836766242
+    }
+  },
+  "Egg": {
+    "best_model": "residual",
+    "best_cv": 42.27387472741357,
+    "forecast": 49.61020123087867,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 42.27387472741357
+    }
+  },
+  "White": {
+    "best_model": "residual",
+    "best_cv": 43.507487808074934,
+    "forecast": 47.884445400953126,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 43.507487808074934
+    }
+  },
+  "Tin Fish": {
+    "best_model": "residual",
+    "best_cv": 26.772340785278498,
+    "forecast": 605.6056426551279,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 26.772340785278498
+    }
+  },
+  "Lakspray": {
+    "best_model": "residual",
+    "best_cv": 12.560879011180923,
+    "forecast": 463.3856608569187,
+    "confidence": "High",
+    "inflation": 64.4,
+    "all_cv": {
+      "residual": 12.560879011180923
+    }
+  },
+  "Anchor": {
+    "best_model": "residual",
+    "best_cv": 39.770492575888085,
+    "forecast": 1412.4281800978843,
+    "confidence": "Medium",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 39.770492575888085
+    }
+  },
+  "Highland": {
+    "best_model": "residual",
+    "best_cv": 8.587665630848951,
+    "forecast": 439.17318355665014,
+    "confidence": "High",
+    "inflation": 64.4,
+    "all_cv": {
+      "residual": 8.587665630848951
+    }
+  },
+  "Lactogen - II": {
+    "best_model": "residual",
+    "best_cv": 42.820520713642715,
+    "forecast": 2048.6511870409026,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 42.820520713642715
+    }
+  },
+  "Lactogen - I": {
+    "best_model": "residual",
+    "best_cv": 43.17781098411245,
+    "forecast": 2050.846734295724,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 43.17781098411245
+    }
+  },
+  "Sour Plantain": {
+    "best_model": "residual",
+    "best_cv": 30.185817349919862,
+    "forecast": 252.57886238955405,
+    "confidence": "Medium",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 30.185817349919862
+    }
+  },
+  "Anamalu": {
+    "best_model": "residual",
+    "best_cv": 21.764293062575067,
+    "forecast": 366.56281574499434,
+    "confidence": "High",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 21.764293062575067
+    }
+  },
+  "Kolikuttu": {
+    "best_model": "residual",
+    "best_cv": 45.061759267953875,
+    "forecast": 497.6396712619069,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 45.061759267953875
+    }
+  },
+  "Papaw": {
+    "best_model": "residual",
+    "best_cv": 45.07097542806537,
+    "forecast": 328.1151192185904,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 45.07097542806537
+    }
+  },
+  "Pineapple": {
+    "best_model": "residual",
+    "best_cv": 54.42369142471922,
+    "forecast": 584.9126190084495,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 54.42369142471922
+    }
+  },
+  "Bread": {
+    "best_model": "residual",
+    "best_cv": 64.13121732204583,
+    "forecast": 128.1219191735281,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 64.13121732204583
+    }
+  },
+  "Mysore Dhall - No 1.(Large": {
+    "best_model": "residual",
+    "best_cv": 0.0,
+    "forecast": 0,
+    "confidence": "N/A",
+    "inflation": 0,
+    "all_cv": {
+      "residual": 0.0
+    }
+  },
+  "No": {
+    "best_model": "residual",
+    "best_cv": 10.912817545023998,
+    "forecast": 1.9331503510685217,
+    "confidence": "Medium",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 10.912817545023998
+    }
+  },
+  "Ash": {
+    "best_model": "residual",
+    "best_cv": 0.0,
+    "forecast": 1.0,
+    "confidence": "High",
+    "inflation": 22.1,
+    "all_cv": {
+      "residual": 0.0
+    }
+  },
+  "Bitter": {
+    "best_model": "residual",
+    "best_cv": 0.0,
+    "forecast": 1.0,
+    "confidence": "High",
+    "inflation": 22.1,
+    "all_cv": {
+      "residual": 0.0
+    }
+  },
+  "Red": {
+    "best_model": "residual",
+    "best_cv": 0.0,
+    "forecast": 1.0,
+    "confidence": "High",
+    "inflation": 22.1,
+    "all_cv": {
+      "residual": 0.0
+    }
+  },
+  "Snake": {
+    "best_model": "residual",
+    "best_cv": 0.0,
+    "forecast": 1.0,
+    "confidence": "High",
+    "inflation": 22.1,
+    "all_cv": {
+      "residual": 0.0
+    }
+  },
+  "Green": {
+    "best_model": "residual",
+    "best_cv": 0.0,
+    "forecast": 1.0,
+    "confidence": "High",
+    "inflation": 22.1,
+    "all_cv": {
+      "residual": 0.0
+    }
+  },
+  "Cap": {
+    "best_model": "residual",
+    "best_cv": 0.0,
+    "forecast": 1.0,
+    "confidence": "High",
+    "inflation": 22.1,
+    "all_cv": {
+      "residual": 0.0
+    }
+  },
+  "Betel": {
+    "best_model": "residual",
+    "best_cv": 0.0,
+    "forecast": 100.0,
+    "confidence": "High",
+    "inflation": 0.8,
+    "all_cv": {
+      "residual": 0.0
+    }
+  },
+  "Arecanuts": {
+    "best_model": "residual",
+    "best_cv": 0.0,
+    "forecast": 100.0,
+    "confidence": "High",
+    "inflation": 22.1,
+    "all_cv": {
+      "residual": 0.0
+    }
+  },
+  "Potatoes": {
+    "best_model": "residual",
+    "best_cv": 0.0,
+    "forecast": 1.0,
+    "confidence": "High",
+    "inflation": 22.1,
+    "all_cv": {
+      "residual": 0.0
+    }
+  },
+  "Beans": {
+    "best_model": "residual",
+    "best_cv": 0.0,
+    "forecast": 1.0,
+    "confidence": "High",
+    "inflation": 3.0,
+    "all_cv": {
+      "residual": 0.0
+    }
+  },
+  "Long": {
+    "best_model": "residual",
+    "best_cv": 0.0,
+    "forecast": 1.0,
+    "confidence": "High",
+    "inflation": 22.1,
+    "all_cv": {
+      "residual": 0.0
+    }
+  },
+  "Cabbagge": {
+    "best_model": "residual",
+    "best_cv": 0.0,
+    "forecast": 1.0,
+    "confidence": "High",
+    "inflation": 22.1,
+    "all_cv": {
+      "residual": 0.0
+    }
+  },
+  "Knol": {
+    "best_model": "residual",
+    "best_cv": 0.0,
+    "forecast": 1.0,
+    "confidence": "High",
+    "inflation": 22.1,
+    "all_cv": {
+      "residual": 0.0
+    }
+  },
+  "Tomatoe": {
+    "best_model": "residual",
+    "best_cv": 0.0,
+    "forecast": 1.0,
+    "confidence": "High",
+    "inflation": 22.1,
+    "all_cv": {
+      "residual": 0.0
+    }
+  },
+  "Dried": {
+    "best_model": "residual",
+    "best_cv": 0.0,
+    "forecast": 1.0,
+    "confidence": "High",
+    "inflation": 22.1,
+    "all_cv": {
+      "residual": 0.0
+    }
+  },
+  "Pepper": {
+    "best_model": "residual",
+    "best_cv": 0.0,
+    "forecast": 1.0,
+    "confidence": "High",
+    "inflation": 22.1,
+    "all_cv": {
+      "residual": 0.0
+    }
+  },
+  "Turmeric": {
+    "best_model": "residual",
+    "best_cv": 0.0,
+    "forecast": 1.0,
+    "confidence": "High",
+    "inflation": 22.1,
+    "all_cv": {
+      "residual": 0.0
+    }
+  },
+  "Cummin": {
+    "best_model": "residual",
+    "best_cv": 0.0,
+    "forecast": 1.0,
+    "confidence": "High",
+    "inflation": 22.1,
+    "all_cv": {
+      "residual": 0.0
+    }
+  },
+  "Fennel": {
+    "best_model": "residual",
+    "best_cv": 0.0,
+    "forecast": 1.0,
+    "confidence": "High",
+    "inflation": 22.1,
+    "all_cv": {
+      "residual": 0.0
+    }
+  },
+  "Mathe": {
+    "best_model": "residual",
+    "best_cv": 0.0,
+    "forecast": 1.0,
+    "confidence": "High",
+    "inflation": 22.1,
+    "all_cv": {
+      "residual": 0.0
+    }
+  },
+  "Maldive": {
+    "best_model": "residual",
+    "best_cv": 0.0,
+    "forecast": 1.0,
+    "confidence": "High",
+    "inflation": 22.1,
+    "all_cv": {
+      "residual": 0.0
+    }
+  },
+  "Raw": {
+    "best_model": "residual",
+    "best_cv": 299.4728987097117,
+    "forecast": 19.31379230971915,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 299.4728987097117
+    }
+  },
+  "Nadu": {
+    "best_model": "residual",
+    "best_cv": 0.0,
+    "forecast": 1.0,
+    "confidence": "High",
+    "inflation": 64.4,
+    "all_cv": {
+      "residual": 0.0
+    }
+  },
+  "Samba": {
+    "best_model": "residual",
+    "best_cv": 0.0,
+    "forecast": 1.0,
+    "confidence": "High",
+    "inflation": 22.1,
+    "all_cv": {
+      "residual": 0.0
+    }
+  },
+  "Wheat": {
+    "best_model": "residual",
+    "best_cv": 0.0,
+    "forecast": 1.0,
+    "confidence": "High",
+    "inflation": 22.1,
+    "all_cv": {
+      "residual": 0.0
+    }
+  },
+  "Mysore": {
+    "best_model": "residual",
+    "best_cv": 0.0,
+    "forecast": 1.0,
+    "confidence": "High",
+    "inflation": 0.3,
+    "all_cv": {
+      "residual": 0.0
+    }
+  },
+  "Cowpea": {
+    "best_model": "residual",
+    "best_cv": 0.0,
+    "forecast": 1.0,
+    "confidence": "High",
+    "inflation": 0.3,
+    "all_cv": {
+      "residual": 0.0
+    }
+  },
+  "Kadalai": {
+    "best_model": "residual",
+    "best_cv": 0.0,
+    "forecast": 1.0,
+    "confidence": "High",
+    "inflation": 22.1,
+    "all_cv": {
+      "residual": 0.0
+    }
+  },
+  "Fresh": {
+    "best_model": "residual",
+    "best_cv": 0.0,
+    "forecast": 1.0,
+    "confidence": "High",
+    "inflation": 22.1,
+    "all_cv": {
+      "residual": 0.0
+    }
+  },
+  "Small": {
+    "best_model": "residual",
+    "best_cv": 0.0,
+    "forecast": 1.0,
+    "confidence": "High",
+    "inflation": 64.4,
+    "all_cv": {
+      "residual": 0.0
+    }
+  },
+  "Chicken": {
+    "best_model": "residual",
+    "best_cv": 0.0,
+    "forecast": 1.0,
+    "confidence": "High",
+    "inflation": 22.1,
+    "all_cv": {
+      "residual": 0.0
+    }
+  },
+  "Tin": {
+    "best_model": "residual",
+    "best_cv": 0.0,
+    "forecast": 425.0,
+    "confidence": "High",
+    "inflation": 22.1,
+    "all_cv": {
+      "residual": 0.0
+    }
+  },
+  "Lactogen": {
+    "best_model": "residual",
+    "best_cv": 18.367346938775512,
+    "forecast": 490.0,
+    "confidence": "Medium",
+    "inflation": 22.1,
+    "all_cv": {
+      "residual": 18.367346938775512
+    }
+  },
+  "Sour": {
+    "best_model": "residual",
+    "best_cv": 0.0,
+    "forecast": 1.0,
+    "confidence": "High",
+    "inflation": 22.1,
+    "all_cv": {
+      "residual": 0.0
+    }
+  },
+  "imputed": {
+    "best_model": "residual",
+    "best_cv": 0.0,
+    "forecast": 3.0,
+    "confidence": "High",
+    "inflation": 9.2,
+    "all_cv": {
+      "residual": 0.0
+    }
+  },
+  "May.": {
+    "best_model": "residual",
+    "best_cv": 0.0,
+    "forecast": 202.0,
+    "confidence": "High",
+    "inflation": 0.8,
+    "all_cv": {
+      "residual": 0.0
+    }
+  },
+  "July": {
+    "best_model": "residual",
+    "best_cv": 0.0,
+    "forecast": 202.0,
+    "confidence": "High",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 0.0
+    }
+  },
+  "July.": {
+    "best_model": "residual",
+    "best_cv": 0.0,
+    "forecast": 202.0,
+    "confidence": "High",
+    "inflation": 9.2,
+    "all_cv": {
+      "residual": 0.0
+    }
+  },
+  "B.Onions - Local": {
+    "best_model": "residual",
+    "best_cv": 20.874563869301387,
+    "forecast": 235.10108419252484,
+    "confidence": "Low",
+    "inflation": 3.0,
+    "all_cv": {
+      "residual": 20.874563869301387
+    }
+  },
+  "Capcicum": {
+    "best_model": "residual",
+    "best_cv": 0.0,
+    "forecast": 0,
+    "confidence": "N/A",
+    "inflation": 0,
+    "all_cv": {
+      "residual": 0.0
+    }
+  },
+  "Capsicum": {
+    "best_model": "residual",
+    "best_cv": 38.01480423868306,
+    "forecast": 882.0796331697657,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 38.01480423868306
+    }
+  },
+  "Raw White": {
+    "best_model": "residual",
+    "best_cv": 8.734830879052167,
+    "forecast": 163.20831021437579,
+    "confidence": "High",
+    "inflation": 64.4,
+    "all_cv": {
+      "residual": 8.734830879052167
+    }
+  },
+  "Nadu-White": {
+    "best_model": "residual",
+    "best_cv": 196.24629238330758,
+    "forecast": 6.5079827132511525,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 196.24629238330758
+    }
+  },
+  "Ponni": {
+    "best_model": "residual",
+    "best_cv": 537.0917269194249,
+    "forecast": -1.6280222886665827,
+    "confidence": "Low",
+    "inflation": 0.8,
+    "all_cv": {
+      "residual": 537.0917269194249
+    }
+  },
+  "Raw White local": {
+    "best_model": "residual",
+    "best_cv": 8.313507657561306,
+    "forecast": 222.9192696551594,
+    "confidence": "High",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 8.313507657561306
+    }
+  },
+  "Nadu - White local": {
+    "best_model": "residual",
+    "best_cv": 5.636672110439727,
+    "forecast": 232.417778701075,
+    "confidence": "High",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 5.636672110439727
+    }
+  },
+  "Betel Leaves ( Average": {
+    "best_model": "residual",
+    "best_cv": 0.0,
+    "forecast": 0,
+    "confidence": "N/A",
+    "inflation": 0,
+    "all_cv": {
+      "residual": 0.0
+    }
+  },
+  "Salaya - Ave": {
+    "best_model": "residual",
+    "best_cv": 0.0,
+    "forecast": 0,
+    "confidence": "N/A",
+    "inflation": 0,
+    "all_cv": {
+      "residual": 0.0
+    }
+  },
+  "Maliban": {
+    "best_model": "residual",
+    "best_cv": 33.92706164399299,
+    "forecast": 1235.393987653479,
+    "confidence": "Medium",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 33.92706164399299
+    }
+  },
+  "Pelwatta": {
+    "best_model": "residual",
+    "best_cv": 36.55824910441534,
+    "forecast": 1233.9239197240433,
+    "confidence": "Low",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 36.55824910441534
+    }
+  },
+  "Jun": {
+    "best_model": "residual",
+    "best_cv": 0.0,
+    "forecast": 202.0,
+    "confidence": "High",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 0.0
+    }
+  },
+  "GEOMETRIC": {
+    "best_model": "residual",
+    "best_cv": 0.0,
+    "forecast": 4.0,
+    "confidence": "High",
+    "inflation": 64.4,
+    "all_cv": {
+      "residual": 0.0
+    }
+  },
+  "Raw White Imported": {
+    "best_model": "residual",
+    "best_cv": 4.76027180016607,
+    "forecast": 209.3215061163559,
+    "confidence": "High",
+    "inflation": 0.3,
+    "all_cv": {
+      "residual": 4.76027180016607
+    }
+  },
+  "Nadu-White Imported": {
+    "best_model": "residual",
+    "best_cv": 2.65404001503345,
+    "forecast": 200.167253187877,
+    "confidence": "High",
+    "inflation": 0.3,
+    "all_cv": {
+      "residual": 2.65404001503345
+    }
+  },
+  "Ponni Samba Imported": {
+    "best_model": "residual",
+    "best_cv": 10.213246072449875,
+    "forecast": 268.5067040624292,
+    "confidence": "Medium",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 10.213246072449875
+    }
+  },
+  "Milk Powder- Imported": {
+    "best_model": "residual",
+    "best_cv": 3.1238105119432618,
+    "forecast": 1111.4336239606278,
+    "confidence": "High",
+    "inflation": 3.0,
+    "all_cv": {
+      "residual": 3.1238105119432618
+    }
+  },
+  "Milk Powder- Local": {
+    "best_model": "residual",
+    "best_cv": 2.4841000116461864,
+    "forecast": 1035.687008506429,
+    "confidence": "High",
+    "inflation": 3.0,
+    "all_cv": {
+      "residual": 2.4841000116461864
+    }
+  },
+  "Infant Milk Powder": {
+    "best_model": "residual",
+    "best_cv": 8.867015369290698,
+    "forecast": 1494.936337848301,
+    "confidence": "High",
+    "inflation": 3.0,
+    "all_cv": {
+      "residual": 8.867015369290698
+    }
+  },
+  "June": {
+    "best_model": "residual",
+    "best_cv": 0.0,
+    "forecast": 202.0,
+    "confidence": "High",
+    "inflation": 3.0,
+    "all_cv": {
+      "residual": 0.0
+    }
+  },
+  "Milk": {
+    "best_model": "residual",
+    "best_cv": 0.0,
+    "forecast": 0,
+    "confidence": "N/A",
+    "inflation": 0,
+    "all_cv": {
+      "residual": 0.0
+    }
+  },
+  "Jan": {
+    "best_model": "residual",
+    "best_cv": 0.0,
+    "forecast": 202.0,
+    "confidence": "High",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 0.0
+    }
+  },
+  "Feb": {
+    "best_model": "residual",
+    "best_cv": 0.0,
+    "forecast": 202.0,
+    "confidence": "High",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 0.0
+    }
+  },
+  "Mar": {
+    "best_model": "residual",
+    "best_cv": 0.0,
+    "forecast": 202.0,
+    "confidence": "High",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 0.0
+    }
+  },
+  "Sep": {
+    "best_model": "residual",
+    "best_cv": 0.0,
+    "forecast": 202.0,
+    "confidence": "High",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 0.0
+    }
+  },
+  "Oct": {
+    "best_model": "residual",
+    "best_cv": 0.0,
+    "forecast": 202.0,
+    "confidence": "High",
+    "inflation": 8.7,
+    "all_cv": {
+      "residual": 0.0
+    }
+  }
+}

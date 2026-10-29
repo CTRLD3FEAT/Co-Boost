@@ -1,0 +1,5154 @@
+{
+  "dataset_summary": {
+    "total_rows": 37539,
+    "weekly_rows": 37539,
+    "total_commodities": 176,
+    "date_range": "2019-12-28 to 2026-10-07",
+    "nan_rows": 10,
+    "nan_rate": 0.0266
+  },
+  "model_metrics": {
+    "Ash Plantain": {
+      "residual_based": {
+        "mse": 1825.7017141879526,
+        "rmse": 42.728230880624494,
+        "mae": 42.728230880624494,
+        "cv_percent": 32.3,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 346.1782308806245,
+        "last_price": 303.45
+      },
+      "median_based": {
+        "mse": 457.1043999999998,
+        "rmse": 21.379999999999995,
+        "mae": 21.379999999999995,
+        "cv_percent": 32.3,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 282.07
+      },
+      "seasonal_based": {
+        "mse": 24.6015999999998,
+        "rmse": 4.9599999999999795,
+        "mae": 4.9599999999999795,
+        "cv_percent": 32.3,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 308.40999999999997
+      }
+    },
+    "Ash Pumpkin": {
+      "residual_based": {
+        "mse": 8.984819785144385,
+        "rmse": 2.997468896443195,
+        "mae": 2.997468896443195,
+        "cv_percent": 26.37,
+        "confidence": "High",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 329.3125311035568,
+        "last_price": 332.31
+      },
+      "median_based": {
+        "mse": 8025.472225000001,
+        "rmse": 89.58500000000001,
+        "mae": 89.58500000000001,
+        "cv_percent": 26.37,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 242.725
+      },
+      "seasonal_based": {
+        "mse": 0.592899999999972,
+        "rmse": 0.7699999999999818,
+        "mae": 0.7699999999999818,
+        "cv_percent": 26.37,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 333.08
+      }
+    },
+    "Bandakka": {
+      "residual_based": {
+        "mse": 10126.87603341323,
+        "rmse": 100.63238064069253,
+        "mae": 100.63238064069253,
+        "cv_percent": 41.2,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 410.63238064069253,
+        "last_price": 310.0
+      },
+      "median_based": {
+        "mse": 442.26089999999886,
+        "rmse": 21.029999999999973,
+        "mae": 21.029999999999973,
+        "cv_percent": 41.2,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 288.97
+      },
+      "seasonal_based": {
+        "mse": 47.65601111111076,
+        "rmse": 6.903333333333308,
+        "mae": 6.903333333333308,
+        "cv_percent": 41.2,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 316.9033333333333
+      }
+    },
+    "Brinjal": {
+      "residual_based": {
+        "mse": 13016.281708984918,
+        "rmse": 114.08892018502462,
+        "mae": 114.08892018502462,
+        "cv_percent": 46.51,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 558.9189201850246,
+        "last_price": 444.83
+      },
+      "median_based": {
+        "mse": 3679.635599999996,
+        "rmse": 60.65999999999997,
+        "mae": 60.65999999999997,
+        "cv_percent": 46.51,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 384.17
+      },
+      "seasonal_based": {
+        "mse": 4.354177777777686,
+        "rmse": 2.0866666666666447,
+        "mae": 2.0866666666666447,
+        "cv_percent": 46.51,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 446.91666666666663
+      }
+    },
+    "Bitter Guard": {
+      "residual_based": {
+        "mse": 20618.302265987466,
+        "rmse": 143.5907457532952,
+        "mae": 143.5907457532952,
+        "cv_percent": 33.85,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 689.9907457532952,
+        "last_price": 546.4
+      },
+      "median_based": {
+        "mse": 2944.147599999999,
+        "rmse": 54.25999999999999,
+        "mae": 54.25999999999999,
+        "cv_percent": 33.85,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 492.14
+      },
+      "seasonal_based": {
+        "mse": 24.535511111111532,
+        "rmse": 4.953333333333376,
+        "mae": 4.953333333333376,
+        "cv_percent": 33.85,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 551.3533333333334
+      }
+    },
+    "Cucumber": {
+      "residual_based": {
+        "mse": 1873.0288801680258,
+        "rmse": 43.27850367293243,
+        "mae": 43.27850367293243,
+        "cv_percent": 38.43,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 273.61850367293243,
+        "last_price": 230.34
+      },
+      "median_based": {
+        "mse": 1217.312100000001,
+        "rmse": 34.890000000000015,
+        "mae": 34.890000000000015,
+        "cv_percent": 38.43,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 195.45
+      },
+      "seasonal_based": {
+        "mse": 21.12934444444442,
+        "rmse": 4.596666666666664,
+        "mae": 4.596666666666664,
+        "cv_percent": 38.43,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 234.93666666666667
+      }
+    },
+    "Red Pumpkin": {
+      "residual_based": {
+        "mse": 1998.265101572035,
+        "rmse": 44.701958587650665,
+        "mae": 44.701958587650665,
+        "cv_percent": 27.78,
+        "confidence": "Medium",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 271.15804141234935,
+        "last_price": 315.86
+      },
+      "median_based": {
+        "mse": 8747.8609,
+        "rmse": 93.53,
+        "mae": 93.53,
+        "cv_percent": 27.78,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 222.33
+      },
+      "seasonal_based": {
+        "mse": 142.88217777777743,
+        "rmse": 11.953333333333319,
+        "mae": 11.953333333333319,
+        "cv_percent": 27.78,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 327.81333333333333
+      }
+    },
+    "Snake Gourd": {
+      "residual_based": {
+        "mse": 2883.5257246418696,
+        "rmse": 53.6984704124975,
+        "mae": 53.6984704124975,
+        "cv_percent": 29.35,
+        "confidence": "Medium",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 497.0284704124975,
+        "last_price": 443.33
+      },
+      "median_based": {
+        "mse": 4806.648899999997,
+        "rmse": 69.32999999999998,
+        "mae": 69.32999999999998,
+        "cv_percent": 29.35,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 374.0
+      },
+      "seasonal_based": {
+        "mse": 6.451600000000104,
+        "rmse": 2.5400000000000205,
+        "mae": 2.5400000000000205,
+        "cv_percent": 29.35,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 445.87
+      }
+    },
+    "Gotukola": {
+      "residual_based": {
+        "mse": 322.3474956465375,
+        "rmse": 17.954038421662617,
+        "mae": 17.954038421662617,
+        "cv_percent": 32.77,
+        "confidence": "Medium",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 70.95403842166262,
+        "last_price": 53.0
+      },
+      "median_based": {
+        "mse": 32.60410000000001,
+        "rmse": 5.710000000000001,
+        "mae": 5.710000000000001,
+        "cv_percent": 32.77,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 47.29
+      },
+      "seasonal_based": {
+        "mse": 0.07111111111111061,
+        "rmse": 0.2666666666666657,
+        "mae": 0.2666666666666657,
+        "cv_percent": 32.77,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 52.733333333333334
+      }
+    },
+    "Kankun": {
+      "residual_based": {
+        "mse": 170.92401741589495,
+        "rmse": 13.073791241101219,
+        "mae": 13.073791241101219,
+        "cv_percent": 24.37,
+        "confidence": "High",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 82.47379124110122,
+        "last_price": 69.4
+      },
+      "median_based": {
+        "mse": 0.04000000000000114,
+        "rmse": 0.20000000000000284,
+        "mae": 0.20000000000000284,
+        "cv_percent": 24.37,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 69.2
+      },
+      "seasonal_based": {
+        "mse": 0.11111111111110795,
+        "rmse": 0.3333333333333286,
+        "mae": 0.3333333333333286,
+        "cv_percent": 24.37,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 69.06666666666668
+      }
+    },
+    "Kathurumurunga": {
+      "residual_based": {
+        "mse": 22.565353431101837,
+        "rmse": 4.750300351672706,
+        "mae": 4.750300351672706,
+        "cv_percent": 23.8,
+        "confidence": "High",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 90.68030035167271,
+        "last_price": 85.93
+      },
+      "median_based": {
+        "mse": 320.0521,
+        "rmse": 17.89,
+        "mae": 17.89,
+        "cv_percent": 23.8,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 68.04
+      },
+      "seasonal_based": {
+        "mse": 0.09201111111111616,
+        "rmse": 0.30333333333334167,
+        "mae": 0.30333333333334167,
+        "cv_percent": 23.8,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 86.23333333333335
+      }
+    },
+    "Kohila": {
+      "residual_based": {
+        "mse": 68.4392576523005,
+        "rmse": 8.272802285338415,
+        "mae": 8.272802285338415,
+        "cv_percent": 39.07,
+        "confidence": "Medium",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 101.29280228533841,
+        "last_price": 93.02
+      },
+      "median_based": {
+        "mse": 931.4703999999998,
+        "rmse": 30.519999999999996,
+        "mae": 30.519999999999996,
+        "cv_percent": 39.07,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 62.5
+      },
+      "seasonal_based": {
+        "mse": 0.21467777777778235,
+        "rmse": 0.46333333333333826,
+        "mae": 0.46333333333333826,
+        "cv_percent": 39.07,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 93.48333333333333
+      }
+    },
+    "Kohila Yams": {
+      "residual_based": {
+        "mse": 33.14363166496404,
+        "rmse": 5.757050604690221,
+        "mae": 5.757050604690221,
+        "cv_percent": 24.48,
+        "confidence": "High",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 357.88294939530977,
+        "last_price": 363.64
+      },
+      "median_based": {
+        "mse": 9992.001599999996,
+        "rmse": 99.95999999999998,
+        "mae": 99.95999999999998,
+        "cv_percent": 24.48,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 263.68
+      },
+      "seasonal_based": {
+        "mse": 27.772899999999808,
+        "rmse": 5.269999999999982,
+        "mae": 5.269999999999982,
+        "cv_percent": 24.48,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 368.90999999999997
+      }
+    },
+    "Vetakolu": {
+      "residual_based": {
+        "mse": 8221.682364190716,
+        "rmse": 90.67349317298147,
+        "mae": 90.67349317298147,
+        "cv_percent": 43.1,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 532.2734931729815,
+        "last_price": 441.6
+      },
+      "median_based": {
+        "mse": 7832.25,
+        "rmse": 88.5,
+        "mae": 88.5,
+        "cv_percent": 43.1,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 353.1
+      },
+      "seasonal_based": {
+        "mse": 4.83999999999995,
+        "rmse": 2.1999999999999886,
+        "mae": 2.1999999999999886,
+        "cv_percent": 43.1,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 443.8
+      }
+    },
+    "Green Chillies": {
+      "residual_based": {
+        "mse": 17600.48228767843,
+        "rmse": 132.66680929184372,
+        "mae": 132.66680929184372,
+        "cv_percent": 48.14,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 952.3068092918437,
+        "last_price": 819.64
+      },
+      "median_based": {
+        "mse": 50945.00410000001,
+        "rmse": 225.71000000000004,
+        "mae": 225.71000000000004,
+        "cv_percent": 48.14,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 593.93
+      },
+      "seasonal_based": {
+        "mse": 5128.469511111112,
+        "rmse": 71.61333333333334,
+        "mae": 71.61333333333334,
+        "cv_percent": 48.14,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 748.0266666666666
+      }
+    },
+    "Cap Chillies": {
+      "residual_based": {
+        "mse": 12054.469168255428,
+        "rmse": 109.79284661696056,
+        "mae": 109.79284661696056,
+        "cv_percent": 17.35,
+        "confidence": "High",
+        "inflation_rate": 64.4,
+        "next_week_forecast": 516.8871533830394,
+        "last_price": 626.68
+      },
+      "median_based": {
+        "mse": 47917.20999999999,
+        "rmse": 218.89999999999998,
+        "mae": 218.89999999999998,
+        "cv_percent": 17.35,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 407.78
+      },
+      "seasonal_based": {
+        "mse": 3646.1469444444433,
+        "rmse": 60.383333333333326,
+        "mae": 60.383333333333326,
+        "cv_percent": 17.35,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 687.0633333333333
+      }
+    },
+    "Leeks": {
+      "residual_based": {
+        "mse": 15195.65709926063,
+        "rmse": 123.27066601288658,
+        "mae": 123.27066601288658,
+        "cv_percent": 45.36,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 481.8906660128866,
+        "last_price": 358.62
+      },
+      "median_based": {
+        "mse": 74.30440000000007,
+        "rmse": 8.620000000000005,
+        "mae": 8.620000000000005,
+        "cv_percent": 45.36,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 350.0
+      },
+      "seasonal_based": {
+        "mse": 447.322499999999,
+        "rmse": 21.149999999999977,
+        "mae": 21.149999999999977,
+        "cv_percent": 45.36,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 337.47
+      }
+    },
+    "Limes": {
+      "residual_based": {
+        "mse": 44857.861725923685,
+        "rmse": 211.79674625905773,
+        "mae": 211.79674625905773,
+        "cv_percent": 81.07,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 1072.8232537409422,
+        "last_price": 1284.62
+      },
+      "median_based": {
+        "mse": 549510.8640999998,
+        "rmse": 741.2899999999998,
+        "mae": 741.2899999999998,
+        "cv_percent": 81.07,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 543.33
+      },
+      "seasonal_based": {
+        "mse": 29671.210844444442,
+        "rmse": 172.25333333333333,
+        "mae": 172.25333333333333,
+        "cv_percent": 81.07,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1456.8733333333332
+      }
+    },
+    "Coconut": {
+      "residual_based": {
+        "mse": 426.80120702032326,
+        "rmse": 20.659167626512044,
+        "mae": 20.659167626512044,
+        "cv_percent": 48.42,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 161.08083237348797,
+        "last_price": 181.74
+      },
+      "median_based": {
+        "mse": 7897.876900000001,
+        "rmse": 88.87,
+        "mae": 88.87,
+        "cv_percent": 48.42,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 92.87
+      },
+      "seasonal_based": {
+        "mse": 109.063211111111,
+        "rmse": 10.443333333333328,
+        "mae": 10.443333333333328,
+        "cv_percent": 48.42,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 171.29666666666668
+      }
+    },
+    "Betel Leaves ( Average )": {
+      "residual_based": {
+        "mse": 9820.200000563022,
+        "rmse": 99.09692225575435,
+        "mae": 99.09692225575435,
+        "cv_percent": 32.75,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 607.2869222557543,
+        "last_price": 508.19
+      },
+      "median_based": {
+        "mse": 2697.7635999999998,
+        "rmse": 51.94,
+        "mae": 51.94,
+        "cv_percent": 32.75,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 456.25
+      },
+      "seasonal_based": {
+        "mse": 0.002177777777779122,
+        "rmse": 0.04666666666668107,
+        "mae": 0.04666666666668107,
+        "cv_percent": 32.75,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 508.1433333333333
+      }
+    },
+    "Betel Leaves ( Medium)": {
+      "residual_based": {
+        "mse": 23080.73500393259,
+        "rmse": 151.92345113224815,
+        "mae": 151.92345113224815,
+        "cv_percent": 32.11,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 729.4234511322481,
+        "last_price": 577.5
+      },
+      "median_based": {
+        "mse": 756.25,
+        "rmse": 27.5,
+        "mae": 27.5,
+        "cv_percent": 32.11,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 550.0
+      },
+      "seasonal_based": {
+        "mse": 31.884844444444223,
+        "rmse": 5.646666666666647,
+        "mae": 5.646666666666647,
+        "cv_percent": 32.11,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 571.8533333333334
+      }
+    },
+    "Betel Leaves ( Small)": {
+      "residual_based": {
+        "mse": 2122.099305954127,
+        "rmse": 46.066249097947264,
+        "mae": 46.066249097947264,
+        "cv_percent": 34.65,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 484.95624909794725,
+        "last_price": 438.89
+      },
+      "median_based": {
+        "mse": 8465.840099999998,
+        "rmse": 92.00999999999999,
+        "mae": 92.00999999999999,
+        "cv_percent": 34.65,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 346.88
+      },
+      "seasonal_based": {
+        "mse": 30.8765444444445,
+        "rmse": 5.556666666666672,
+        "mae": 5.556666666666672,
+        "cv_percent": 34.65,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 444.44666666666666
+      }
+    },
+    "Arecanuts ( Average )": {
+      "residual_based": {
+        "mse": 87.94630567192534,
+        "rmse": 9.377969165652303,
+        "mae": 9.377969165652303,
+        "cv_percent": 43.19,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 1372.5679691656524,
+        "last_price": 1363.19
+      },
+      "median_based": {
+        "mse": 86694.91360000003,
+        "rmse": 294.44000000000005,
+        "mae": 294.44000000000005,
+        "cv_percent": 43.19,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1068.75
+      },
+      "seasonal_based": {
+        "mse": 139.31867777777663,
+        "rmse": 11.803333333333285,
+        "mae": 11.803333333333285,
+        "cv_percent": 43.19,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1374.9933333333333
+      }
+    },
+    "Arecanuts ( Medium )": {
+      "residual_based": {
+        "mse": 18141.141278807245,
+        "rmse": 134.68905404229122,
+        "mae": 134.68905404229122,
+        "cv_percent": 40.77,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 1623.5790540422913,
+        "last_price": 1488.89
+      },
+      "median_based": {
+        "mse": 45748.93210000004,
+        "rmse": 213.8900000000001,
+        "mae": 213.8900000000001,
+        "cv_percent": 40.77,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1275.0
+      },
+      "seasonal_based": {
+        "mse": 13.714677777778093,
+        "rmse": 3.7033333333333758,
+        "mae": 3.7033333333333758,
+        "cv_percent": 40.77,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1492.5933333333335
+      }
+    },
+    "Arecanuts ( Small )": {
+      "residual_based": {
+        "mse": 7589.237700853586,
+        "rmse": 87.11623098397672,
+        "mae": 87.11623098397672,
+        "cv_percent": 46.25,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 1150.3837690160233,
+        "last_price": 1237.5
+      },
+      "median_based": {
+        "mse": 137514.88890000002,
+        "rmse": 370.83000000000004,
+        "mae": 370.83000000000004,
+        "cv_percent": 46.25,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 866.67
+      },
+      "seasonal_based": {
+        "mse": 396.27537777778116,
+        "rmse": 19.90666666666675,
+        "mae": 19.90666666666675,
+        "cv_percent": 46.25,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1257.4066666666668
+      }
+    },
+    "Potatoes - Local": {
+      "residual_based": {
+        "mse": 1533.9451546083062,
+        "rmse": 39.16561188859822,
+        "mae": 39.16561188859822,
+        "cv_percent": 23.8,
+        "confidence": "Medium",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 444.1656118885982,
+        "last_price": 405.0
+      },
+      "median_based": {
+        "mse": 961.0,
+        "rmse": 31.0,
+        "mae": 31.0,
+        "cv_percent": 23.8,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 374.0
+      },
+      "seasonal_based": {
+        "mse": 9.241600000000124,
+        "rmse": 3.0400000000000205,
+        "mae": 3.0400000000000205,
+        "cv_percent": 23.8,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 401.96
+      }
+    },
+    "Imported": {
+      "residual_based": {
+        "mse": 4458.379959728151,
+        "rmse": 66.77110123195627,
+        "mae": 66.77110123195627,
+        "cv_percent": 37.12,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 252.77889876804375,
+        "last_price": 319.55
+      },
+      "median_based": {
+        "mse": 13965.330625000002,
+        "rmse": 118.17500000000001,
+        "mae": 118.17500000000001,
+        "cv_percent": 37.12,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 201.375
+      },
+      "seasonal_based": {
+        "mse": 898.6005444444457,
+        "rmse": 29.976666666666688,
+        "mae": 29.976666666666688,
+        "cv_percent": 37.12,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 349.5266666666667
+      }
+    },
+    "Coconut Oil": {
+      "residual_based": {
+        "mse": 246.40064695253167,
+        "rmse": 15.697154103611638,
+        "mae": 15.697154103611638,
+        "cv_percent": 22.01,
+        "confidence": "High",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 683.1971541036116,
+        "last_price": 667.5
+      },
+      "median_based": {
+        "mse": 25715.329600000005,
+        "rmse": 160.36,
+        "mae": 160.36,
+        "cv_percent": 22.01,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 507.14
+      },
+      "seasonal_based": {
+        "mse": 0.5088444444444921,
+        "rmse": 0.7133333333333667,
+        "mae": 0.7133333333333667,
+        "cv_percent": 22.01,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 666.7866666666666
+      }
+    },
+    "Mukunuwenna": {
+      "residual_based": {
+        "mse": 177.66403786029838,
+        "rmse": 13.329067403997115,
+        "mae": 13.329067403997115,
+        "cv_percent": 24.23,
+        "confidence": "High",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 82.43906740399711,
+        "last_price": 69.11
+      },
+      "median_based": {
+        "mse": 2.822399999999975,
+        "rmse": 1.6799999999999926,
+        "mae": 1.6799999999999926,
+        "cv_percent": 24.23,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 67.43
+      },
+      "seasonal_based": {
+        "mse": 0.2240444444444405,
+        "rmse": 0.47333333333332916,
+        "mae": 0.47333333333332916,
+        "cv_percent": 24.23,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 68.63666666666667
+      }
+    },
+    "Nivithi": {
+      "residual_based": {
+        "mse": 894.7462095435798,
+        "rmse": 29.912308662882907,
+        "mae": 29.912308662882907,
+        "cv_percent": 69.14,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 126.75769133711708,
+        "last_price": 156.67
+      },
+      "median_based": {
+        "mse": 566.9160999999988,
+        "rmse": 23.809999999999974,
+        "mae": 23.809999999999974,
+        "cv_percent": 69.14,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 132.86
+      },
+      "seasonal_based": {
+        "mse": 27.59751111111108,
+        "rmse": 5.25333333333333,
+        "mae": 5.25333333333333,
+        "cv_percent": 69.14,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 161.92333333333332
+      }
+    },
+    "Sarana": {
+      "residual_based": {
+        "mse": 133.77101069649507,
+        "rmse": 11.565941842171569,
+        "mae": 11.565941842171569,
+        "cv_percent": 27.84,
+        "confidence": "High",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 110.95594184217157,
+        "last_price": 99.39
+      },
+      "median_based": {
+        "mse": 501.31210000000004,
+        "rmse": 22.39,
+        "mae": 22.39,
+        "cv_percent": 27.84,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 77.0
+      },
+      "seasonal_based": {
+        "mse": 0.5776000000000078,
+        "rmse": 0.7600000000000051,
+        "mae": 0.7600000000000051,
+        "cv_percent": 27.84,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 98.63
+      }
+    },
+    "Thampala": {
+      "residual_based": {
+        "mse": 375.7116612451483,
+        "rmse": 19.383283035779783,
+        "mae": 19.383283035779783,
+        "cv_percent": 30.04,
+        "confidence": "High",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 120.89328303577979,
+        "last_price": 101.51
+      },
+      "median_based": {
+        "mse": 632.5225000000003,
+        "rmse": 25.150000000000006,
+        "mae": 25.150000000000006,
+        "cv_percent": 30.04,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 76.36
+      },
+      "seasonal_based": {
+        "mse": 2.5387111111111125,
+        "rmse": 1.5933333333333337,
+        "mae": 1.5933333333333337,
+        "cv_percent": 30.04,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 99.91666666666667
+      }
+    },
+    "Beans - Butter": {
+      "residual_based": {
+        "mse": 8150.509922521087,
+        "rmse": 90.28017458180443,
+        "mae": 90.28017458180443,
+        "cv_percent": 39.29,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 858.2801745818044,
+        "last_price": 768.0
+      },
+      "median_based": {
+        "mse": 28224.0,
+        "rmse": 168.0,
+        "mae": 168.0,
+        "cv_percent": 39.29,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 600.0
+      },
+      "seasonal_based": {
+        "mse": 7.111111111110909,
+        "rmse": 2.6666666666666288,
+        "mae": 2.6666666666666288,
+        "cv_percent": 39.29,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 770.6666666666666
+      }
+    },
+    "Beans - Green": {
+      "residual_based": {
+        "mse": 5826.087393437119,
+        "rmse": 76.32881103120314,
+        "mae": 76.32881103120314,
+        "cv_percent": 38.32,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 698.3988110312032,
+        "last_price": 622.07
+      },
+      "median_based": {
+        "mse": 14130.076900000015,
+        "rmse": 118.87000000000006,
+        "mae": 118.87000000000006,
+        "cv_percent": 38.32,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 503.2
+      },
+      "seasonal_based": {
+        "mse": 711.111111111109,
+        "rmse": 26.66666666666663,
+        "mae": 26.66666666666663,
+        "cv_percent": 38.32,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 648.7366666666667
+      }
+    },
+    "Long Beans": {
+      "residual_based": {
+        "mse": 1100.8568105751722,
+        "rmse": 33.17916229465675,
+        "mae": 33.17916229465675,
+        "cv_percent": 30.77,
+        "confidence": "Medium",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 475.78916229465676,
+        "last_price": 442.61
+      },
+      "median_based": {
+        "mse": 6551.2836,
+        "rmse": 80.94,
+        "mae": 80.94,
+        "cv_percent": 30.77,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 361.67
+      },
+      "seasonal_based": {
+        "mse": 12.087211111111259,
+        "rmse": 3.476666666666688,
+        "mae": 3.476666666666688,
+        "cv_percent": 30.77,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 439.1333333333333
+      }
+    },
+    "BeetRoot": {
+      "residual_based": {
+        "mse": 11794.805420220651,
+        "rmse": 108.60389228853933,
+        "mae": 108.60389228853933,
+        "cv_percent": 54.86,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 554.1238922885393,
+        "last_price": 445.52
+      },
+      "median_based": {
+        "mse": 14225.332899999996,
+        "rmse": 119.26999999999998,
+        "mae": 119.26999999999998,
+        "cv_percent": 54.86,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 326.25
+      },
+      "seasonal_based": {
+        "mse": 28.05467777777793,
+        "rmse": 5.296666666666681,
+        "mae": 5.296666666666681,
+        "cv_percent": 54.86,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 450.81666666666666
+      }
+    },
+    "Cabbagge Seed": {
+      "residual_based": {
+        "mse": 11.882832982787646,
+        "rmse": 3.4471485292611987,
+        "mae": 3.4471485292611987,
+        "cv_percent": 38.58,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 453.4471485292612,
+        "last_price": 450.0
+      },
+      "median_based": {
+        "mse": 11236.0,
+        "rmse": 106.0,
+        "mae": 106.0,
+        "cv_percent": 38.58,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 344.0
+      },
+      "seasonal_based": {
+        "mse": 816.2448999999996,
+        "rmse": 28.569999999999993,
+        "mae": 28.569999999999993,
+        "cv_percent": 38.58,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 478.57
+      }
+    },
+    "Carrot": {
+      "residual_based": {
+        "mse": 23220.492737859535,
+        "rmse": 152.38271797634906,
+        "mae": 152.38271797634906,
+        "cv_percent": 58.23,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 571.6927179763491,
+        "last_price": 419.31
+      },
+      "median_based": {
+        "mse": 314.35290000000066,
+        "rmse": 17.730000000000018,
+        "mae": 17.730000000000018,
+        "cv_percent": 58.23,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 401.58
+      },
+      "seasonal_based": {
+        "mse": 1.9043999999999874,
+        "rmse": 1.3799999999999955,
+        "mae": 1.3799999999999955,
+        "cv_percent": 58.23,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 420.69
+      }
+    },
+    "Drumstick": {
+      "residual_based": {
+        "mse": 366153.76526567497,
+        "rmse": 605.1064082173275,
+        "mae": 605.1064082173275,
+        "cv_percent": 83.29,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 996.8264082173275,
+        "last_price": 391.72
+      },
+      "median_based": {
+        "mse": 14467.278399999994,
+        "rmse": 120.27999999999997,
+        "mae": 120.27999999999997,
+        "cv_percent": 83.29,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 512.0
+      },
+      "seasonal_based": {
+        "mse": 15.262044444444664,
+        "rmse": 3.9066666666666947,
+        "mae": 3.9066666666666947,
+        "cv_percent": 83.29,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 395.6266666666667
+      }
+    },
+    "Knol Khol": {
+      "residual_based": {
+        "mse": 8178.2989585372925,
+        "rmse": 90.4339480424099,
+        "mae": 90.4339480424099,
+        "cv_percent": 32.38,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 458.0539480424099,
+        "last_price": 367.62
+      },
+      "median_based": {
+        "mse": 631.0144000000003,
+        "rmse": 25.120000000000005,
+        "mae": 25.120000000000005,
+        "cv_percent": 32.38,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 342.5
+      },
+      "seasonal_based": {
+        "mse": 31.024899999999924,
+        "rmse": 5.569999999999993,
+        "mae": 5.569999999999993,
+        "cv_percent": 32.38,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 373.19
+      }
+    },
+    "Raddish": {
+      "residual_based": {
+        "mse": 227.05417434190326,
+        "rmse": 15.068316904747633,
+        "mae": 15.068316904747633,
+        "cv_percent": 40.91,
+        "confidence": "Medium",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 353.24831690474764,
+        "last_price": 338.18
+      },
+      "median_based": {
+        "mse": 8909.472100000003,
+        "rmse": 94.39000000000001,
+        "mae": 94.39000000000001,
+        "cv_percent": 40.91,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 243.79
+      },
+      "seasonal_based": {
+        "mse": 0.06934444444443806,
+        "rmse": 0.2633333333333212,
+        "mae": 0.2633333333333212,
+        "cv_percent": 40.91,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 338.4433333333333
+      }
+    },
+    "Tomatoe - No 1.": {
+      "residual_based": {
+        "mse": 26176.226884033775,
+        "rmse": 161.79068849607438,
+        "mae": 161.79068849607438,
+        "cv_percent": 52.59,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 515.2493115039256,
+        "last_price": 677.04
+      },
+      "median_based": {
+        "mse": 125954.00999999998,
+        "rmse": 354.9,
+        "mae": 354.9,
+        "cv_percent": 52.59,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 322.14
+      },
+      "seasonal_based": {
+        "mse": 3321.60111111111,
+        "rmse": 57.633333333333326,
+        "mae": 57.633333333333326,
+        "cv_percent": 52.59,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 734.6733333333333
+      }
+    },
+    "Dried Chillies - No 1.": {
+      "residual_based": {
+        "mse": 17276.455312331094,
+        "rmse": 131.4399304333774,
+        "mae": 131.4399304333774,
+        "cv_percent": 36.48,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 1203.7500695666226,
+        "last_price": 1335.19
+      },
+      "median_based": {
+        "mse": 119156.13610000003,
+        "rmse": 345.19000000000005,
+        "mae": 345.19000000000005,
+        "cv_percent": 36.48,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 990.0
+      },
+      "seasonal_based": {
+        "mse": 17.250177777778507,
+        "rmse": 4.153333333333421,
+        "mae": 4.153333333333421,
+        "cv_percent": 36.48,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1339.3433333333335
+      }
+    },
+    "Corriander": {
+      "residual_based": {
+        "mse": 5128.937361205118,
+        "rmse": 71.61659976014721,
+        "mae": 71.61659976014721,
+        "cv_percent": 35.91,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 752.3865997601472,
+        "last_price": 680.77
+      },
+      "median_based": {
+        "mse": 4381.116099999992,
+        "rmse": 66.18999999999994,
+        "mae": 66.18999999999994,
+        "cv_percent": 35.91,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 614.58
+      },
+      "seasonal_based": {
+        "mse": 31.248100000000356,
+        "rmse": 5.590000000000032,
+        "mae": 5.590000000000032,
+        "cv_percent": 35.91,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 686.36
+      }
+    },
+    "Pepper - Powder": {
+      "residual_based": {
+        "mse": 122471.8703165991,
+        "rmse": 349.9598124307977,
+        "mae": 349.9598124307977,
+        "cv_percent": 26.83,
+        "confidence": "Medium",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 3299.9598124307977,
+        "last_price": 2950.0
+      },
+      "median_based": {
+        "mse": 51651.652899999994,
+        "rmse": 227.26999999999998,
+        "mae": 227.26999999999998,
+        "cv_percent": 26.83,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 2722.73
+      },
+      "seasonal_based": {
+        "mse": 7.709877777777643,
+        "rmse": 2.7766666666666424,
+        "mae": 2.7766666666666424,
+        "cv_percent": 26.83,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 2952.7766666666666
+      }
+    },
+    "Turmeric -Powder": {
+      "residual_based": {
+        "mse": 39118.54930901848,
+        "rmse": 197.78409771520683,
+        "mae": 197.78409771520683,
+        "cv_percent": 20.62,
+        "confidence": "Medium",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 3561.4240977152067,
+        "last_price": 3363.64
+      },
+      "median_based": {
+        "mse": 3491.6280999999635,
+        "rmse": 59.08999999999969,
+        "mae": 59.08999999999969,
+        "cv_percent": 20.62,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 3304.55
+      },
+      "seasonal_based": {
+        "mse": 270.602499999994,
+        "rmse": 16.449999999999818,
+        "mae": 16.449999999999818,
+        "cv_percent": 20.62,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 3380.0899999999997
+      }
+    },
+    "Garlic": {
+      "residual_based": {
+        "mse": 16418.8311601538,
+        "rmse": 128.1359869831805,
+        "mae": 128.1359869831805,
+        "cv_percent": 34.34,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 702.3059869831804,
+        "last_price": 574.17
+      },
+      "median_based": {
+        "mse": 284.25960000000043,
+        "rmse": 16.860000000000014,
+        "mae": 16.860000000000014,
+        "cv_percent": 34.34,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 557.31
+      },
+      "seasonal_based": {
+        "mse": 9.322844444444842,
+        "rmse": 3.0533333333333985,
+        "mae": 3.0533333333333985,
+        "cv_percent": 34.34,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 571.1166666666666
+      }
+    },
+    "Cummin Seed": {
+      "residual_based": {
+        "mse": 544050.7954183195,
+        "rmse": 737.5979903838672,
+        "mae": 737.5979903838672,
+        "cv_percent": 36.13,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 2363.5279903838673,
+        "last_price": 1625.93
+      },
+      "median_based": {
+        "mse": 59194.88999999998,
+        "rmse": 243.29999999999995,
+        "mae": 243.29999999999995,
+        "cv_percent": 36.13,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1869.23
+      },
+      "seasonal_based": {
+        "mse": 8.390677777777006,
+        "rmse": 2.8966666666665333,
+        "mae": 2.8966666666665333,
+        "cv_percent": 36.13,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1623.0333333333335
+      }
+    },
+    "Fennel Seed": {
+      "residual_based": {
+        "mse": 222806.81350089159,
+        "rmse": 472.0241662255139,
+        "mae": 472.0241662255139,
+        "cv_percent": 34.22,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 1957.214166225514,
+        "last_price": 1485.19
+      },
+      "median_based": {
+        "mse": 13625.892900000004,
+        "rmse": 116.73000000000002,
+        "mae": 116.73000000000002,
+        "cv_percent": 34.22,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1601.92
+      },
+      "seasonal_based": {
+        "mse": 7.599211111111078,
+        "rmse": 2.7566666666666606,
+        "mae": 2.7566666666666606,
+        "cv_percent": 34.22,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1487.9466666666667
+      }
+    },
+    "Mustard": {
+      "residual_based": {
+        "mse": 31485.204639025655,
+        "rmse": 177.44070738989308,
+        "mae": 177.44070738989308,
+        "cv_percent": 37.46,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 899.6607073898931,
+        "last_price": 722.22
+      },
+      "median_based": {
+        "mse": 54.90809999999953,
+        "rmse": 7.409999999999968,
+        "mae": 7.409999999999968,
+        "cv_percent": 37.46,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 729.63
+      },
+      "seasonal_based": {
+        "mse": 23.457877777778055,
+        "rmse": 4.843333333333362,
+        "mae": 4.843333333333362,
+        "cv_percent": 37.46,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 727.0633333333334
+      }
+    },
+    "Mathe Seed": {
+      "residual_based": {
+        "mse": 13535.55634090822,
+        "rmse": 116.342409898146,
+        "mae": 116.342409898146,
+        "cv_percent": 23.96,
+        "confidence": "Medium",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 838.562409898146,
+        "last_price": 722.22
+      },
+      "median_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 23.96,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 722.22
+      },
+      "seasonal_based": {
+        "mse": 8.12250000000013,
+        "rmse": 2.8500000000000227,
+        "mae": 2.8500000000000227,
+        "cv_percent": 23.96,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 719.37
+      }
+    },
+    "Cinnamon": {
+      "residual_based": {
+        "mse": 200567.62145731342,
+        "rmse": 447.8477659398486,
+        "mae": 447.8477659398486,
+        "cv_percent": 36.63,
+        "confidence": "Medium",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 7576.417765939848,
+        "last_price": 7128.57
+      },
+      "median_based": {
+        "mse": 2162899.6623999984,
+        "rmse": 1470.6799999999994,
+        "mae": 1470.6799999999994,
+        "cv_percent": 36.63,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 5657.89
+      },
+      "seasonal_based": {
+        "mse": 239.52721111110472,
+        "rmse": 15.47666666666646,
+        "mae": 15.47666666666646,
+        "cv_percent": 36.63,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 7113.093333333333
+      }
+    },
+    "Gorakka": {
+      "residual_based": {
+        "mse": 5072.199112015358,
+        "rmse": 71.21937315095772,
+        "mae": 71.21937315095772,
+        "cv_percent": 29.27,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 786.0293731509577,
+        "last_price": 714.81
+      },
+      "median_based": {
+        "mse": 552.7200999999995,
+        "rmse": 23.50999999999999,
+        "mae": 23.50999999999999,
+        "cv_percent": 29.27,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 691.3
+      },
+      "seasonal_based": {
+        "mse": 16.29467777777751,
+        "rmse": 4.036666666666633,
+        "mae": 4.036666666666633,
+        "cv_percent": 29.27,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 710.7733333333333
+      }
+    },
+    "Maldive Fish": {
+      "residual_based": {
+        "mse": 38394.02281875456,
+        "rmse": 195.94392774147036,
+        "mae": 195.94392774147036,
+        "cv_percent": 20.86,
+        "confidence": "Medium",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 3479.2739277414703,
+        "last_price": 3283.33
+      },
+      "median_based": {
+        "mse": 69843.91839999986,
+        "rmse": 264.27999999999975,
+        "mae": 264.27999999999975,
+        "cv_percent": 20.86,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 3019.05
+      },
+      "seasonal_based": {
+        "mse": 356.8320999999952,
+        "rmse": 18.889999999999873,
+        "mae": 18.889999999999873,
+        "cv_percent": 20.86,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 3264.44
+      }
+    },
+    "Salt": {
+      "residual_based": {
+        "mse": 198.9318935968094,
+        "rmse": 14.1043218056314,
+        "mae": 14.1043218056314,
+        "cv_percent": 54.84,
+        "confidence": "Medium",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 175.5343218056314,
+        "last_price": 161.43
+      },
+      "median_based": {
+        "mse": 3773.6449000000007,
+        "rmse": 61.43000000000001,
+        "mae": 61.43000000000001,
+        "cv_percent": 54.84,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 100.0
+      },
+      "seasonal_based": {
+        "mse": 2.260011111111102,
+        "rmse": 1.5033333333333303,
+        "mae": 1.5033333333333303,
+        "cv_percent": 54.84,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 162.93333333333334
+      }
+    },
+    "Tamarind": {
+      "residual_based": {
+        "mse": 76022.59310814514,
+        "rmse": 275.721948905315,
+        "mae": 275.721948905315,
+        "cv_percent": 59.5,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 1338.221948905315,
+        "last_price": 1062.5
+      },
+      "median_based": {
+        "mse": 197580.25,
+        "rmse": 444.5,
+        "mae": 444.5,
+        "cv_percent": 59.5,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 618.0
+      },
+      "seasonal_based": {
+        "mse": 5.553877777777321,
+        "rmse": 2.3566666666665697,
+        "mae": 2.3566666666665697,
+        "cv_percent": 59.5,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1060.1433333333334
+      }
+    },
+    "Red Onions - Average": {
+      "residual_based": {
+        "mse": 2101.6256546930576,
+        "rmse": 45.843490865040565,
+        "mae": 45.843490865040565,
+        "cv_percent": 22.56,
+        "confidence": "Medium",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 470.63650913495945,
+        "last_price": 516.48
+      },
+      "median_based": {
+        "mse": 4736.192399999999,
+        "rmse": 68.82,
+        "mae": 68.82,
+        "cv_percent": 22.56,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 447.66
+      },
+      "seasonal_based": {
+        "mse": 335.256099999998,
+        "rmse": 18.309999999999945,
+        "mae": 18.309999999999945,
+        "cv_percent": 22.56,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 534.79
+      }
+    },
+    "B.Onions": {
+      "residual_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "High",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 1.0,
+        "last_price": 1.0
+      },
+      "median_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      }
+    },
+    "Raw Red - ( Average )": {
+      "residual_based": {
+        "mse": 2301.6904998286805,
+        "rmse": 47.975936674844405,
+        "mae": 47.975936674844405,
+        "cv_percent": 27.32,
+        "confidence": "Medium",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 241.1959366748444,
+        "last_price": 193.22
+      },
+      "median_based": {
+        "mse": 16.892100000000113,
+        "rmse": 4.110000000000014,
+        "mae": 4.110000000000014,
+        "cv_percent": 27.32,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 197.33
+      },
+      "seasonal_based": {
+        "mse": 0.42250000000000737,
+        "rmse": 0.6500000000000057,
+        "mae": 0.6500000000000057,
+        "cv_percent": 27.32,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 193.87
+      }
+    },
+    "Raw Red - No 1.": {
+      "residual_based": {
+        "mse": 1632.4644388482934,
+        "rmse": 40.403767631847074,
+        "mae": 40.403767631847074,
+        "cv_percent": 26.16,
+        "confidence": "Medium",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 247.28376763184707,
+        "last_price": 206.88
+      },
+      "median_based": {
+        "mse": 18.404099999999932,
+        "rmse": 4.289999999999992,
+        "mae": 4.289999999999992,
+        "cv_percent": 26.16,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 202.59
+      },
+      "seasonal_based": {
+        "mse": 0.10027777777777538,
+        "rmse": 0.3166666666666629,
+        "mae": 0.3166666666666629,
+        "cv_percent": 26.16,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 206.56333333333333
+      }
+    },
+    "No 2.": {
+      "residual_based": {
+        "mse": 107.24413042961508,
+        "rmse": 10.355874199198013,
+        "mae": 10.355874199198013,
+        "cv_percent": 19.44,
+        "confidence": "High",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 169.21412580080198,
+        "last_price": 179.57
+      },
+      "median_based": {
+        "mse": 6676.524099999999,
+        "rmse": 81.71,
+        "mae": 81.71,
+        "cv_percent": 19.44,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 97.86
+      },
+      "seasonal_based": {
+        "mse": 2.6244000000000147,
+        "rmse": 1.6200000000000045,
+        "mae": 1.6200000000000045,
+        "cv_percent": 19.44,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 181.19
+      }
+    },
+    "Raw White - Average": {
+      "residual_based": {
+        "mse": 196.7113253122532,
+        "rmse": 14.025381467619809,
+        "mae": 14.025381467619809,
+        "cv_percent": 8.64,
+        "confidence": "High",
+        "inflation_rate": 22.1,
+        "next_week_forecast": 116.2446185323802,
+        "last_price": 130.27
+      },
+      "median_based": {
+        "mse": 736.3082250000003,
+        "rmse": 27.135000000000005,
+        "mae": 27.135000000000005,
+        "cv_percent": 8.64,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 103.135
+      },
+      "seasonal_based": {
+        "mse": 0.8525444444444158,
+        "rmse": 0.9233333333333178,
+        "mae": 0.9233333333333178,
+        "cv_percent": 8.64,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 129.3466666666667
+      }
+    },
+    "Nadu - Red": {
+      "residual_based": {
+        "mse": 1706.3051383309055,
+        "rmse": 41.3074465239732,
+        "mae": 41.3074465239732,
+        "cv_percent": 26.19,
+        "confidence": "Medium",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 272.9074465239732,
+        "last_price": 231.6
+      },
+      "median_based": {
+        "mse": 52.128399999999985,
+        "rmse": 7.219999999999999,
+        "mae": 7.219999999999999,
+        "cv_percent": 26.19,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 224.38
+      },
+      "seasonal_based": {
+        "mse": 0.14187777777777663,
+        "rmse": 0.37666666666666515,
+        "mae": 0.37666666666666515,
+        "cv_percent": 26.19,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 231.22333333333333
+      }
+    },
+    "Nadu - White": {
+      "residual_based": {
+        "mse": 1280.3337016967682,
+        "rmse": 35.78175095906806,
+        "mae": 35.78175095906806,
+        "cv_percent": 30.19,
+        "confidence": "High",
+        "inflation_rate": 3.0,
+        "next_week_forecast": 263.54175095906805,
+        "last_price": 227.76
+      },
+      "median_based": {
+        "mse": 264.55022499999956,
+        "rmse": 16.264999999999986,
+        "mae": 16.264999999999986,
+        "cv_percent": 30.19,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 211.495
+      },
+      "seasonal_based": {
+        "mse": 0.044100000000003345,
+        "rmse": 0.21000000000000796,
+        "mae": 0.21000000000000796,
+        "cv_percent": 30.19,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 227.54999999999998
+      }
+    },
+    "Samba - ( Average )": {
+      "residual_based": {
+        "mse": 2881.916031045501,
+        "rmse": 53.68348005714142,
+        "mae": 53.68348005714142,
+        "cv_percent": 27.06,
+        "confidence": "Medium",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 297.9434800571414,
+        "last_price": 244.26
+      },
+      "median_based": {
+        "mse": 23.42560000000003,
+        "rmse": 4.840000000000003,
+        "mae": 4.840000000000003,
+        "cv_percent": 27.06,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 239.42
+      },
+      "seasonal_based": {
+        "mse": 0.008100000000000614,
+        "rmse": 0.09000000000000341,
+        "mae": 0.09000000000000341,
+        "cv_percent": 27.06,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 244.35
+      }
+    },
+    "Samba - No 1.": {
+      "residual_based": {
+        "mse": 1561.5285889147804,
+        "rmse": 39.516181355424266,
+        "mae": 39.516181355424266,
+        "cv_percent": 23.45,
+        "confidence": "Medium",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 283.36618135542426,
+        "last_price": 243.85
+      },
+      "median_based": {
+        "mse": 52.852899999999735,
+        "rmse": 7.269999999999982,
+        "mae": 7.269999999999982,
+        "cv_percent": 23.45,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 236.58
+      },
+      "seasonal_based": {
+        "mse": 0.024544444444444327,
+        "rmse": 0.1566666666666663,
+        "mae": 0.1566666666666663,
+        "cv_percent": 23.45,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 244.00666666666666
+      }
+    },
+    "Wheat Flour": {
+      "residual_based": {
+        "mse": 537.2571978240296,
+        "rmse": 23.178809240856822,
+        "mae": 23.178809240856822,
+        "cv_percent": 35.1,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 226.36880924085682,
+        "last_price": 203.19
+      },
+      "median_based": {
+        "mse": 231.9528999999997,
+        "rmse": 15.22999999999999,
+        "mae": 15.22999999999999,
+        "cv_percent": 35.1,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 187.96
+      },
+      "seasonal_based": {
+        "mse": 1.97871111111111,
+        "rmse": 1.4066666666666663,
+        "mae": 1.4066666666666663,
+        "cv_percent": 35.1,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 204.59666666666666
+      }
+    },
+    "Mysore Dhall - ( Average )": {
+      "residual_based": {
+        "mse": 3968.452883327728,
+        "rmse": 62.99565765453781,
+        "mae": 62.99565765453781,
+        "cv_percent": 29.03,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 397.5156576545378,
+        "last_price": 334.52
+      },
+      "median_based": {
+        "mse": 119.24640000000035,
+        "rmse": 10.920000000000016,
+        "mae": 10.920000000000016,
+        "cv_percent": 29.03,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 345.44
+      },
+      "seasonal_based": {
+        "mse": 1.2693777777777744,
+        "rmse": 1.1266666666666652,
+        "mae": 1.1266666666666652,
+        "cv_percent": 29.03,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 335.64666666666665
+      }
+    },
+    "Mysore Dhall - No 1.(Large)": {
+      "residual_based": {
+        "mse": 3505.080423252572,
+        "rmse": 59.20371967412666,
+        "mae": 59.20371967412666,
+        "cv_percent": 27.66,
+        "confidence": "Medium",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 523.5837196741267,
+        "last_price": 464.38
+      },
+      "median_based": {
+        "mse": 478.7343999999998,
+        "rmse": 21.879999999999995,
+        "mae": 21.879999999999995,
+        "cv_percent": 27.66,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 442.5
+      },
+      "seasonal_based": {
+        "mse": 2.13159999999994,
+        "rmse": 1.4599999999999795,
+        "mae": 1.4599999999999795,
+        "cv_percent": 27.66,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 465.84
+      }
+    },
+    "No 2.(Medium)": {
+      "residual_based": {
+        "mse": 4078.5729480344157,
+        "rmse": 63.86370603115995,
+        "mae": 63.86370603115995,
+        "cv_percent": 30.35,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 349.69370603115993,
+        "last_price": 285.83
+      },
+      "median_based": {
+        "mse": 550.3716000000018,
+        "rmse": 23.460000000000036,
+        "mae": 23.460000000000036,
+        "cv_percent": 30.35,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 309.29
+      },
+      "seasonal_based": {
+        "mse": 0.40959999999998253,
+        "rmse": 0.6399999999999864,
+        "mae": 0.6399999999999864,
+        "cv_percent": 30.35,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 286.46999999999997
+      }
+    },
+    "No 3.(Small)": {
+      "residual_based": {
+        "mse": 4111.041857202637,
+        "rmse": 64.117406819074,
+        "mae": 64.117406819074,
+        "cv_percent": 30.85,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 317.477406819074,
+        "last_price": 253.36
+      },
+      "median_based": {
+        "mse": 692.2161000000001,
+        "rmse": 26.310000000000002,
+        "mae": 26.310000000000002,
+        "cv_percent": 30.85,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 279.67
+      },
+      "seasonal_based": {
+        "mse": 1.6555111111110985,
+        "rmse": 1.2866666666666617,
+        "mae": 1.2866666666666617,
+        "cv_percent": 30.85,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 254.64666666666668
+      }
+    },
+    "Cowpea Whole - Average": {
+      "residual_based": {
+        "mse": 58428.939763689974,
+        "rmse": 241.7207888529449,
+        "mae": 241.7207888529449,
+        "cv_percent": 29.85,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 1124.2507888529449,
+        "last_price": 882.53
+      },
+      "median_based": {
+        "mse": 231.95290000000057,
+        "rmse": 15.230000000000018,
+        "mae": 15.230000000000018,
+        "cv_percent": 29.85,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 897.76
+      },
+      "seasonal_based": {
+        "mse": 13.714677777778093,
+        "rmse": 3.7033333333333758,
+        "mae": 3.7033333333333758,
+        "cv_percent": 29.85,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 878.8266666666666
+      }
+    },
+    "Green Gram - Average": {
+      "residual_based": {
+        "mse": 42698.23045834261,
+        "rmse": 206.63550144721648,
+        "mae": 206.63550144721648,
+        "cv_percent": 34.05,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 1124.5955014472165,
+        "last_price": 917.96
+      },
+      "median_based": {
+        "mse": 26.010000000000232,
+        "rmse": 5.100000000000023,
+        "mae": 5.100000000000023,
+        "cv_percent": 34.05,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 912.86
+      },
+      "seasonal_based": {
+        "mse": 42.85884444444389,
+        "rmse": 6.546666666666624,
+        "mae": 6.546666666666624,
+        "cv_percent": 34.05,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 924.5066666666667
+      }
+    },
+    "Kadalai - Average": {
+      "residual_based": {
+        "mse": 32421.774685452958,
+        "rmse": 180.06047507838292,
+        "mae": 180.06047507838292,
+        "cv_percent": 32.03,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 670.2704750783829,
+        "last_price": 490.21
+      },
+      "median_based": {
+        "mse": 3214.8899999999985,
+        "rmse": 56.69999999999999,
+        "mae": 56.69999999999999,
+        "cv_percent": 32.03,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 546.91
+      },
+      "seasonal_based": {
+        "mse": 8.58490000000004,
+        "rmse": 2.930000000000007,
+        "mae": 2.930000000000007,
+        "cv_percent": 32.03,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 487.28
+      }
+    },
+    "Sugar": {
+      "residual_based": {
+        "mse": 2184.425677261693,
+        "rmse": 46.737839886559726,
+        "mae": 46.737839886559726,
+        "cv_percent": 40.76,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 300.06783988655974,
+        "last_price": 253.33
+      },
+      "median_based": {
+        "mse": 404.8144000000002,
+        "rmse": 20.120000000000005,
+        "mae": 20.120000000000005,
+        "cv_percent": 40.76,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 233.21
+      },
+      "seasonal_based": {
+        "mse": 0.35999999999999316,
+        "rmse": 0.5999999999999943,
+        "mae": 0.5999999999999943,
+        "cv_percent": 40.76,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 253.93
+      }
+    },
+    "Fresh Fish - Paraw": {
+      "residual_based": {
+        "mse": 4925.490264350905,
+        "rmse": 70.18183714003862,
+        "mae": 70.18183714003862,
+        "cv_percent": 28.42,
+        "confidence": "Medium",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 3065.4481628599615,
+        "last_price": 3135.63
+      },
+      "median_based": {
+        "mse": 647252.4304000007,
+        "rmse": 804.5200000000004,
+        "mae": 804.5200000000004,
+        "cv_percent": 28.42,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 2331.1099999999997
+      },
+      "seasonal_based": {
+        "mse": 2006.1440999999968,
+        "rmse": 44.789999999999964,
+        "mae": 44.789999999999964,
+        "cv_percent": 28.42,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 3090.84
+      }
+    },
+    "Mullet": {
+      "residual_based": {
+        "mse": 105856.38700561674,
+        "rmse": 325.3557852653257,
+        "mae": 325.3557852653257,
+        "cv_percent": 42.91,
+        "confidence": "Medium",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 3149.1057852653257,
+        "last_price": 2823.75
+      },
+      "median_based": {
+        "mse": 295664.0625,
+        "rmse": 543.75,
+        "mae": 543.75,
+        "cv_percent": 42.91,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 2280.0
+      },
+      "seasonal_based": {
+        "mse": 171.69734444444794,
+        "rmse": 13.103333333333467,
+        "mae": 13.103333333333467,
+        "cv_percent": 42.91,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 2836.8533333333335
+      }
+    },
+    "Thalapath": {
+      "residual_based": {
+        "mse": 138271.77949818326,
+        "rmse": 371.8491354006128,
+        "mae": 371.8491354006128,
+        "cv_percent": 40.81,
+        "confidence": "Medium",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 3493.519135400613,
+        "last_price": 3121.67
+      },
+      "median_based": {
+        "mse": 262533.2644000001,
+        "rmse": 512.3800000000001,
+        "mae": 512.3800000000001,
+        "cv_percent": 40.81,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 2609.29
+      },
+      "seasonal_based": {
+        "mse": 3899.169877777756,
+        "rmse": 62.44333333333316,
+        "mae": 62.44333333333316,
+        "cv_percent": 40.81,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 3059.226666666667
+      }
+    },
+    "Balaya": {
+      "residual_based": {
+        "mse": 66309.90942421838,
+        "rmse": 257.50710558005653,
+        "mae": 257.50710558005653,
+        "cv_percent": 49.41,
+        "confidence": "Medium",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 1825.8228944199434,
+        "last_price": 2083.33
+      },
+      "median_based": {
+        "mse": 816005.0888999999,
+        "rmse": 903.3299999999999,
+        "mae": 903.3299999999999,
+        "cv_percent": 49.41,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1180.0
+      },
+      "seasonal_based": {
+        "mse": 3734.8395111111263,
+        "rmse": 61.11333333333346,
+        "mae": 61.11333333333346,
+        "cv_percent": 49.41,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 2022.2166666666665
+      }
+    },
+    "Kelewella": {
+      "residual_based": {
+        "mse": 4071.1290711736888,
+        "rmse": 63.805400015779924,
+        "mae": 63.805400015779924,
+        "cv_percent": 41.66,
+        "confidence": "Medium",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 2939.05459998422,
+        "last_price": 3002.86
+      },
+      "median_based": {
+        "mse": 831288.0625,
+        "rmse": 911.75,
+        "mae": 911.75,
+        "cv_percent": 41.66,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 2091.11
+      },
+      "seasonal_based": {
+        "mse": 321.724011111105,
+        "rmse": 17.936666666666497,
+        "mae": 17.936666666666497,
+        "cv_percent": 41.66,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 2984.9233333333336
+      }
+    },
+    "Mora": {
+      "residual_based": {
+        "mse": 70808.8727086294,
+        "rmse": 266.09936623116823,
+        "mae": 266.09936623116823,
+        "cv_percent": 41.94,
+        "confidence": "Medium",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 2307.0093662311683,
+        "last_price": 2040.91
+      },
+      "median_based": {
+        "mse": 145092.42810000005,
+        "rmse": 380.9100000000001,
+        "mae": 380.9100000000001,
+        "cv_percent": 41.94,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1660.0
+      },
+      "seasonal_based": {
+        "mse": 6270.000277777787,
+        "rmse": 79.1833333333334,
+        "mae": 79.1833333333334,
+        "cv_percent": 41.94,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1961.7266666666667
+      }
+    },
+    "Salaya": {
+      "residual_based": {
+        "mse": 28225.79699079725,
+        "rmse": 168.005348101771,
+        "mae": 168.005348101771,
+        "cv_percent": 58.37,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 773.505348101771,
+        "last_price": 605.5
+      },
+      "median_based": {
+        "mse": 20851.359999999993,
+        "rmse": 144.39999999999998,
+        "mae": 144.39999999999998,
+        "cv_percent": 58.37,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 461.1
+      },
+      "seasonal_based": {
+        "mse": 1936.0,
+        "rmse": 44.0,
+        "mae": 44.0,
+        "cv_percent": 58.37,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 561.5
+      }
+    },
+    "Parati": {
+      "residual_based": {
+        "mse": 11734.868480740512,
+        "rmse": 108.32759796441769,
+        "mae": 108.32759796441769,
+        "cv_percent": 42.9,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 1872.1375979644176,
+        "last_price": 1763.81
+      },
+      "median_based": {
+        "mse": 220026.66489999995,
+        "rmse": 469.06999999999994,
+        "mae": 469.06999999999994,
+        "cv_percent": 42.9,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1294.74
+      },
+      "seasonal_based": {
+        "mse": 27663.451211111165,
+        "rmse": 166.3233333333335,
+        "mae": 166.3233333333335,
+        "cv_percent": 42.9,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1597.4866666666665
+      }
+    },
+    "Small Mullet": {
+      "residual_based": {
+        "mse": 144.2568086405294,
+        "rmse": 12.010695593533683,
+        "mae": 12.010695593533683,
+        "cv_percent": 26.22,
+        "confidence": "Medium",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 1710.2506955935337,
+        "last_price": 1698.24
+      },
+      "median_based": {
+        "mse": 134281.93802499995,
+        "rmse": 366.44499999999994,
+        "mae": 366.44499999999994,
+        "cv_percent": 26.22,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1331.795
+      },
+      "seasonal_based": {
+        "mse": 10602.134444444451,
+        "rmse": 102.9666666666667,
+        "mae": 102.9666666666667,
+        "cv_percent": 26.22,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1595.2733333333333
+      }
+    },
+    "Hurulla": {
+      "residual_based": {
+        "mse": 185182.41910221506,
+        "rmse": 430.3282690019505,
+        "mae": 430.3282690019505,
+        "cv_percent": 47.08,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 1328.3282690019505,
+        "last_price": 898.0
+      },
+      "median_based": {
+        "mse": 0.05760000000000436,
+        "rmse": 0.2400000000000091,
+        "mae": 0.2400000000000091,
+        "cv_percent": 47.08,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 898.24
+      },
+      "seasonal_based": {
+        "mse": 4239.312100000002,
+        "rmse": 65.11000000000001,
+        "mae": 65.11000000000001,
+        "cv_percent": 47.08,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 832.89
+      }
+    },
+    "Linna": {
+      "residual_based": {
+        "mse": 84380.6232847643,
+        "rmse": 290.48343031017157,
+        "mae": 290.48343031017157,
+        "cv_percent": 45.19,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 1132.4834303101716,
+        "last_price": 842.0
+      },
+      "median_based": {
+        "mse": 3943.8399999999942,
+        "rmse": 62.799999999999955,
+        "mae": 62.799999999999955,
+        "cv_percent": 45.19,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 779.2
+      },
+      "seasonal_based": {
+        "mse": 985.7506777777766,
+        "rmse": 31.396666666666647,
+        "mae": 31.396666666666647,
+        "cv_percent": 45.19,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 810.6033333333334
+      }
+    },
+    "Prawns": {
+      "residual_based": {
+        "mse": 151696.20144692253,
+        "rmse": 389.48196549637896,
+        "mae": 389.48196549637896,
+        "cv_percent": 40.5,
+        "confidence": "Medium",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 2568.9519654963788,
+        "last_price": 2179.47
+      },
+      "median_based": {
+        "mse": 133027.97289999985,
+        "rmse": 364.7299999999998,
+        "mae": 364.7299999999998,
+        "cv_percent": 40.5,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1814.74
+      },
+      "seasonal_based": {
+        "mse": 1665.4560999999956,
+        "rmse": 40.809999999999945,
+        "mae": 40.809999999999945,
+        "cv_percent": 40.5,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 2138.66
+      }
+    },
+    "Dried Fish - Katta": {
+      "residual_based": {
+        "mse": 157711.286450052,
+        "rmse": 397.1288033498099,
+        "mae": 397.1288033498099,
+        "cv_percent": 22.14,
+        "confidence": "Medium",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 2868.25119665019,
+        "last_price": 3265.38
+      },
+      "median_based": {
+        "mse": 955271.6644000002,
+        "rmse": 977.3800000000001,
+        "mae": 977.3800000000001,
+        "cv_percent": 22.14,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 2288.0
+      },
+      "seasonal_based": {
+        "mse": 67.45884444444873,
+        "rmse": 8.213333333333594,
+        "mae": 8.213333333333594,
+        "cv_percent": 22.14,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 3273.5933333333337
+      }
+    },
+    "Spratts": {
+      "residual_based": {
+        "mse": 113128.04842492257,
+        "rmse": 336.3451328991139,
+        "mae": 336.3451328991139,
+        "cv_percent": 41.82,
+        "confidence": "Medium",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 1703.6548671008861,
+        "last_price": 2040.0
+      },
+      "median_based": {
+        "mse": 613840.9104,
+        "rmse": 783.48,
+        "mae": 783.48,
+        "cv_percent": 41.82,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1256.52
+      },
+      "seasonal_based": {
+        "mse": 0.26351111111109865,
+        "rmse": 0.5133333333333212,
+        "mae": 0.5133333333333212,
+        "cv_percent": 41.82,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 2040.5133333333333
+      }
+    },
+    "Salaya - Average": {
+      "residual_based": {
+        "mse": 2823.1224887018243,
+        "rmse": 53.133063987519336,
+        "mae": 53.133063987519336,
+        "cv_percent": 27.22,
+        "confidence": "Medium",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 1513.5369360124807,
+        "last_price": 1566.67
+      },
+      "median_based": {
+        "mse": 134446.88890000005,
+        "rmse": 366.6700000000001,
+        "mae": 366.6700000000001,
+        "cv_percent": 27.22,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1200.0
+      },
+      "seasonal_based": {
+        "mse": 143.44054444444495,
+        "rmse": 11.976666666666688,
+        "mae": 11.976666666666688,
+        "cv_percent": 27.22,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1554.6933333333334
+      }
+    },
+    "Beef": {
+      "residual_based": {
+        "mse": 65782.96284309676,
+        "rmse": 256.48189574138905,
+        "mae": 256.48189574138905,
+        "cv_percent": 44.08,
+        "confidence": "Medium",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 3309.811895741389,
+        "last_price": 3053.33
+      },
+      "median_based": {
+        "mse": 552539.4888999999,
+        "rmse": 743.3299999999999,
+        "mae": 743.3299999999999,
+        "cv_percent": 44.08,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 2310.0
+      },
+      "seasonal_based": {
+        "mse": 15.106177777778578,
+        "rmse": 3.8866666666667697,
+        "mae": 3.8866666666667697,
+        "cv_percent": 44.08,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 3057.2166666666667
+      }
+    },
+    "Mutton": {
+      "residual_based": {
+        "mse": 15.238414419032248,
+        "rmse": 3.903641174471886,
+        "mae": 3.903641174471886,
+        "cv_percent": 39.81,
+        "confidence": "Medium",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 4512.993641174472,
+        "last_price": 4509.09
+      },
+      "median_based": {
+        "mse": 1985534.6281000003,
+        "rmse": 1409.0900000000001,
+        "mae": 1409.0900000000001,
+        "cv_percent": 39.81,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 3100.0
+      },
+      "seasonal_based": {
+        "mse": 36.72360000000485,
+        "rmse": 6.0600000000004,
+        "mae": 6.0600000000004,
+        "cv_percent": 39.81,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 4515.150000000001
+      }
+    },
+    "Chicken - Fresh": {
+      "residual_based": {
+        "mse": 10261.750104996732,
+        "rmse": 101.3002966678614,
+        "mae": 101.3002966678614,
+        "cv_percent": 27.29,
+        "confidence": "Medium",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 1481.9702966678615,
+        "last_price": 1380.67
+      },
+      "median_based": {
+        "mse": 41278.04890000003,
+        "rmse": 203.17000000000007,
+        "mae": 203.17000000000007,
+        "cv_percent": 27.29,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1177.5
+      },
+      "seasonal_based": {
+        "mse": 4.943211111111219,
+        "rmse": 2.2233333333333576,
+        "mae": 2.2233333333333576,
+        "cv_percent": 27.29,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1382.8933333333334
+      }
+    },
+    "Broiler": {
+      "residual_based": {
+        "mse": 40563.794868146026,
+        "rmse": 201.40455523186665,
+        "mae": 201.40455523186665,
+        "cv_percent": 44.53,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 1481.4045552318667,
+        "last_price": 1280.0
+      },
+      "median_based": {
+        "mse": 19600.0,
+        "rmse": 140.0,
+        "mae": 140.0,
+        "cv_percent": 44.53,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1140.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 44.53,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1280.0
+      }
+    },
+    "Pork": {
+      "residual_based": {
+        "mse": 207167.64421600848,
+        "rmse": 455.156724893754,
+        "mae": 455.156724893754,
+        "cv_percent": 63.75,
+        "confidence": "Medium",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 2744.843275106246,
+        "last_price": 3200.0
+      },
+      "median_based": {
+        "mse": 3240000.0,
+        "rmse": 1800.0,
+        "mae": 1800.0,
+        "cv_percent": 63.75,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1400.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 63.75,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 3200.0
+      }
+    },
+    "Egg": {
+      "residual_based": {
+        "mse": 320.77530813056796,
+        "rmse": 17.910201230878673,
+        "mae": 17.910201230878673,
+        "cv_percent": 42.27,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 49.61020123087867,
+        "last_price": 31.7
+      },
+      "median_based": {
+        "mse": 0.6400000000000011,
+        "rmse": 0.8000000000000007,
+        "mae": 0.8000000000000007,
+        "cv_percent": 42.27,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 30.9
+      },
+      "seasonal_based": {
+        "mse": 0.034844444444444726,
+        "rmse": 0.18666666666666742,
+        "mae": 0.18666666666666742,
+        "cv_percent": 42.27,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 31.513333333333332
+      }
+    },
+    "White": {
+      "residual_based": {
+        "mse": 352.47980011337,
+        "rmse": 18.774445400953127,
+        "mae": 18.774445400953127,
+        "cv_percent": 43.51,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 47.884445400953126,
+        "last_price": 29.11
+      },
+      "median_based": {
+        "mse": 0.17640000000000144,
+        "rmse": 0.4200000000000017,
+        "mae": 0.4200000000000017,
+        "cv_percent": 43.51,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 29.53
+      },
+      "seasonal_based": {
+        "mse": 0.2601000000000016,
+        "rmse": 0.5100000000000016,
+        "mae": 0.5100000000000016,
+        "cv_percent": 43.51,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 28.599999999999998
+      }
+    },
+    "Tin Fish": {
+      "residual_based": {
+        "mse": 4190.703429972414,
+        "rmse": 64.73564265512789,
+        "mae": 64.73564265512789,
+        "cv_percent": 26.77,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 605.6056426551279,
+        "last_price": 540.87
+      },
+      "median_based": {
+        "mse": 698.5448999999974,
+        "rmse": 26.42999999999995,
+        "mae": 26.42999999999995,
+        "cv_percent": 26.77,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 514.44
+      },
+      "seasonal_based": {
+        "mse": 0.43559999999995797,
+        "rmse": 0.6599999999999682,
+        "mae": 0.6599999999999682,
+        "cv_percent": 26.77,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 541.53
+      }
+    },
+    "Lakspray": {
+      "residual_based": {
+        "mse": 4017.7420022683177,
+        "rmse": 63.38566085691872,
+        "mae": 63.38566085691872,
+        "cv_percent": 12.56,
+        "confidence": "High",
+        "inflation_rate": 64.4,
+        "next_week_forecast": 463.3856608569187,
+        "last_price": 400.0
+      },
+      "median_based": {
+        "mse": 400.0,
+        "rmse": 20.0,
+        "mae": 20.0,
+        "cv_percent": 12.56,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 380.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 12.56,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 400.0
+      }
+    },
+    "Anchor": {
+      "residual_based": {
+        "mse": 12640.095680122296,
+        "rmse": 112.42818009788425,
+        "mae": 112.42818009788425,
+        "cv_percent": 39.77,
+        "confidence": "Medium",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 1412.4281800978843,
+        "last_price": 1300.0
+      },
+      "median_based": {
+        "mse": 48400.0,
+        "rmse": 220.0,
+        "mae": 220.0,
+        "cv_percent": 39.77,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1080.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 39.77,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1300.0
+      }
+    },
+    "Highland": {
+      "residual_based": {
+        "mse": 1534.5383099630053,
+        "rmse": 39.173183556650145,
+        "mae": 39.173183556650145,
+        "cv_percent": 8.59,
+        "confidence": "High",
+        "inflation_rate": 64.4,
+        "next_week_forecast": 439.17318355665014,
+        "last_price": 400.0
+      },
+      "median_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 8.59,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 400.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 8.59,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 400.0
+      }
+    },
+    "Lactogen - II": {
+      "residual_based": {
+        "mse": 121557.65022503048,
+        "rmse": 348.65118704090264,
+        "mae": 348.65118704090264,
+        "cv_percent": 42.82,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 2048.6511870409026,
+        "last_price": 1700.0
+      },
+      "median_based": {
+        "mse": 40000.0,
+        "rmse": 200.0,
+        "mae": 200.0,
+        "cv_percent": 42.82,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1500.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 42.82,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1700.0
+      }
+    },
+    "Lactogen - I": {
+      "residual_based": {
+        "mse": 123093.4309659745,
+        "rmse": 350.8467342957242,
+        "mae": 350.8467342957242,
+        "cv_percent": 43.18,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 2050.846734295724,
+        "last_price": 1700.0
+      },
+      "median_based": {
+        "mse": 40000.0,
+        "rmse": 200.0,
+        "mae": 200.0,
+        "cv_percent": 43.18,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1500.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 43.18,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1700.0
+      }
+    },
+    "Sour Plantain": {
+      "residual_based": {
+        "mse": 3425.8940699729624,
+        "rmse": 58.53113761044597,
+        "mae": 58.53113761044597,
+        "cv_percent": 30.19,
+        "confidence": "Medium",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 252.57886238955405,
+        "last_price": 311.11
+      },
+      "median_based": {
+        "mse": 13481.532100000004,
+        "rmse": 116.11000000000001,
+        "mae": 116.11000000000001,
+        "cv_percent": 30.19,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 195.0
+      },
+      "seasonal_based": {
+        "mse": 44.62240000000009,
+        "rmse": 6.680000000000007,
+        "mae": 6.680000000000007,
+        "cv_percent": 30.19,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 304.43
+      }
+    },
+    "Anamalu": {
+      "residual_based": {
+        "mse": 281.1384678413092,
+        "rmse": 16.767184255005645,
+        "mae": 16.767184255005645,
+        "cv_percent": 21.76,
+        "confidence": "High",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 366.56281574499434,
+        "last_price": 383.33
+      },
+      "median_based": {
+        "mse": 6696.148899999997,
+        "rmse": 81.82999999999998,
+        "mae": 81.82999999999998,
+        "cv_percent": 21.76,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 301.5
+      },
+      "seasonal_based": {
+        "mse": 0.22090000000002566,
+        "rmse": 0.4700000000000273,
+        "mae": 0.4700000000000273,
+        "cv_percent": 21.76,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 382.85999999999996
+      }
+    },
+    "Kolikuttu": {
+      "residual_based": {
+        "mse": 7470.201725774846,
+        "rmse": 86.43032873809312,
+        "mae": 86.43032873809312,
+        "cv_percent": 45.06,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 497.6396712619069,
+        "last_price": 584.07
+      },
+      "median_based": {
+        "mse": 60181.90240000003,
+        "rmse": 245.32000000000005,
+        "mae": 245.32000000000005,
+        "cv_percent": 45.06,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 338.75
+      },
+      "seasonal_based": {
+        "mse": 1.137777777777891,
+        "rmse": 1.0666666666667197,
+        "mae": 1.0666666666667197,
+        "cv_percent": 45.06,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 585.1366666666668
+      }
+    },
+    "Papaw": {
+      "residual_based": {
+        "mse": 2126.6042205448052,
+        "rmse": 46.115119218590394,
+        "mae": 46.115119218590394,
+        "cv_percent": 45.07,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 328.1151192185904,
+        "last_price": 282.0
+      },
+      "median_based": {
+        "mse": 2916.0,
+        "rmse": 54.0,
+        "mae": 54.0,
+        "cv_percent": 45.07,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 228.0
+      },
+      "seasonal_based": {
+        "mse": 0.002177777777779122,
+        "rmse": 0.04666666666668107,
+        "mae": 0.04666666666668107,
+        "cv_percent": 45.07,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 281.9533333333333
+      }
+    },
+    "Pineapple": {
+      "residual_based": {
+        "mse": 9471.69217066382,
+        "rmse": 97.32261900844952,
+        "mae": 97.32261900844952,
+        "cv_percent": 54.42,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 584.9126190084495,
+        "last_price": 487.59
+      },
+      "median_based": {
+        "mse": 7848.188099999996,
+        "rmse": 88.58999999999997,
+        "mae": 88.58999999999997,
+        "cv_percent": 54.42,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 399.0
+      },
+      "seasonal_based": {
+        "mse": 373.9066777777769,
+        "rmse": 19.336666666666645,
+        "mae": 19.336666666666645,
+        "cv_percent": 54.42,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 506.9266666666666
+      }
+    },
+    "Bread": {
+      "residual_based": {
+        "mse": 55.32504638112874,
+        "rmse": 7.438080826471889,
+        "mae": 7.438080826471889,
+        "cv_percent": 64.13,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 128.1219191735281,
+        "last_price": 135.56
+      },
+      "median_based": {
+        "mse": 3.686400000000061,
+        "rmse": 1.920000000000016,
+        "mae": 1.920000000000016,
+        "cv_percent": 64.13,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 133.64
+      },
+      "seasonal_based": {
+        "mse": 0.6561000000000037,
+        "rmse": 0.8100000000000023,
+        "mae": 0.8100000000000023,
+        "cv_percent": 64.13,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 136.37
+      }
+    },
+    "No": {
+      "residual_based": {
+        "mse": 0.004468875562261893,
+        "rmse": 0.06684964893147827,
+        "mae": 0.06684964893147827,
+        "cv_percent": 10.91,
+        "confidence": "Medium",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 1.9331503510685217,
+        "last_price": 2.0
+      },
+      "median_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 10.91,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 2.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 10.91,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 2.0
+      }
+    },
+    "Ash": {
+      "residual_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "High",
+        "inflation_rate": 22.1,
+        "next_week_forecast": 1.0,
+        "last_price": 1.0
+      },
+      "median_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      }
+    },
+    "Bitter": {
+      "residual_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "High",
+        "inflation_rate": 22.1,
+        "next_week_forecast": 1.0,
+        "last_price": 1.0
+      },
+      "median_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      }
+    },
+    "Red": {
+      "residual_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "High",
+        "inflation_rate": 22.1,
+        "next_week_forecast": 1.0,
+        "last_price": 1.0
+      },
+      "median_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      }
+    },
+    "Snake": {
+      "residual_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "High",
+        "inflation_rate": 22.1,
+        "next_week_forecast": 1.0,
+        "last_price": 1.0
+      },
+      "median_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      }
+    },
+    "Green": {
+      "residual_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "High",
+        "inflation_rate": 22.1,
+        "next_week_forecast": 1.0,
+        "last_price": 1.0
+      },
+      "median_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      }
+    },
+    "Cap": {
+      "residual_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "High",
+        "inflation_rate": 22.1,
+        "next_week_forecast": 1.0,
+        "last_price": 1.0
+      },
+      "median_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      }
+    },
+    "Betel": {
+      "residual_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "High",
+        "inflation_rate": 0.8,
+        "next_week_forecast": 100.0,
+        "last_price": 100.0
+      },
+      "median_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 100.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 100.0
+      }
+    },
+    "Arecanuts": {
+      "residual_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "High",
+        "inflation_rate": 22.1,
+        "next_week_forecast": 100.0,
+        "last_price": 100.0
+      },
+      "median_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 100.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 100.0
+      }
+    },
+    "Potatoes": {
+      "residual_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "High",
+        "inflation_rate": 22.1,
+        "next_week_forecast": 1.0,
+        "last_price": 1.0
+      },
+      "median_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      }
+    },
+    "Beans": {
+      "residual_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "High",
+        "inflation_rate": 3.0,
+        "next_week_forecast": 1.0,
+        "last_price": 1.0
+      },
+      "median_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      }
+    },
+    "Long": {
+      "residual_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "High",
+        "inflation_rate": 22.1,
+        "next_week_forecast": 1.0,
+        "last_price": 1.0
+      },
+      "median_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      }
+    },
+    "Cabbagge": {
+      "residual_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "High",
+        "inflation_rate": 22.1,
+        "next_week_forecast": 1.0,
+        "last_price": 1.0
+      },
+      "median_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      }
+    },
+    "Knol": {
+      "residual_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "High",
+        "inflation_rate": 22.1,
+        "next_week_forecast": 1.0,
+        "last_price": 1.0
+      },
+      "median_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      }
+    },
+    "Tomatoe": {
+      "residual_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "High",
+        "inflation_rate": 22.1,
+        "next_week_forecast": 1.0,
+        "last_price": 1.0
+      },
+      "median_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      }
+    },
+    "Dried": {
+      "residual_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "High",
+        "inflation_rate": 22.1,
+        "next_week_forecast": 1.0,
+        "last_price": 1.0
+      },
+      "median_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      }
+    },
+    "Pepper": {
+      "residual_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "High",
+        "inflation_rate": 22.1,
+        "next_week_forecast": 1.0,
+        "last_price": 1.0
+      },
+      "median_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      }
+    },
+    "Turmeric": {
+      "residual_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "High",
+        "inflation_rate": 22.1,
+        "next_week_forecast": 1.0,
+        "last_price": 1.0
+      },
+      "median_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      }
+    },
+    "Cummin": {
+      "residual_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "High",
+        "inflation_rate": 22.1,
+        "next_week_forecast": 1.0,
+        "last_price": 1.0
+      },
+      "median_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      }
+    },
+    "Fennel": {
+      "residual_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "High",
+        "inflation_rate": 22.1,
+        "next_week_forecast": 1.0,
+        "last_price": 1.0
+      },
+      "median_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      }
+    },
+    "Mathe": {
+      "residual_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "High",
+        "inflation_rate": 22.1,
+        "next_week_forecast": 1.0,
+        "last_price": 1.0
+      },
+      "median_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      }
+    },
+    "Maldive": {
+      "residual_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "High",
+        "inflation_rate": 22.1,
+        "next_week_forecast": 1.0,
+        "last_price": 1.0
+      },
+      "median_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      }
+    },
+    "Raw": {
+      "residual_based": {
+        "mse": 335.3949887635283,
+        "rmse": 18.31379230971915,
+        "mae": 18.31379230971915,
+        "cv_percent": 299.47,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 19.31379230971915,
+        "last_price": 1.0
+      },
+      "median_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 299.47,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 299.47,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      }
+    },
+    "Nadu": {
+      "residual_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "High",
+        "inflation_rate": 64.4,
+        "next_week_forecast": 1.0,
+        "last_price": 1.0
+      },
+      "median_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      }
+    },
+    "Samba": {
+      "residual_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "High",
+        "inflation_rate": 22.1,
+        "next_week_forecast": 1.0,
+        "last_price": 1.0
+      },
+      "median_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      }
+    },
+    "Wheat": {
+      "residual_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "High",
+        "inflation_rate": 22.1,
+        "next_week_forecast": 1.0,
+        "last_price": 1.0
+      },
+      "median_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      }
+    },
+    "Mysore": {
+      "residual_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "High",
+        "inflation_rate": 0.3,
+        "next_week_forecast": 1.0,
+        "last_price": 1.0
+      },
+      "median_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      }
+    },
+    "Cowpea": {
+      "residual_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "High",
+        "inflation_rate": 0.3,
+        "next_week_forecast": 1.0,
+        "last_price": 1.0
+      },
+      "median_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      }
+    },
+    "Kadalai": {
+      "residual_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "High",
+        "inflation_rate": 22.1,
+        "next_week_forecast": 1.0,
+        "last_price": 1.0
+      },
+      "median_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      }
+    },
+    "Fresh": {
+      "residual_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "High",
+        "inflation_rate": 22.1,
+        "next_week_forecast": 1.0,
+        "last_price": 1.0
+      },
+      "median_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      }
+    },
+    "Small": {
+      "residual_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "High",
+        "inflation_rate": 64.4,
+        "next_week_forecast": 1.0,
+        "last_price": 1.0
+      },
+      "median_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      }
+    },
+    "Chicken": {
+      "residual_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "High",
+        "inflation_rate": 22.1,
+        "next_week_forecast": 1.0,
+        "last_price": 1.0
+      },
+      "median_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      }
+    },
+    "Tin": {
+      "residual_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "High",
+        "inflation_rate": 22.1,
+        "next_week_forecast": 425.0,
+        "last_price": 425.0
+      },
+      "median_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 425.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 425.0
+      }
+    },
+    "Lactogen": {
+      "residual_based": {
+        "mse": 8100.0,
+        "rmse": 90.0,
+        "mae": 90.0,
+        "cv_percent": 18.37,
+        "confidence": "Medium",
+        "inflation_rate": 22.1,
+        "next_week_forecast": 490.0,
+        "last_price": 580.0
+      },
+      "median_based": {
+        "mse": 8100.0,
+        "rmse": 90.0,
+        "mae": 90.0,
+        "cv_percent": 18.37,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 490.0
+      },
+      "seasonal_based": {
+        "mse": 3600.0,
+        "rmse": 60.0,
+        "mae": 60.0,
+        "cv_percent": 18.37,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 640.0
+      }
+    },
+    "Sour": {
+      "residual_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "High",
+        "inflation_rate": 22.1,
+        "next_week_forecast": 1.0,
+        "last_price": 1.0
+      },
+      "median_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      }
+    },
+    "imputed": {
+      "residual_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "High",
+        "inflation_rate": 9.2,
+        "next_week_forecast": 3.0,
+        "last_price": 3.0
+      },
+      "median_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 3.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 3.0
+      }
+    },
+    "May.": {
+      "residual_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "High",
+        "inflation_rate": 0.8,
+        "next_week_forecast": 202.0,
+        "last_price": 202.0
+      },
+      "median_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 202.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 202.0
+      }
+    },
+    "July": {
+      "residual_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "High",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 202.0,
+        "last_price": 202.0
+      },
+      "median_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 202.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 202.0
+      }
+    },
+    "July.": {
+      "residual_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "High",
+        "inflation_rate": 9.2,
+        "next_week_forecast": 202.0,
+        "last_price": 202.0
+      },
+      "median_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 202.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 202.0
+      }
+    },
+    "B.Onions - Local": {
+      "residual_based": {
+        "mse": 404.05358571497186,
+        "rmse": 20.101084192524837,
+        "mae": 20.101084192524837,
+        "cv_percent": 20.87,
+        "confidence": "Low",
+        "inflation_rate": 3.0,
+        "next_week_forecast": 235.10108419252484,
+        "last_price": 215.0
+      },
+      "median_based": {
+        "mse": 44.422225000000275,
+        "rmse": 6.6650000000000205,
+        "mae": 6.6650000000000205,
+        "cv_percent": 20.87,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 221.66500000000002
+      },
+      "seasonal_based": {
+        "mse": 41.990399999999866,
+        "rmse": 6.47999999999999,
+        "mae": 6.47999999999999,
+        "cv_percent": 20.87,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 221.48
+      }
+    },
+    "Capsicum": {
+      "residual_based": {
+        "mse": 80349.36363673811,
+        "rmse": 283.45963316976565,
+        "mae": 283.45963316976565,
+        "cv_percent": 38.01,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 882.0796331697657,
+        "last_price": 598.62
+      },
+      "median_based": {
+        "mse": 11265.699599999996,
+        "rmse": 106.13999999999999,
+        "mae": 106.13999999999999,
+        "cv_percent": 38.01,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 704.76
+      },
+      "seasonal_based": {
+        "mse": 27.94884444444409,
+        "rmse": 5.286666666666633,
+        "mae": 5.286666666666633,
+        "cv_percent": 38.01,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 603.9066666666666
+      }
+    },
+    "Raw White": {
+      "residual_based": {
+        "mse": 32.584805503546924,
+        "rmse": 5.708310214375786,
+        "mae": 5.708310214375786,
+        "cv_percent": 8.73,
+        "confidence": "High",
+        "inflation_rate": 64.4,
+        "next_week_forecast": 163.20831021437579,
+        "last_price": 157.5
+      },
+      "median_based": {
+        "mse": 641.6089000000006,
+        "rmse": 25.330000000000013,
+        "mae": 25.330000000000013,
+        "cv_percent": 8.73,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 132.17
+      },
+      "seasonal_based": {
+        "mse": 32.584805503546924,
+        "rmse": 5.708310214375786,
+        "mae": 5.708310214375786,
+        "cv_percent": 8.73,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 163.20831021437579
+      }
+    },
+    "Nadu-White": {
+      "residual_based": {
+        "mse": 30.337873569473526,
+        "rmse": 5.5079827132511525,
+        "mae": 5.5079827132511525,
+        "cv_percent": 196.25,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 6.5079827132511525,
+        "last_price": 1.0
+      },
+      "median_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 196.25,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 196.25,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      }
+    },
+    "Ponni": {
+      "residual_based": {
+        "mse": 6.906501149728343,
+        "rmse": 2.6280222886665827,
+        "mae": 2.6280222886665827,
+        "cv_percent": 537.09,
+        "confidence": "Low",
+        "inflation_rate": 0.8,
+        "next_week_forecast": -1.6280222886665827,
+        "last_price": 1.0
+      },
+      "median_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 537.09,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 537.09,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1.0
+      }
+    },
+    "Raw White local": {
+      "residual_based": {
+        "mse": 387.6673395535816,
+        "rmse": 19.68926965515942,
+        "mae": 19.68926965515942,
+        "cv_percent": 8.31,
+        "confidence": "High",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 222.9192696551594,
+        "last_price": 203.23
+      },
+      "median_based": {
+        "mse": 92.16000000000044,
+        "rmse": 9.600000000000023,
+        "mae": 9.600000000000023,
+        "cv_percent": 8.31,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 212.83
+      },
+      "seasonal_based": {
+        "mse": 0.07471111111111504,
+        "rmse": 0.27333333333334053,
+        "mae": 0.27333333333334053,
+        "cv_percent": 8.31,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 202.95666666666665
+      }
+    },
+    "Nadu - White local": {
+      "residual_based": {
+        "mse": 117.0243360254322,
+        "rmse": 10.817778701075014,
+        "mae": 10.817778701075014,
+        "cv_percent": 5.64,
+        "confidence": "High",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 232.417778701075,
+        "last_price": 221.6
+      },
+      "median_based": {
+        "mse": 29.92089999999999,
+        "rmse": 5.469999999999999,
+        "mae": 5.469999999999999,
+        "cv_percent": 5.64,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 227.07
+      },
+      "seasonal_based": {
+        "mse": 0.7569000000000079,
+        "rmse": 0.8700000000000045,
+        "mae": 0.8700000000000045,
+        "cv_percent": 5.64,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 220.73
+      }
+    },
+    "Maliban": {
+      "residual_based": {
+        "mse": 4173.936831318834,
+        "rmse": 64.60601234652108,
+        "mae": 64.60601234652108,
+        "cv_percent": 33.93,
+        "confidence": "Medium",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 1235.393987653479,
+        "last_price": 1300.0
+      },
+      "median_based": {
+        "mse": 22500.0,
+        "rmse": 150.0,
+        "mae": 150.0,
+        "cv_percent": 33.93,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1150.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 33.93,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1300.0
+      }
+    },
+    "Pelwatta": {
+      "residual_based": {
+        "mse": 1150.8323294433371,
+        "rmse": 33.923919724043344,
+        "mae": 33.923919724043344,
+        "cv_percent": 36.56,
+        "confidence": "Low",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 1233.9239197240433,
+        "last_price": 1200.0
+      },
+      "median_based": {
+        "mse": 14400.0,
+        "rmse": 120.0,
+        "mae": 120.0,
+        "cv_percent": 36.56,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1080.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 36.56,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1200.0
+      }
+    },
+    "Jun": {
+      "residual_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "High",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 202.0,
+        "last_price": 202.0
+      },
+      "median_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 202.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 202.0
+      }
+    },
+    "GEOMETRIC": {
+      "residual_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "High",
+        "inflation_rate": 64.4,
+        "next_week_forecast": 4.0,
+        "last_price": 4.0
+      },
+      "median_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 4.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 4.0
+      }
+    },
+    "Raw White Imported": {
+      "residual_based": {
+        "mse": 81.15296205165355,
+        "rmse": 9.008493883644121,
+        "mae": 9.008493883644121,
+        "cv_percent": 4.76,
+        "confidence": "High",
+        "inflation_rate": 0.3,
+        "next_week_forecast": 209.3215061163559,
+        "last_price": 218.33
+      },
+      "median_based": {
+        "mse": 683.8225000000003,
+        "rmse": 26.150000000000006,
+        "mae": 26.150000000000006,
+        "cv_percent": 4.76,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 192.18
+      },
+      "seasonal_based": {
+        "mse": 14.263211111111143,
+        "rmse": 3.776666666666671,
+        "mae": 3.776666666666671,
+        "cv_percent": 4.76,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 222.10666666666668
+      }
+    },
+    "Nadu-White Imported": {
+      "residual_based": {
+        "mse": 122.82727690162233,
+        "rmse": 11.082746812122991,
+        "mae": 11.082746812122991,
+        "cv_percent": 2.65,
+        "confidence": "High",
+        "inflation_rate": 0.3,
+        "next_week_forecast": 200.167253187877,
+        "last_price": 211.25
+      },
+      "median_based": {
+        "mse": 186.86889999999966,
+        "rmse": 13.669999999999987,
+        "mae": 13.669999999999987,
+        "cv_percent": 2.65,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 197.58
+      },
+      "seasonal_based": {
+        "mse": 47.564011111111235,
+        "rmse": 6.896666666666675,
+        "mae": 6.896666666666675,
+        "cv_percent": 2.65,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 218.14666666666668
+      }
+    },
+    "Ponni Samba Imported": {
+      "residual_based": {
+        "mse": 568.1884605598297,
+        "rmse": 23.83670406242922,
+        "mae": 23.83670406242922,
+        "cv_percent": 10.21,
+        "confidence": "Medium",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 268.5067040624292,
+        "last_price": 244.67
+      },
+      "median_based": {
+        "mse": 95.8441000000004,
+        "rmse": 9.79000000000002,
+        "mae": 9.79000000000002,
+        "cv_percent": 10.21,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 254.46
+      },
+      "seasonal_based": {
+        "mse": 0.0007111111111113334,
+        "rmse": 0.026666666666670835,
+        "mae": 0.026666666666670835,
+        "cv_percent": 10.21,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 244.69666666666666
+      }
+    },
+    "Milk Powder- Imported": {
+      "residual_based": {
+        "mse": 7844.00296474749,
+        "rmse": 88.56637603937224,
+        "mae": 88.56637603937224,
+        "cv_percent": 3.12,
+        "confidence": "High",
+        "inflation_rate": 3.0,
+        "next_week_forecast": 1111.4336239606278,
+        "last_price": 1200.0
+      },
+      "median_based": {
+        "mse": 22500.0,
+        "rmse": 150.0,
+        "mae": 150.0,
+        "cv_percent": 3.12,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1050.0
+      },
+      "seasonal_based": {
+        "mse": 1111.111111111106,
+        "rmse": 33.33333333333326,
+        "mae": 33.33333333333326,
+        "cv_percent": 3.12,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1233.3333333333333
+      }
+    },
+    "Milk Powder- Local": {
+      "residual_based": {
+        "mse": 204.86172549503473,
+        "rmse": 14.312991493570962,
+        "mae": 14.312991493570962,
+        "cv_percent": 2.48,
+        "confidence": "High",
+        "inflation_rate": 3.0,
+        "next_week_forecast": 1035.687008506429,
+        "last_price": 1050.0
+      },
+      "median_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 2.48,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1050.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 2.48,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1050.0
+      }
+    },
+    "Infant Milk Powder": {
+      "residual_based": {
+        "mse": 25.640674386548575,
+        "rmse": 5.0636621516989635,
+        "mae": 5.0636621516989635,
+        "cv_percent": 8.87,
+        "confidence": "High",
+        "inflation_rate": 3.0,
+        "next_week_forecast": 1494.936337848301,
+        "last_price": 1500.0
+      },
+      "median_based": {
+        "mse": 90000.0,
+        "rmse": 300.0,
+        "mae": 300.0,
+        "cv_percent": 8.87,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1800.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 8.87,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 1500.0
+      }
+    },
+    "June": {
+      "residual_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "High",
+        "inflation_rate": 3.0,
+        "next_week_forecast": 202.0,
+        "last_price": 202.0
+      },
+      "median_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 202.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 202.0
+      }
+    },
+    "Jan": {
+      "residual_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "High",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 202.0,
+        "last_price": 202.0
+      },
+      "median_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 202.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 202.0
+      }
+    },
+    "Feb": {
+      "residual_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "High",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 202.0,
+        "last_price": 202.0
+      },
+      "median_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 202.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 202.0
+      }
+    },
+    "Mar": {
+      "residual_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "High",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 202.0,
+        "last_price": 202.0
+      },
+      "median_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 202.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 202.0
+      }
+    },
+    "Sep": {
+      "residual_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "High",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 202.0,
+        "last_price": 202.0
+      },
+      "median_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 202.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 202.0
+      }
+    },
+    "Oct": {
+      "residual_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "High",
+        "inflation_rate": 8.7,
+        "next_week_forecast": 202.0,
+        "last_price": 202.0
+      },
+      "median_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 202.0
+      },
+      "seasonal_based": {
+        "mse": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "cv_percent": 0.0,
+        "confidence": "Medium",
+        "inflation_rate": 0.0,
+        "next_week_forecast": 202.0
+      }
+    }
+  },
+  "alert_severity": {
+    "HIGH": 62,
+    "MEDIUM": 41,
+    "LOW": 68,
+    "total": 171
+  },
+  "model_comparison": {
+    "total_compared": 126,
+    "residual_better_than_median": "0/126 (0.0%)",
+    "median_better_than_seasonal": "0/126 (0.0%)",
+    "residual_better_than_seasonal": "0/126 (0.0%)"
+  }
+}
