@@ -121,6 +121,10 @@ with st.sidebar:
 mon_cols = ["item", "category", "weeks", "last_price", "last_week",
             "monitor_reason"]
 mon = monitor.copy()
+if "monitor_reason" not in mon.columns:
+    mon["monitor_reason"] = "Current week not reported"
+    mon.loc[mon["weeks"] < al.MIN_HISTORY, "monitor_reason"] = (
+        "Not enough history")
 mon = mon[mon_cols]
 mon["spike_prob"] = 0.0
 mon["pred_r1"] = 0.0
