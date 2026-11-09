@@ -98,6 +98,10 @@ latest_wk = dt.latest_week(dy)
 vintage = latest_wk.strftime("%b %Y") if hasattr(latest_wk, "strftime") \
     else str(latest_wk)
 alerts, bundle = alert_rank(dy, latest_wk)
+latest_by_item = dy.groupby("commodity")["week"].max()
+alerts = alerts[
+    alerts["item"].map(latest_by_item).eq(latest_wk)
+].copy()
 THR = float(bundle["threshold"])
 monitor = monitoring_rank(dy, latest_wk)
 anomalies = anomaly_rank(dy)
