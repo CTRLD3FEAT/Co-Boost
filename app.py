@@ -350,7 +350,7 @@ if selected is not None:
             fig.update_layout(
                 height=340,
                 margin=dict(l=16, r=24, t=28 if title is None else 64, b=18),
-                title=dict(text=title, x=0, xanchor="left",
+                title=dict(text=title, x=0.01, xanchor="left",
                            y=1, yanchor="bottom",
                            pad=dict(b=12),
                            font=dict(size=15, color="#1F2A27"))
