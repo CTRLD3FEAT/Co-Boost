@@ -282,7 +282,7 @@ if selected is not None:
                 fig.add_trace(go.Scatter(
                     x=[next_wk], y=[med_price], mode="lines",
                     line=dict(width=0), fill="tonexty",
-                    fillcolor="rgba(179,38,30,0.22)", showlegend=False,
+                    fillcolor="rgba(179,38,30,0.30)", showlegend=False,
                     hoverinfo="skip"))
                 fig.add_trace(go.Scatter(
                     x=[next_wk], y=[lo_price], mode="lines",
@@ -292,18 +292,11 @@ if selected is not None:
                     hovertemplate="%{x|%d %b %Y}<br>Rs %{y:,.2f}"
                                   "<extra>Lower bound (p10)</extra>"))
                 direction_color = UP_RED if q50 >= 0 else DOWN_GREEN
-                direction_label = "Expected increase" if q50 >= 0 \
-                    else "Expected decrease"
                 fig.add_trace(go.Scatter(
                     x=[next_wk], y=[med_price], mode="markers",
-                    marker=dict(color=f"{direction_color}44", size=26),
-                    name=direction_label,
-                    hoverinfo="skip"))
-                fig.add_trace(go.Scatter(
-                    x=[next_wk], y=[med_price], mode="markers",
-                    marker=dict(color=direction_color, size=12,
+                    marker=dict(color=direction_color, size=8,
                                 line=dict(color="#FFFFFF", width=2),
-                                symbol="diamond"),
+                                symbol="circle"),
                     name="Best prediction (p50)",
                     hovertemplate="%{x|%d %b %Y}<br>Rs %{y:,.2f}"
                                   "<extra>Best prediction (p50)</extra>"))
