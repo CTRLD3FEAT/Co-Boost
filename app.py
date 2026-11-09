@@ -291,6 +291,14 @@ if selected is not None:
                     name="Lower bound (p10)",
                     hovertemplate="%{x|%d %b %Y}<br>Rs %{y:,.2f}"
                                   "<extra>Lower bound (p10)</extra>"))
+                fig.add_trace(go.Scatter(
+                    x=[next_wk], y=[med_price], mode="markers",
+                    marker=dict(color=DOWN_GREEN, size=12,
+                                line=dict(color="#FFFFFF", width=2),
+                                symbol="diamond"),
+                    name="Best prediction (p50)",
+                    hovertemplate="%{x|%d %b %Y}<br>Rs %{y:,.2f}"
+                                  "<extra>Best prediction (p50)</extra>"))
                 x_max = next_wk + pd.Timedelta(weeks=2)
                 title = (f"<span style='color:#1F2A27;font-weight:600;"
                          f"font-size:14px'>Weekly price — {row['item']}</span>")
