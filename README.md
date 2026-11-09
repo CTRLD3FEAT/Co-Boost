@@ -1,34 +1,82 @@
-# Co-Boost — Sri Lanka Food Security DSS
+# Co-Boost — Colombo food-price early warning
 
-Weekly retail-price monitoring, forecasting, and **food-price spike early warning**
-for the Colombo district, built end-to-end from official DCS (Department of Census
-& Statistics) weekly retail price PDFs — 320 reports, Dec 2019 → Oct 2026.
+Co-Boost turns official weekly retail-price reports into a ranked answer for a
+Colombo food-security or consumer-protection officer:
 
-Built for the ModelX 2.0 competition (IEEE CIS Student Chapter, IIT · Team NRZB).
+> Which commodity signals deserve verification first, what does the data
+> suggest for next week, and when is the evidence not current enough to trust?
 
-## What it does
+It is a decision-support system, not a guaranteed price predictor, procurement
+engine, household adviser, or clinical system. Built for ModelX 2.0 by Team
+NRZB.
 
-1. **Ingest — strict, no-guess parsing** of 320 official DCS-WRP PDFs via
-   `Scripts/parse_wrp.py` (three DCS layouts auto-detected; missing prices excluded
-   and logged, never imputed; reporting week taken from the filename, with title
-   mismatches logged).
-2. **Clean canonical dataset** — 34,099 rows × 146 commodities after normalization
-   (Unicode-dash name families merged; non-food Betel Leaves/Arecanuts excluded at
-   loader level with an auditable exclusion table).
-3. **Honest benchmark** — walk-forward, one-step-ahead backtest of naive and
-   statistical baselines (`Scripts/backtest_baselines.py`): naive *last price* is the
-   price bar (median MAPE **2.7%**, wins 121/121) that any richer model must beat.
-4. **ML spike early warning** — classifiers trained on a chronological holdout to
-   predict ≥ +10% next-week spikes (`Scripts/spike_ml.py`); best reaches PR-AUC ≈ 0.20
-   against a 0.054 random base (≈ 4×). Bundle saved to
-   `outputs/spike_ml_bundle.joblib` with p10/p50/p90 quantile regressors for forecast
-   bands.
-5. **Decision-support dashboard** — `streamlit run app.py`
-   - Ranked alert board (Spike risk %, next-week move, signal, High/Medium/Low
-     confidence anchored to holdout precision)
-   - Monitoring view for short-history items (safe-floor badge, raw chart)
-   - Per-commodity drill-down: weekly price chart with ML median forecast + p10/p90
-     band, "why this alert" reasoning, source-report next step
+## What is built
+
+- 320 official Department of Census & Statistics (DCS) weekly retail-price
+  PDFs parsed into an auditable Colombo District dataset.
+- 34,099 usable observations covering 146 canonical commodities from December
+  2019 through October 2026.
+- Current scoring only when a commodity has at least 27 observations and
+  reports the dataset's latest week. Thin or outdated series are Monitoring
+  only.
+- Ranked spike-risk probabilities, expected next-week movement, p10/p50/p90
+  forecast ranges, anomaly flags, confidence tiers, source context, and
+  interactive weekly charts.
+- Safe failure: missing values are not invented, and outdated commodities are
+  not presented as current alerts.
+
+At the current data vintage, 109 commodities are eligible for current scoring
+and 37 are Monitoring-only. Active alerts are a subset of the scored items.
+
+## Architecture
+
+```mermaid
+flowchart LR
+    P[DCS weekly PDFs] --> X[Deterministic parser]
+    X --> C[Canonical weekly prices]
+    C --> B[Baseline checks]
+    C --> M[ML spike classifier]
+    C --> Q[Quantile regressors]
+    C --> A[Z-score anomaly engine]
+    B --> G[Eligibility gate]
+    M --> G
+    Q --> G
+    A --> G
+    G -->|current week and enough history| R[Current alerts]
+    G -->|thin or outdated| O[Monitoring only]
+    R --> D[Streamlit + Plotly]
+    O --> D
+```
+
+## Models and outputs
+
+| Component | Purpose | Output |
+|---|---|---|
+| Naive persistence | Honest price-level benchmark | Reference forecast |
+| MLP spike classifier | Predicts a next-week return of at least 10% | Spike-risk probability |
+| Quantile regressors | Estimate next-week p10, p50, and p90 changes | Price range |
+| Z-score anomaly engine | Detect unusual levels and movements | High/low/stable/move flag |
+
+Spike risk is the likelihood of an unusually large event; it is not a
+percentage price increase. Next-week move describes expected direction and
+size. Anomaly describes unusual current behavior relative to history.
+
+## Validation
+
+Training and testing use chronological out-of-time data rather than random
+shuffling:
+
+| Check | Result |
+|---|---:|
+| Spike PR-AUC versus 0.054 random base rate | 0.198 |
+| High-tier precision over 184 flagged weeks | 0.342 |
+| Probability calibration | Passed |
+| p10–p90 holdout coverage | 76.26% |
+| Naive persistence median MAPE | 2.7% |
+
+The simple persistence forecast remains the price-level reference. The ML
+system is used to prioritize unusual risk and expose uncertainty, not to claim
+that a complex model always predicts exact prices better.
 
 ## Quickstart
 
@@ -37,36 +85,44 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
+The supported entry point is `app.py`. Required model and canonical data
+artifacts are in `outputs/`; source PDFs are in `Dataset/`.
+
 Submission documents:
 
-- `SUMMARY.md` — two-page implementation summary
-- `docs/TECHNICAL_REPORT.md` — architecture, data, evaluation, and limitations
-- `docs/DEMO_SCRIPT.md` — three-minute local demonstration storyboard
+- `SUMMARY.md` — implementation summary
+- `docs/TECHNICAL_REPORT.md` — architecture, data, evaluation, limitations,
+  and reproducibility
+- `docs/DEMO_SCRIPT.md` — three-minute demonstration storyboard
 
-## Repository layout (by phase)
+## Data and limitations
 
-| Phase | Commit | Path |
-|---|---|---|
-| 1 · Data Acquisition and Preprocessing | `7d88a3b`…`ce8f4a1` (6 commits) | `Dataset/` (320 DCS-WRP PDFs + `food_inflation.csv`), `Scripts/parse_wrp.py`, `Scripts/ingest_official_pdfs.py`, `baseline.py`, `outputs/official_prices_wrp*.csv`, `outputs/DATASET_NOTES.md` |
-| 2 · Baselines | `c6065ae` | `Scripts/backtest_baselines.py`, `outputs/backtest_*` |
-| 3 · ML spike warning | `e3bdcea` | `Scripts/spike_ml.py`, `outputs/spike_ml_bundle.joblib`, leaderboards |
-| 4 · Dashboards | `ac17660` | `app.py`, `data.py`, `alerts.py`, `.streamlit/config.toml`, `requirements.txt` |
-| 5 · Docs | (this commit) | `README.md`, `SUMMARY.md`, `docs/` |
+- Primary source: [DCS weekly retail prices](https://www.statistics.gov.lk/InflationAndPrices/StaticalInformation/RetailPrices).
+- CBSL daily reports and WFP food inflation are credited supplementary
+  sources, but are not silently merged into the current DCS operational model.
+- DCS is a Colombo District aggregate, not a named-market panel.
+- Filename/date mismatches, missing values, exclusions, incompatible units,
+  and normalization decisions are recorded in `outputs/`.
+- A commodity without the latest reporting week is withheld from current
+  prediction and shown in Monitoring with its last observed date.
+- Public-source terms remain applicable; see `LICENSE`.
 
-## Data sources (credited)
+Claude and Grok were used for research, planning, drafting, and coding. The
+team owns and is responsible for the submitted implementation and claims.
 
-- **DCS weekly retail prices** (primary): Department of Census & Statistics Sri Lanka — https://www.statistics.gov.lk/InflationAndPrices/StaticalInformation/RetailPrices (publicly available)
-- **CBSL daily price reports** (supplementary named-market cross-check): https://www.cbsl.gov.lk/en/statistics/economic-indicators/pricereport (publicly available)
-- **Sri Lanka food inflation** (WFP, supplementary factor): https://dataviz.vam.wfp.org/data-explorer/economic/inflation (publicly available)
+## Repository structure
 
-Tool disclosure: Claude & Grok used for research, planning, drafting and coding, per competition rules; the team owns everything submitted.
-
-## Honesty & audit trail
-
-- Every excluded price is recorded with a reason; anomalies and exclusions are never silently dropped or imputed.
-- All reported metrics are out-of-sample, chronological holdouts — no leakage.
-- Dataset decisions and their evidence live in `outputs/DATASET_NOTES.md`.
+| Path | Purpose |
+|---|---|
+| `app.py` | Supported Streamlit dashboard |
+| `data.py`, `baseline.py` | Canonical data loading and cleaning |
+| `alerts.py` | Current inference, eligibility, ranking, and forecast outputs |
+| `Scripts/` | Extraction, training, and evaluation code |
+| `Dataset/` | Official DCS source reports |
+| `outputs/` | Canonical data, notes, metrics, and model bundle |
+| `docs/` | Technical report and demo storyboard |
 
 ## License
 
-MIT — see `LICENSE`. Public datasets remain under their own terms; credit them as listed above.
+MIT for repository code. Public datasets remain subject to their own terms and
+are credited above.

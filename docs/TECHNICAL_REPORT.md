@@ -14,6 +14,28 @@ source definitions, temporal freshness, and failure cases visible.
 
 ## 2. Architecture
 
+```mermaid
+flowchart TD
+    PDFs[320 official DCS-WRP PDFs] --> Parser[Deterministic parser]
+    Parser --> Data[Canonical weekly prices]
+    Parser --> Notes[Extraction notes and exclusion tables]
+    Data --> Load[data.py and baseline.py]
+    Load --> Base[Naive and statistical baselines]
+    Load --> Spike[MLP spike classifier]
+    Load --> Quant[Quantile regressors]
+    Load --> Anomaly[Z-score anomaly engine]
+    Spike --> Bundle[Saved model bundle]
+    Quant --> Bundle
+    Load --> Gate{At least 27 observations\nand latest observation equals dataset latest week?}
+    Spike --> Gate
+    Quant --> Gate
+    Gate -->|yes| Alerts[Current scoring and ranked alerts]
+    Gate -->|no| Monitor[Monitoring-only row with reason]
+    Alerts --> App[app.py]
+    Monitor --> App
+    App --> UI[Streamlit and Plotly dashboard]
+```
+
 ```text
 DCS weekly PDF reports
         |
@@ -58,6 +80,13 @@ and possible climate/fuel enrichments were considered, but are not silently
 merged into the current DCS operational model. This is a deliberate
 temporality and comparability boundary.
 
+The current freshness rule is strict: a next-week forecast is allowed only
+when the commodity has an observation in the dataset's latest reporting week.
+This prevents a valid historical series from being misrepresented as a current
+warning. A commodity such as Lakspray remains available for historical
+inspection, but its last observation is shown and it is placed in Monitoring
+until current data is available.
+
 ## 4. Models and feature engineering
 
 The engine has four complementary components:
@@ -79,6 +108,11 @@ inflation. A commodity needs at least 26 weeks for the monitoring baseline and
 
 ## 5. Evaluation
 
+Evaluation uses chronological out-of-time holdouts. Earlier observations are
+used for model development and later unseen observations are used to measure
+deployment-like behavior. The four checks below are the project's
+calibration-and-reliability gates.
+
 Training and evaluation are chronological. The 2024–2026 observations are
 held out from model selection and threshold calibration:
 
@@ -96,11 +130,11 @@ point forecast is universally superior.
 
 ## 6. Failure-safe behavior
 
-Thin histories are visible in a Monitoring view and do not receive predictive
-alerts. Missing observations remain missing. Source age, history length,
-confidence, and forecast horizon are shown with the output. If data is too
-old, incompatible, or insufficient, the appropriate result is a low-confidence
-or unavailable signal, not a synthetic current price.
+Thin histories and outdated series are visible in a Monitoring view and do not
+receive predictive alerts. Missing observations remain missing. Source age,
+history length, confidence, and forecast horizon are shown with the output.
+If data is too old, incompatible, or insufficient, the appropriate result is
+an unavailable current signal, not a synthetic current price.
 
 The dashboard is decision support. A high-risk row means “verify this first,”
 not “the price will definitely rise.” The final action remains with the
@@ -115,6 +149,9 @@ officer.
 - a “Why this alert” card with model probability, momentum, history, and
   source-report verification step;
 - a Monitoring view for insufficient history.
+- a strict current-week eligibility check for every commodity.
+- a chart showing observed weekly markers, absolute and percentage
+  week-over-week changes, current price, forecast range, and zoom controls.
 
 The local demo should show one real alert end-to-end and then deliberately show
 the safe monitoring behavior. The accompanying `docs/DEMO_SCRIPT.md` keeps the
@@ -137,7 +174,7 @@ AI tools were used for research, planning, drafting, and coding as disclosed
 in the proposal. The team remains responsible for the implementation, data
 licensing checks, reported metrics, and demonstration claims.
 
-## 9. Honest comparison with the proposal
+## 9. Implementation against the proposal
 
 The implementation delivers the proposed ranked warning board, one-week
 forecast range, anomaly signal, confidence/failure behavior, and
