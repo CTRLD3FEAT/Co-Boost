@@ -2,7 +2,8 @@
 
 ## Date: 2026-10-23 — Non-food commodities removed from analytics
 
-**Decision by TEAM_NRZB: Betel Leaves and Arecanuts are excluded from the Co-Boost
+**Decision by TEAM_NRZB: 
+<br>Betel Leaves and Arecanuts are excluded from the Co-Boost
 food-security dataset.** They are chewed stimulants (betel-vine leaves / areca nut),
 not food consumables, so tracking them as "staple food prices" distorts
 food-inflation monitoring, anomaly scores and spike predictions.
@@ -26,8 +27,6 @@ Removed commodity variants (6, 1,908 rows of the 36,008-row wrp dataset, ~5%):
 Commodity count in the canonical view: 171 → 165.
 
 ## Date: 2026-10-23 — Name normalization + corrupted-row removal
-
-**Decision by TEAM_NRZB:**
 
 ### 1. Unicode dash variants merged (not excluded)
 The DCS PDFs print item names with two different dash glyphs (ASCII '-' and
