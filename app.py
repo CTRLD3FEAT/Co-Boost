@@ -112,13 +112,14 @@ with st.sidebar:
                             help="Pick one commodity to focus the table.")
     sel_view = st.segmented_control(
         "View", ["Alerts", "Monitoring"], default="Alerts",
-        help="Monitoring = fewer than 26 weeks of history. Predictive "
-             "alerts are suppressed there to prevent false signals.")
+        help="Monitoring includes short histories and commodities missing the "
+             "latest reporting week. Predictive alerts are suppressed there.")
     st.caption("Source: official DCS weekly retail price reports "
                "(Colombo district)")
 
 # ------------------------------------------------------------- filters
-mon_cols = ["item", "category", "weeks", "last_price", "last_week"]
+mon_cols = ["item", "category", "weeks", "last_price", "last_week",
+            "monitor_reason"]
 mon = monitor.copy()
 mon = mon[mon_cols]
 mon["spike_prob"] = 0.0
@@ -416,13 +417,14 @@ if selected is not None:
         with st.container(border=True):
             st.subheader("Why this alert (selected row)")
             if row["monitoring"]:
-                st.markdown("**Status: not enough data - monitoring only**")
+                reason = row.get("monitor_reason", "Monitoring only")
+                st.markdown(f"**Status: {reason} - monitoring only**")
                 st.markdown(
-                    f"Requires at least {al.MIN_HISTORY} weeks of historical "
-                    f"observations to establish a baseline z-score. "
+                    f"Latest observation: **{row['last_week']}**. "
+                    f"Dataset latest week: **{latest_wk}**. "
                     f"Currently tracking: **{row['weeks']} weeks**. "
-                    f"Predictive alerts are suppressed to prevent false "
-                    f"signals.")
+                    f"Predictive alerts require the latest reporting week "
+                    f"and at least {al.MIN_HISTORY} weeks of history.")
                 st.caption("The raw weekly price chart on the left shows "
                            "everything observed so far.")
             else:

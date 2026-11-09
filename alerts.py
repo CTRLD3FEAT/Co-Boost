@@ -14,6 +14,7 @@ from pathlib import Path
 
 MIN_HISTORY = 26          # below this: "not enough data" monitoring badge
 ML_HISTORY = 27           # model needs 26-week trailing stats + 1 lag
+REQUIRE_CURRENT_WEEK = True
 BUNDLE_PATH = Path("outputs/spike_ml_bundle.joblib")
 FEATURES = ["r1", "r2", "r4", "z26", "dd26", "vol_ratio", "streak",
             "month_sin", "month_cos", "inflation"]
@@ -102,7 +103,8 @@ def compute_spike_alerts(dy: pd.DataFrame, latest: pd.Timestamp):
         g = g.sort_values("week")
         s = g.set_index("week")["price"].astype(float)
         weeks = int(len(s))
-        if weeks < ML_HISTORY:
+        if weeks < ML_HISTORY or (
+                REQUIRE_CURRENT_WEEK and s.index[-1] != pd.Timestamp(latest)):
             continue
         x = _features_last_row(s, infl_map)
         X = scaler.transform(x) if use_scaler else x
@@ -134,18 +136,22 @@ def compute_spike_alerts(dy: pd.DataFrame, latest: pd.Timestamp):
 
 
 def monitoring_items(dy: pd.DataFrame, latest: pd.Timestamp) -> pd.DataFrame:
-    """Commodities with < 26 weeks of history in total: visible, selectable,
-    no predictive signals."""
+    """Commodities without enough history or the current reporting week."""
     g = (dy.sort_values("week")
          .groupby("commodity")
          .agg(weeks=("price", "size"),
               last_price=("price", "last"),
               last_week=("week", "last"),
               category=("parent", lambda s: s.mode().iat[0])))
-    g = g[g["weeks"] < MIN_HISTORY]
+    g["monitor_reason"] = "Current week not reported"
+    g.loc[g["weeks"] < MIN_HISTORY, "monitor_reason"] = (
+        "Not enough history")
+    g = g[(g["weeks"] < MIN_HISTORY) | (
+        g["last_week"] != pd.Timestamp(latest))]
     return (g.reset_index()
              .rename(columns={"commodity": "item"})
-             [["item", "category", "weeks", "last_price", "last_week"]])
+             [["item", "category", "weeks", "last_price", "last_week",
+               "monitor_reason"]])
 
 
 def proba_label(p: float) -> str:
