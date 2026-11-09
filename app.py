@@ -244,10 +244,9 @@ if selected is not None:
         with st.container(border=True):
             comm_series = dy[dy["commodity"] == row["item"]] \
                 .sort_values("week")[["week", "price"]]
-            hist = comm_series
+            hist = comm_series.tail(30)
             fig = go.Figure()
             MUTED = "#6B7A75"
-            y_values = hist["price"].astype(float).tolist()
             fig.add_trace(go.Scatter(
                 x=hist["week"], y=hist["price"], mode="lines",
                 line=dict(color="#0F6B57", width=2.5, shape="linear"),
@@ -276,16 +275,10 @@ if selected is not None:
                     x=[next_wk], y=[hi_price], mode="lines",
                     line=dict(width=0), showlegend=False, hoverinfo="skip"))
                 fig.add_trace(go.Scatter(
-                    x=[next_wk], y=[med_price], mode="lines",
-                    line=dict(width=0), fill="tonexty",
-                    fillcolor="rgba(179,38,30,0.22)", showlegend=False,
-                    hoverinfo="skip"))
-                fig.add_trace(go.Scatter(
                     x=[next_wk], y=[lo_price], mode="lines",
                     line=dict(width=0), fill="tonexty",
                     fillcolor="rgba(15,107,87,0.20)", showlegend=False,
                     hoverinfo="skip"))
-                y_values.extend([lo_price, med_price, hi_price])
                 fig.add_trace(go.Scatter(
                     x=[last_wk, next_wk], y=[last_px, med_price],
                     mode="lines", line=dict(color=MUTED, width=1.5,
@@ -320,8 +313,6 @@ if selected is not None:
                 title = ("<span style='color:#7A7F7C;font-weight:600;"
                          f"font-size:14px'>Weekly price — {row['item']}<br>"
                          "Not enough data - monitoring only</span>")
-            y_min, y_max = min(y_values), max(y_values)
-            y_padding = max((y_max - y_min) * 0.08, y_max * 0.02, 1.0)
             fig.update_layout(
                 height=340,
                 margin=dict(l=16, r=24, t=18 if title is None else 30, b=16),
@@ -336,8 +327,7 @@ if selected is not None:
                            showgrid=False, zeroline=False,
                            linecolor="#DDE5E1", tickformat="%d %b",
                            tickfont=dict(color=MUTED, size=11)),
-                yaxis=dict(range=[max(0, y_min - y_padding), y_max + y_padding],
-                           gridcolor="#EEF2F0", zeroline=False,
+                yaxis=dict(gridcolor="#EEF2F0", zeroline=False,
                            tickprefix="Rs ",
                            tickfont=dict(color=MUTED, size=11),
                            tickformat=",.0f"))
