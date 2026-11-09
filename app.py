@@ -256,12 +256,12 @@ if selected is not None:
             last_wk, last_px = hist["week"].iloc[-1], hist["price"].iloc[-1]
             fig.add_trace(go.Scatter(
                 x=[last_wk], y=[last_px], mode="markers",
-                marker=dict(color="rgba(179,38,30,0.18)", size=22),
+                marker=dict(color="rgba(31,42,39,0.16)", size=22),
                 showlegend=False, hoverinfo="skip"))
             fig.add_trace(go.Scatter(
                 x=[last_wk], y=[last_px], mode="markers",
-                marker=dict(color=UP_RED, size=11, line=dict(color="#fff",
-                                                             width=2)),
+                marker=dict(color="#1F2A27", size=10, line=dict(color="#fff",
+                                                                 width=2)),
                 name="Latest",
                 hovertemplate="%{x|%d %b %Y}<br>Rs %{y:,.2f}"
                               "<extra>latest</extra>"))
@@ -291,6 +291,14 @@ if selected is not None:
                     name="Lower bound (p10)",
                     hovertemplate="%{x|%d %b %Y}<br>Rs %{y:,.2f}"
                                   "<extra>Lower bound (p10)</extra>"))
+                direction_color = UP_RED if q50 >= 0 else DOWN_GREEN
+                direction_label = "Expected increase" if q50 >= 0 \
+                    else "Expected decrease"
+                fig.add_trace(go.Scatter(
+                    x=[next_wk], y=[med_price], mode="markers",
+                    marker=dict(color=f"{direction_color}44", size=26),
+                    name=direction_label,
+                    hoverinfo="skip"))
                 fig.add_trace(go.Scatter(
                     x=[next_wk], y=[med_price], mode="markers",
                     marker=dict(color=DOWN_GREEN, size=12,
@@ -299,6 +307,14 @@ if selected is not None:
                     name="Best prediction (p50)",
                     hovertemplate="%{x|%d %b %Y}<br>Rs %{y:,.2f}"
                                   "<extra>Best prediction (p50)</extra>"))
+                fig.add_annotation(
+                    x=next_wk, y=med_price,
+                    text=f"Best prediction<br>Rs {med_price:,.2f}",
+                    showarrow=True, arrowhead=2, arrowsize=1,
+                    arrowcolor=direction_color, ax=-75, ay=-48,
+                    font=dict(color="#1F2A27", size=11),
+                    bgcolor="#FFFFFF", bordercolor=direction_color,
+                    borderwidth=1.5, borderpad=5)
                 x_max = next_wk + pd.Timedelta(weeks=2)
                 title = (f"<span style='color:#1F2A27;font-weight:600;"
                          f"font-size:14px'>Weekly price — {row['item']}</span>")
