@@ -260,8 +260,10 @@ if selected is not None:
                 hover_hist = hist.iloc[:-1]
                 latest_segment = hist.iloc[-2:]
                 fig.add_trace(go.Scatter(
-                    x=hover_hist["week"], y=hover_hist["price"], mode="lines",
+                    x=hover_hist["week"], y=hover_hist["price"],
+                    mode="lines+markers",
                     line=dict(color="#0F6B57", width=2.5, shape="linear"),
+                    marker=dict(color="#0F6B57", size=5),
                     name="Weekly price",
                     customdata=hover_hist[
                         ["wow_abs_label", "wow_pct_label"]].to_numpy(),
