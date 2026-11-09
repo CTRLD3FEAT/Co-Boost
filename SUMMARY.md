@@ -1,16 +1,17 @@
-# Co-Boost — ModelX 2.0 Implementation Summary
+# Co-Boost — Summary
 
 ## The problem
 
 Food-price shocks reach low-income households before the people responsible
-for monitoring food security can compare the signal with its history. Official
+for monitoring food security can compare the signal with its history. 
+Most of the time they get to know after the food prices hit the market. Official
 price tables show what happened, but not which Colombo staple prices are
 abnormal, likely to move next week, or supported by enough evidence to act on.
 
 Co-Boost is a decision-support system for a Colombo food-security or
 consumer-protection officer. It ranks the item-level risks that deserve
-verification, field monitoring, or an advisory response. It does not replace
-the officer's judgement.
+verification, field monitoring, or an advisory response. Though the
+the officer's expertise remains essential. 
 
 ## What the system delivers
 
@@ -22,7 +23,7 @@ commodities covering December 2019 to October 2026. It provides:
 2. A p10/p50/p90 forecast range rather than a false-precision point estimate.
 3. Statistical anomaly signals for unusual highs, lows, calm periods, and
    one-week moves.
-4. A monitoring view for commodities with fewer than 26 observations.
+4. A monitoring view for commodities with fewer than 26 observations. (When Data is not enough for a prediction)
 5. Source, history, confidence, and next-step context for verification.
 
 This is insight computed from the data: the officer does not need to manually
@@ -43,7 +44,7 @@ drawdown from the 26-week maximum, volatility ratio, directional streak,
 cyclical month features, and food inflation. Missing histories are not
 silently imputed: thin series are shown as monitoring-only.
 
-## Out-of-time evidence
+## Co-Boost Calibration Gate (G1-G4)
 
 All model claims use chronological holdouts covering 2024–2026.
 
