@@ -276,7 +276,7 @@ if selected is not None:
                 fig.add_trace(go.Scatter(
                     x=[next_wk], y=[hi_price], mode="lines",
                     line=dict(color=UP_RED, width=1.5, dash="dot"),
-                    name="Upper bound (p90)",
+                    showlegend=False,
                     hovertemplate="%{x|%d %b %Y}<br>Rs %{y:,.2f}"
                                   "<extra>Upper bound (p90)</extra>"))
                 fig.add_trace(go.Scatter(
@@ -288,7 +288,7 @@ if selected is not None:
                     x=[next_wk], y=[lo_price], mode="lines",
                     line=dict(color=DOWN_GREEN, width=1.5, dash="dot"),
                     fill="tonexty", fillcolor="rgba(15,107,87,0.20)",
-                    name="Lower bound (p10)",
+                    showlegend=False,
                     hovertemplate="%{x|%d %b %Y}<br>Rs %{y:,.2f}"
                                   "<extra>Lower bound (p10)</extra>"))
                 direction_color = UP_RED if q50 >= 0 else DOWN_GREEN
@@ -297,7 +297,7 @@ if selected is not None:
                     marker=dict(color=direction_color, size=8,
                                 line=dict(color="#FFFFFF", width=2),
                                 symbol="circle"),
-                    name="Best prediction (p50)",
+                    showlegend=False,
                     hovertemplate="%{x|%d %b %Y}<br>Rs %{y:,.2f}"
                                   "<extra>Best prediction (p50)</extra>"))
                 fig.add_trace(go.Scatter(
@@ -335,17 +335,17 @@ if selected is not None:
                          "Not enough data - monitoring only</span>")
             fig.update_layout(
                 height=340,
-                margin=dict(l=16, r=24, t=24 if title is None else 42, b=18),
-                title=dict(text=title, font=dict(size=15, color="#1F2A27"))
+                margin=dict(l=16, r=24, t=28 if title is None else 64, b=18),
+                title=dict(text=title, y=1, yanchor="bottom",
+                           pad=dict(b=12),
+                           font=dict(size=15, color="#1F2A27"))
                 if title else None,
                 plot_bgcolor="#FFFFFF", paper_bgcolor="#FFFFFF",
                 hovermode="x unified",
                 hoverlabel=dict(bgcolor="#FFFFFF", bordercolor="#DDE5E1",
                                 font=dict(color="#1F2A27", size=13)),
                 font=dict(family="Inter, sans-serif", color="#1F2A27"),
-                legend=dict(orientation="h", y=1.02, x=0, xanchor="left",
-                            yanchor="bottom", font=dict(size=10),
-                            bgcolor="rgba(255,255,255,0.82)"),
+                showlegend=False,
                 xaxis=dict(range=[hist["week"].iloc[0] - pd.Timedelta(days=3),
                                   x_max],
                            showgrid=False, zeroline=False,
@@ -358,7 +358,7 @@ if selected is not None:
                                dict(count=182, label="26w", step="day",
                                     stepmode="backward"),
                                dict(step="all", label="All")
-                           ], font=dict(size=10))),
+                           ], y=1, font=dict(size=10))),
                 yaxis=dict(range=[0, axis_max * 1.08],
                            gridcolor="#EEF2F0", zeroline=False,
                            tickprefix="Rs ",
