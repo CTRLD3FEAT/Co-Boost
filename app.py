@@ -275,38 +275,22 @@ if selected is not None:
                 up = q50 >= 0
                 fig.add_trace(go.Scatter(
                     x=[next_wk], y=[hi_price], mode="lines",
-                    line=dict(width=0), showlegend=False, hoverinfo="skip"))
+                    line=dict(color=UP_RED, width=1.5, dash="dot"),
+                    name="Upper bound (p90)",
+                    hovertemplate="%{x|%d %b %Y}<br>Rs %{y:,.2f}"
+                                  "<extra>Upper bound (p90)</extra>"))
                 fig.add_trace(go.Scatter(
-                    x=[next_wk], y=[lo_price], mode="lines",
+                    x=[next_wk], y=[med_price], mode="lines",
                     line=dict(width=0), fill="tonexty",
-                    fillcolor="rgba(15,107,87,0.20)", showlegend=False,
+                    fillcolor="rgba(179,38,30,0.22)", showlegend=False,
                     hoverinfo="skip"))
                 fig.add_trace(go.Scatter(
-                    x=[last_wk, next_wk], y=[last_px, med_price],
-                    mode="lines", line=dict(color=MUTED, width=1.5,
-                                            dash="dot"),
-                    showlegend=False, hoverinfo="skip"))
-                fig.add_trace(go.Scatter(
-                    x=[next_wk], y=[med_price], mode="markers",
-                    marker=dict(color="#0F6B57", size=12,
-                                line=dict(color="#fff", width=2),
-                                symbol="diamond"),
-                    name="Forecast (median)",
+                    x=[next_wk], y=[lo_price], mode="lines",
+                    line=dict(color=DOWN_GREEN, width=1.5, dash="dot"),
+                    fill="tonexty", fillcolor="rgba(15,107,87,0.20)",
+                    name="Lower bound (p10)",
                     hovertemplate="%{x|%d %b %Y}<br>Rs %{y:,.2f}"
-                                  "<extra>ML forecast (median)</extra>"))
-                fig.add_annotation(
-                    x=next_wk, y=med_price,
-                    text=("ML move (median) "
-                          + al.move_label(q50 * 100.0)
-                          + "  [p10 " + al.move_label(q10 * 100.0)
-                          + " .. p90 " + al.move_label(q90 * 100.0) + "]"
-                          + "  |  spike risk "
-                          + al.proba_label(row["spike_prob"])),
-                    showarrow=True, arrowhead=2, arrowsize=1,
-                    arrowcolor=MUTED, ax=-95, ay=-38,
-                    font=dict(color="#fff", size=12),
-                    bgcolor=UP_RED if up else DOWN_GREEN,
-                    borderpad=6, borderwidth=0)
+                                  "<extra>Lower bound (p10)</extra>"))
                 x_max = next_wk + pd.Timedelta(weeks=2)
                 title = (f"<span style='color:#1F2A27;font-weight:600;"
                          f"font-size:14px'>Weekly price — {row['item']}</span>")
