@@ -335,24 +335,44 @@ if selected is not None:
                          "Not enough data - monitoring only</span>")
             fig.update_layout(
                 height=340,
-                margin=dict(l=16, r=24, t=18 if title is None else 30, b=16),
-                title=dict(text=title, font=dict(size=14)) if title else None,
+                margin=dict(l=16, r=24, t=24 if title is None else 42, b=18),
+                title=dict(text=title, font=dict(size=15, color="#1F2A27"))
+                if title else None,
                 plot_bgcolor="#FFFFFF", paper_bgcolor="#FFFFFF",
                 hovermode="x unified",
                 hoverlabel=dict(bgcolor="#FFFFFF", bordercolor="#DDE5E1",
                                 font=dict(color="#1F2A27", size=13)),
-                showlegend=False,
+                font=dict(family="Inter, sans-serif", color="#1F2A27"),
+                legend=dict(orientation="h", y=1.02, x=0, xanchor="left",
+                            yanchor="bottom", font=dict(size=10),
+                            bgcolor="rgba(255,255,255,0.82)"),
                 xaxis=dict(range=[hist["week"].iloc[0] - pd.Timedelta(days=3),
                                   x_max],
                            showgrid=False, zeroline=False,
                            linecolor="#DDE5E1", tickformat="%d %b",
-                           tickfont=dict(color=MUTED, size=11)),
+                           tickfont=dict(color=MUTED, size=11),
+                           rangeslider=dict(visible=True, thickness=0.06),
+                           rangeselector=dict(buttons=[
+                               dict(count=84, label="12w", step="day",
+                                    stepmode="backward"),
+                               dict(count=182, label="26w", step="day",
+                                    stepmode="backward"),
+                               dict(step="all", label="All")
+                           ], font=dict(size=10))),
                 yaxis=dict(range=[0, axis_max * 1.08],
                            gridcolor="#EEF2F0", zeroline=False,
                            tickprefix="Rs ",
                            tickfont=dict(color=MUTED, size=11),
                            tickformat=",.0f"))
-            st.plotly_chart(fig, config={"displayModeBar": False},
+            st.plotly_chart(
+                fig,
+                config={
+                    "displayModeBar": True,
+                    "displaylogo": False,
+                    "responsive": True,
+                    "scrollZoom": True,
+                    "modeBarButtonsToRemove": ["lasso2d", "select2d"],
+                },
                             alt="Weekly price with ML forecast band")
 
     # ---------------- why this alert card
