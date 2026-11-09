@@ -239,8 +239,10 @@ with st.container(border=True):
             on_select="rerun", selection_mode="single-row",
             hide_index=True, key="alerts_tbl", width="stretch",
             alt="Ranked price alerts by ML spike probability and statistical anomaly")
-        selected = int(event["selection"]["rows"][0]) \
-            if event["selection"]["rows"] else 0
+        selected_rows = event["selection"]["rows"]
+        selected = (int(selected_rows[0])
+                    if selected_rows and selected_rows[0] < len(show)
+                    else 0)
 
 # ------------------------------------------------- bottom row, two cards
 left, right = st.columns([1.2, 1])
