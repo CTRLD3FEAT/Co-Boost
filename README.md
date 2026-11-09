@@ -46,6 +46,18 @@ flowchart LR
     G -->|thin or outdated| O[Monitoring only]
     R --> D[Streamlit + Plotly]
     O --> D
+    classDef source fill:#FFFFFF,stroke:#0F6B57,color:#1F2A27,stroke-width:2px;
+    classDef process fill:#E8F3EF,stroke:#0F6B57,color:#1F2A27;
+    classDef model fill:#D5EDE5,stroke:#0F6B57,color:#1F2A27;
+    classDef decision fill:#FFFFFF,stroke:#1F2A27,color:#1F2A27,stroke-width:2px;
+    classDef output fill:#0F6B57,stroke:#0F6B57,color:#FFFFFF,stroke-width:2px;
+    classDef warning fill:#FCE8E6,stroke:#B3261E,color:#7A1B16,stroke-width:2px;
+    class P source;
+    class X,C process;
+    class B,M,Q,A model;
+    class G decision;
+    class R,D output;
+    class O warning;
 ```
 
 ## Models and outputs
