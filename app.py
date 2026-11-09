@@ -244,6 +244,14 @@ if selected is not None:
         with st.container(border=True):
             comm_series = dy[dy["commodity"] == row["item"]] \
                 .sort_values("week")[["week", "price"]]
+            comm_series["wow_abs"] = comm_series["price"].diff()
+            comm_series["wow_pct"] = comm_series["price"].pct_change() * 100
+            comm_series["wow_abs_label"] = comm_series["wow_abs"].map(
+                lambda value: "N/A" if pd.isna(value)
+                else f"{value:+,.2f}")
+            comm_series["wow_pct_label"] = comm_series["wow_pct"].map(
+                lambda value: "N/A" if pd.isna(value)
+                else f"{value:+.2f}%")
             hist = comm_series.tail(30)
             fig = go.Figure()
             MUTED = "#6B7A75"
@@ -255,7 +263,11 @@ if selected is not None:
                     x=hover_hist["week"], y=hover_hist["price"], mode="lines",
                     line=dict(color="#0F6B57", width=2.5, shape="linear"),
                     name="Weekly price",
+                    customdata=hover_hist[
+                        ["wow_abs_label", "wow_pct_label"]].to_numpy(),
                     hovertemplate="%{x|%d %b %Y}<br>Rs %{y:,.2f}"
+                                  "<br>Change: Rs %{customdata[0]}"
+                                  "<br>Change: %{customdata[1]}"
                                   "<extra></extra>"))
                 fig.add_trace(go.Scatter(
                     x=latest_segment["week"], y=latest_segment["price"],
@@ -277,7 +289,11 @@ if selected is not None:
                 marker=dict(color="#1F2A27", size=10, line=dict(color="#fff",
                                                                  width=2)),
                 name="Latest",
+                customdata=[[hist["wow_abs_label"].iloc[-1],
+                             hist["wow_pct_label"].iloc[-1]]],
                 hovertemplate="%{x|%d %b %Y}<br>Rs %{y:,.2f}"
+                              "<br>Change: Rs %{customdata[0]}"
+                              "<br>Change: %{customdata[1]}"
                               "<extra>latest</extra>"))
             if not row["monitoring"]:
                 next_wk = last_wk + pd.Timedelta(weeks=1)
