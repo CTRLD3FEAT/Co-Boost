@@ -340,16 +340,19 @@ if selected is not None:
                     text="", showarrow=True, arrowhead=3, arrowsize=1,
                     arrowwidth=1.5, arrowcolor=DOWN_GREEN)
                 x_max = next_wk + pd.Timedelta(weeks=2)
-                title = (f"<span style='color:#1F2A27;font-weight:600;"
-                         f"font-size:14px'>{row['item']}</span>")
+                title = None
+                chart_label = row["item"]
             else:
                 x_max = last_wk + pd.Timedelta(weeks=2)
-                title = ("<span style='color:#7A7F7C;font-weight:600;"
-                         f"font-size:14px'>{row['item']}<br>"
-                         "Not enough data - monitoring only</span>")
+                title = None
+                chart_label = f"{row['item']} · Monitoring only"
+            st.markdown(
+                f"<div style='color:#1F2A27;font-weight:600;font-size:14px;"
+                f"padding:0 0 6px 2px'>{chart_label}</div>",
+                unsafe_allow_html=True)
             fig.update_layout(
                 height=340,
-                margin=dict(l=16, r=24, t=28 if title is None else 64, b=18),
+                margin=dict(l=16, r=24, t=28, b=18),
                 title=dict(text=title, x=0.01, xanchor="left",
                            y=1, yanchor="bottom",
                            pad=dict(b=12),
