@@ -6,9 +6,8 @@ Colombo food-security or consumer-protection officer:
 > Which commodity signals deserve verification first, what does the data
 > suggest for next week, and when is the evidence not current enough to trust?
 
-It is a decision-support system, not a guaranteed price predictor, procurement
-engine or household adviser. Built for ModelX 2.0 by Team
-NRZB.
+It is a decision-support system, not a guaranteed price predictor or household adviser. 
+Built for ModelX 2.0 by Team NRZB.
 
 ## What is built
 
