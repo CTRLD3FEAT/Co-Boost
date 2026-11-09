@@ -73,7 +73,7 @@ until current data is available.
 
 ## 4. Models and feature engineering
 
-The engine has four complementary components:
+The Co-Boost's engine has four complementary components:
 
 1. **Naive persistence** is the point-forecast anchor and the benchmark that a
    richer model must justify.
