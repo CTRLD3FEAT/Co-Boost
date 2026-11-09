@@ -1,4 +1,4 @@
-# Co-Boost — ModelX 2.0 Implementation Summary
+# Co-Boost — Summary
 
 ## The problem
 
