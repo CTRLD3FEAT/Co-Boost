@@ -64,7 +64,7 @@ beats every simple forecast.
 DCS is the operational primary source and represents a Colombo District
 aggregate, not a separate series for every named market. PDFs can have missing
 weeks, stale labels, inconsistent names, and incompatible units; the parser
-records provenance and excludes unsafe rows rather than guessing. CBSL/WFP and
+records provenance and excludes unsafe rows rather than guessing. WFP Food inflation is used to build more relationships with food price --> inflation to help make the predictions. CBSL,Open-meteo and
 other enrichment are contextual or future scope, not silently merged into the
 current DCS model.
 
