@@ -164,6 +164,6 @@ The implementation delivers the proposed ranked warning board, one-week
 forecast range, anomaly signal, confidence/failure behavior, and
 Colombo-focused DCS scope. It does not claim a fully reconciled named-market
 CBSL/DCS panel or a live multi-source production feed. Those would require
-additional crosswalks, freshness checks, and evaluation. The narrower system
+additional crosswalks, freshness checks, and evaluation. More than that WFP dataset we mentioned in the proposal had a lot of inconsistencies, breadth without depth & fresh data. The narrower system
 was chosen because a smaller verified pipeline is safer and more defensible
-than an apparently richer but incomparable dataset.
+than an apparently richer but incomparable, inconsistent dataset.
