@@ -46,12 +46,13 @@ flowchart LR
     G -->|thin or outdated| O[Monitoring only]
     R --> D[Streamlit + Plotly]
     O --> D
-    classDef source fill:#FFFFFF,stroke:#0F6B57,color:#1F2A27,stroke-width:2px;
-    classDef process fill:#E8F3EF,stroke:#0F6B57,color:#1F2A27;
-    classDef model fill:#D5EDE5,stroke:#0F6B57,color:#1F2A27;
-    classDef decision fill:#FFFFFF,stroke:#1F2A27,color:#1F2A27,stroke-width:2px;
+    classDef source fill:#FFFFFF,stroke:#0F6B57,color:#0F6B57,stroke-width:2px;
+    classDef process fill:#E8F3EF,stroke:#0F6B57,color:#0F6B57;
+    classDef model fill:#D5EDE5,stroke:#0F6B57,color:#0F6B57;
+    classDef decision fill:#FFFFFF,stroke:#0F6B57,color:#0F6B57,stroke-width:2px;
     classDef output fill:#0F6B57,stroke:#0F6B57,color:#FFFFFF,stroke-width:2px;
-    classDef warning fill:#FCE8E6,stroke:#B3261E,color:#7A1B16,stroke-width:2px;
+    classDef warning fill:#E8F3EF,stroke:#1E8E4E,color:#0F6B57,stroke-width:2px;
+    linkStyle default stroke:#0F6B57,stroke-width:1.5px;
     class P source;
     class X,C process;
     class B,M,Q,A model;
