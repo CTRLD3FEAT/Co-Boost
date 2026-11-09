@@ -1,6 +1,6 @@
 import pandas as pd
 
-DATA_PATH = "data/colombo_prices.csv"
+DATA_PATH = "legacy/data/colombo_prices.csv"
 
 STAPLES = [
     "Rice (white)", "Rice (red nadu)", "Rice (long grain)", "Rice (medium grain)",

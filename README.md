@@ -50,7 +50,7 @@ Submission documents:
 | 1 · Data Acquisition and Preprocessing | `7d88a3b`…`ce8f4a1` (6 commits) | `Dataset/` (320 DCS-WRP PDFs + `food_inflation.csv`), `Scripts/parse_wrp.py`, `Scripts/ingest_official_pdfs.py`, `baseline.py`, `outputs/official_prices_wrp*.csv`, `outputs/DATASET_NOTES.md` |
 | 2 · Baselines | `c6065ae` | `Scripts/backtest_baselines.py`, `outputs/backtest_*` |
 | 3 · ML spike warning | `e3bdcea` | `Scripts/spike_ml.py`, `outputs/spike_ml_bundle.joblib`, leaderboards |
-| 4 · Dashboards | `ac17660` | `app.py`, `streamlit_app.py`, `data.py`, `alerts.py`, `Dash_APP/dash_app.py`, `.streamlit/config.toml`, `requirements.txt` |
+| 4 · Dashboards | `ac17660` | `app.py`, `data.py`, `alerts.py`, `.streamlit/config.toml`, `requirements.txt` |
 | 5 · Docs | (this commit) | `README.md`, `SUMMARY.md`, `docs/` |
 
 ## Data sources (credited)
