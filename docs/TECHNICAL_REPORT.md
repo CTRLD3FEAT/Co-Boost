@@ -48,22 +48,6 @@ flowchart TD
     class Monitor warning;
 ```
 
-```text
-DCS weekly PDF reports
-        |
-        v
-Scripts/parse_wrp.py
-        |
-        v
-outputs/official_prices_wrp.csv
-        |
-        +--> baseline.py ----------------------+
-        |                                      |
-        +--> Scripts/spike_ml.py --------------+--> app.py
-        |                                      |    Streamlit dashboard
-        +--> outputs/spike_ml_bundle.joblib --+
-```
-
 `data.py` loads and date-normalizes the canonical dataset. `alerts.py`
 performs current-week inference and creates ranked spike alerts, confidence
 tiers, forecast bands, and monitoring-only rows. `Scripts/spike_ml.py` contains
@@ -101,7 +85,7 @@ until current data is available.
 
 ## 4. Models and feature engineering
 
-The engine has four complementary components:
+The Co-Boost's engine has four complementary components:
 
 1. **Naive persistence** is the point-forecast anchor and the benchmark that a
    richer model must justify.
@@ -192,6 +176,6 @@ The implementation delivers the proposed ranked warning board, one-week
 forecast range, anomaly signal, confidence/failure behavior, and
 Colombo-focused DCS scope. It does not claim a fully reconciled named-market
 CBSL/DCS panel or a live multi-source production feed. Those would require
-additional crosswalks, freshness checks, and evaluation. The narrower system
+additional crosswalks, freshness checks, and evaluation. More than that WFP dataset we mentioned in the proposal had a lot of inconsistencies, breadth without depth & fresh data. The narrower system
 was chosen because a smaller verified pipeline is safer and more defensible
-than an apparently richer but incomparable dataset.
+than an apparently richer but incomparable, inconsistent dataset.
