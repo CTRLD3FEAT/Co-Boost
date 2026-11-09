@@ -300,6 +300,21 @@ if selected is not None:
                     name="Best prediction (p50)",
                     hovertemplate="%{x|%d %b %Y}<br>Rs %{y:,.2f}"
                                   "<extra>Best prediction (p50)</extra>"))
+                fig.add_trace(go.Scatter(
+                    x=[last_wk, next_wk], y=[last_px, lo_price],
+                    mode="lines", line=dict(color=DOWN_GREEN, width=1.5,
+                                            dash="dash"),
+                    showlegend=False, hoverinfo="skip"))
+                fig.add_trace(go.Scatter(
+                    x=[last_wk, next_wk], y=[last_px, med_price],
+                    mode="lines", line=dict(color=direction_color, width=1.5,
+                                            dash="dash"),
+                    showlegend=False, hoverinfo="skip"))
+                fig.add_trace(go.Scatter(
+                    x=[last_wk, next_wk], y=[last_px, hi_price],
+                    mode="lines", line=dict(color=UP_RED, width=1.5,
+                                            dash="dash"),
+                    showlegend=False, hoverinfo="skip"))
                 fig.add_annotation(
                     x=next_wk, y=hi_price, ax=last_wk, ay=last_px,
                     xref="x", yref="y", axref="x", ayref="y",
