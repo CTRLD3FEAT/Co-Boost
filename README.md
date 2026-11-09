@@ -62,7 +62,7 @@ flowchart LR
 
 ## Models and outputs
 
-| Component | Purpose | Output |
+| Model | Purpose | Output |
 |---|---|---|
 | Naive persistence | Honest price-level benchmark | Reference forecast |
 | MLP spike classifier | Predicts a next-week return of at least 10% | Spike-risk probability |
@@ -105,12 +105,12 @@ Submission documents:
 - `SUMMARY.md` — implementation summary
 - `docs/TECHNICAL_REPORT.md` — architecture, data, evaluation, limitations,
   and reproducibility
-- `docs/DEMO_SCRIPT.md` — three-minute demonstration storyboard
 
 ## Data and limitations
 
 - Primary source: [DCS weekly retail prices](https://www.statistics.gov.lk/InflationAndPrices/StaticalInformation/RetailPrices).
-- CBSL daily reports and WFP food inflation are credited supplementary
+- WFP Food Inflation - https://dataviz.vam.wfp.org/data-explorer/economic/inflation
+- CBSL daily reports and open-meteo rain fall data are credited as supplementary
   sources, but are not silently merged into the current DCS operational model.
 - DCS is a Colombo District aggregate, not a named-market panel.
 - Filename/date mismatches, missing values, exclusions, incompatible units,
@@ -119,7 +119,7 @@ Submission documents:
   prediction and shown in Monitoring with its last observed date.
 - Public-source terms remain applicable; see `LICENSE`.
 
-Claude and Grok were used for research, planning, drafting, and coding. The
+Claude Code, Co-pilot were used for research, planning, drafting, and coding. The
 team owns and is responsible for the submitted implementation and claims.
 
 ## Repository structure
