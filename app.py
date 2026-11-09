@@ -247,6 +247,7 @@ if selected is not None:
             hist = comm_series.tail(30)
             fig = go.Figure()
             MUTED = "#6B7A75"
+            axis_max = float(comm_series["price"].max())
             fig.add_trace(go.Scatter(
                 x=hist["week"], y=hist["price"], mode="lines",
                 line=dict(color="#0F6B57", width=2.5, shape="linear"),
@@ -270,6 +271,7 @@ if selected is not None:
                 lo_price = last_px * (1 + q10)
                 med_price = last_px * (1 + q50)
                 hi_price = last_px * (1 + q90)
+                axis_max = max(axis_max, hi_price)
                 up = q50 >= 0
                 fig.add_trace(go.Scatter(
                     x=[next_wk], y=[hi_price], mode="lines",
@@ -327,7 +329,8 @@ if selected is not None:
                            showgrid=False, zeroline=False,
                            linecolor="#DDE5E1", tickformat="%d %b",
                            tickfont=dict(color=MUTED, size=11)),
-                yaxis=dict(gridcolor="#EEF2F0", zeroline=False,
+                yaxis=dict(range=[0, axis_max * 1.08],
+                           gridcolor="#EEF2F0", zeroline=False,
                            tickprefix="Rs ",
                            tickfont=dict(color=MUTED, size=11),
                            tickformat=",.0f"))
