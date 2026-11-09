@@ -248,11 +248,25 @@ if selected is not None:
             fig = go.Figure()
             MUTED = "#6B7A75"
             axis_max = float(comm_series["price"].max())
-            fig.add_trace(go.Scatter(
-                x=hist["week"], y=hist["price"], mode="lines",
-                line=dict(color="#0F6B57", width=2.5, shape="linear"),
-                name="Weekly price",
-                hovertemplate="%{x|%d %b %Y}<br>Rs %{y:,.2f}<extra></extra>"))
+            if len(hist) > 1:
+                hover_hist = hist.iloc[:-1]
+                latest_segment = hist.iloc[-2:]
+                fig.add_trace(go.Scatter(
+                    x=hover_hist["week"], y=hover_hist["price"], mode="lines",
+                    line=dict(color="#0F6B57", width=2.5, shape="linear"),
+                    name="Weekly price",
+                    hovertemplate="%{x|%d %b %Y}<br>Rs %{y:,.2f}"
+                                  "<extra></extra>"))
+                fig.add_trace(go.Scatter(
+                    x=latest_segment["week"], y=latest_segment["price"],
+                    mode="lines",
+                    line=dict(color="#0F6B57", width=2.5, shape="linear"),
+                    showlegend=False, hoverinfo="skip"))
+            else:
+                fig.add_trace(go.Scatter(
+                    x=hist["week"], y=hist["price"], mode="lines",
+                    line=dict(color="#0F6B57", width=2.5, shape="linear"),
+                    name="Weekly price", hoverinfo="skip"))
             last_wk, last_px = hist["week"].iloc[-1], hist["price"].iloc[-1]
             fig.add_trace(go.Scatter(
                 x=[last_wk], y=[last_px], mode="markers",
@@ -327,16 +341,17 @@ if selected is not None:
                     arrowwidth=1.5, arrowcolor=DOWN_GREEN)
                 x_max = next_wk + pd.Timedelta(weeks=2)
                 title = (f"<span style='color:#1F2A27;font-weight:600;"
-                         f"font-size:14px'>Weekly price — {row['item']}</span>")
+                         f"font-size:14px'>{row['item']}</span>")
             else:
                 x_max = last_wk + pd.Timedelta(weeks=2)
                 title = ("<span style='color:#7A7F7C;font-weight:600;"
-                         f"font-size:14px'>Weekly price — {row['item']}<br>"
+                         f"font-size:14px'>{row['item']}<br>"
                          "Not enough data - monitoring only</span>")
             fig.update_layout(
                 height=340,
                 margin=dict(l=16, r=24, t=28 if title is None else 64, b=18),
-                title=dict(text=title, y=1, yanchor="bottom",
+                title=dict(text=title, x=0, xanchor="left",
+                           y=1, yanchor="bottom",
                            pad=dict(b=12),
                            font=dict(size=15, color="#1F2A27"))
                 if title else None,
