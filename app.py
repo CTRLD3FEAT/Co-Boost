@@ -11,18 +11,26 @@ import pandas as pd
 import plotly.graph_objects as go
 
 st.set_page_config(layout="wide", initial_sidebar_state="expanded",
-                   page_title="Food Price Early Warning")
+                   page_title="Co-Boost", page_icon="🛒")
 
 import data as dt
 import alerts as al
+from Scripts import spike_ml as sml
 
 PAGE_CSS = """
 <style>
-    .block-container { padding-top: 1.6rem; padding-bottom: 2.5rem; }
+    header[data-testid="stHeader"] { background: transparent; }
+    header[data-testid="stHeader"] svg { color: #6B7A75; }
+    .block-container { padding-top: 4.5rem; padding-bottom: 2.5rem; }
     div[data-testid="stVerticalBlockBorderWrapper"] { border-radius: 12px; }
-    .kpi-value { font-size: 2.4rem; font-weight: 700; color: #0F6B57;
+    .kpi-card { border: 1px solid #DDE5E1; border-radius: 14px;
+                padding: 1rem 1.1rem .85rem; background: #FFFFFF;
+                box-shadow: 0 2px 8px rgba(15,107,87,.06); }
+    .kpi-value { font-size: 2.4rem; font-weight: 750; color: #0F6B57;
                  line-height: 1; }
-    .kpi-label { color: #6B7A75; font-size: 0.85rem; margin-top: .3rem; }
+    .kpi-label { color: #6B7A75; font-size: 0.82rem; margin-top: .4rem;
+                 letter-spacing: .01em; }
+    .section-note { color: #6B7A75; font-size: .82rem; margin: -.35rem 0 1rem; }
     .vintage-box { border: 1px solid #DDE5E1; border-radius: 12px;
                    padding: .55rem .9rem; background: #FFFFFF;
                    text-align: right; }
@@ -32,11 +40,39 @@ PAGE_CSS = """
                  padding: .7rem .9rem; background: #FFFFFF; }
     .chg-up { color: #B3261E; font-weight: 600; }
     .chg-down { color: #1E8E4E; font-weight: 600; }
+    .cb-brand { text-align: center; margin-bottom: 1.4rem; }
+    .cb-wordmark { background: linear-gradient(90deg, #006850, #00A881, #006850);
+                   background-size: 200% auto; color: transparent;
+                   background-clip: text; -webkit-background-clip: text;
+                   font-size: 4.2rem; font-weight: 800;
+                   letter-spacing: -.04em; line-height: 1;
+                   animation: cbShift 4s ease-in-out infinite; }
+    .cb-tagline { color: #6B7A75; font-size: .9rem; margin-top: .35rem; }
+    .cb-footer { margin-top: 2rem; padding: 1rem 0 .4rem;
+                 border-top: 1px solid #DDE5E1; text-align: center;
+                 color: #6B7A75; font-size: .82rem; }
+    .cb-footer strong { color: #0F6B57; font-size: 1.15rem; }
+    .cb-footer span { display: inline-block; margin-top: .35rem;
+                      font-size: .94rem; }
+    @keyframes cbShift {
+        0%, 100% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+    }
 </style>
 """
 st.markdown(PAGE_CSS, unsafe_allow_html=True)
 
 UP_RED, DOWN_GREEN = "#B3261E", "#1E8E4E"
+ANOMALY_LABELS = {
+    "high": "Unusually high",
+    "low": "Unusually low",
+    "calm": "Stable",
+    "move": "Unusual move",
+}
+st.markdown(
+    "<div class='cb-brand'><div class='cb-wordmark'>Co-Boost</div>"
+    "<div class='cb-tagline'>Food-price early warning system for Colombo district</div></div>",
+    unsafe_allow_html=True)
 
 
 # ------------------------------------------------- cached computations
@@ -50,6 +86,12 @@ def monitoring_rank(dy, latest):
     return al.monitoring_items(dy, pd.Timestamp(latest))
 
 
+@st.cache_data(ttl=3600, max_entries=8, show_spinner=False)
+def anomaly_rank(dy):
+    source_df = dy.rename(columns={"week": "observation_date"})
+    return sml.anomaly_table(source_df)
+
+
 # ------------------------------------------------------------- data
 dy = dt.load_weekly()
 latest_wk = dt.latest_week(dy)
@@ -58,6 +100,9 @@ vintage = latest_wk.strftime("%b %Y") if hasattr(latest_wk, "strftime") \
 alerts, bundle = alert_rank(dy, latest_wk)
 THR = float(bundle["threshold"])
 monitor = monitoring_rank(dy, latest_wk)
+anomalies = anomaly_rank(dy)
+anomaly_cols = ["commodity", "flag"]
+anomalies = anomalies[anomaly_cols].rename(columns={"commodity": "item"})
 
 # ------------------------------------------------------------- sidebar
 with st.sidebar:
@@ -65,7 +110,6 @@ with st.sidebar:
     choices = ["All items"] + dt.items(dy)
     sel_item = st.selectbox("Item", choices, index=0,
                             help="Pick one commodity to focus the table.")
-    sel_signal = st.selectbox("Signal", ["Both", "Spike predicted"], index=0)
     sel_view = st.segmented_control(
         "View", ["Alerts", "Monitoring"], default="Alerts",
         help="Monitoring = fewer than 26 weeks of history. Predictive "
@@ -86,14 +130,16 @@ mon["score"] = 0.0
 mon["threshold"] = THR
 mon["confidence"] = "Monitoring only"
 mon["monitoring"] = True
+mon = mon.merge(anomalies, on="item", how="left")
+mon["flag"] = mon["flag"].fillna("")
 
 if sel_view == "Monitoring":
     view = mon.copy()
 else:
     view = alerts[alerts["alert"]].copy()
     view["monitoring"] = False
-    if sel_signal == "Spike predicted":
-        view = view[view["alert"]]
+    view = view.merge(anomalies, on="item", how="left")
+    view["flag"] = view["flag"].fillna("")
 if sel_item != "All items":
     view = view[view["item"] == sel_item]
 
@@ -115,14 +161,18 @@ c1, c2, c3 = st.columns(3)
 for col, (num, label) in zip((c1, c2, c3), kpis):
     with col:
         st.markdown(
-            f"<div class='kpi-value'>{num}</div>"
-            f"<div class='kpi-label'>{label}</div>",
+            f"<div class='kpi-card'><div class='kpi-value'>{num}</div>"
+            f"<div class='kpi-label'>{label}</div></div>",
             unsafe_allow_html=True)
-        st.markdown("")
 
 # ------------------------------------------------------------- ranked alerts
 with st.container(border=True):
     st.subheader("Ranked alerts")
+    if sel_view == "Alerts":
+        st.markdown(
+            "ML-selected spike alerts only · ranked by calibrated next-week "
+            "spike probability",
+            unsafe_allow_html=False)
     if len(view) == 0:
         st.caption("No alerts for the current filters - all monitored "
                    "prices look normal.")
@@ -137,9 +187,9 @@ with st.container(border=True):
             lambda r: "—" if r["monitoring"]
             else (("▲ " if r["pred_r1"] >= 0 else "▼ ")
                   + al.move_label(r["pred_move_pct"])), axis=1)
-        show["signal"] = show.apply(
-            lambda r: "Not enough data" if r["monitoring"]
-            else "Spike predicted", axis=1)
+        show["anomaly"] = (
+            show["flag"].map(ANOMALY_LABELS).fillna("None")
+        )
 
         def risk_cell(v, proba, conf):
             if v == "—":
@@ -161,11 +211,12 @@ with st.container(border=True):
                       "Monitoring only": "#7A7F7C"}
             return f"background-color:{colors.get(v, '#7A7F7C')};color:#fff"
 
-        tbl = show[["#", "item", "category", "risk", "move", "signal",
-                    "confidence"]].rename(columns={
+        tbl = show[["#", "item", "category", "risk", "move",
+                    "anomaly", "confidence"]].rename(columns={
                         "item": "Item", "category": "Category",
                         "risk": "Spike risk", "move": "Next-week move",
-                        "signal": "Signal", "confidence": "Confidence"})
+                        "anomaly": "Anomaly",
+                        "confidence": "Confidence"})
 
         styles = pd.DataFrame("", index=tbl.index, columns=tbl.columns)
         for i, row in show.iterrows():
@@ -178,7 +229,7 @@ with st.container(border=True):
             tbl.style.apply(lambda _: styles, axis=None),
             on_select="rerun", selection_mode="single-row",
             hide_index=True, key="alerts_tbl", width="stretch",
-            alt="Ranked price alerts by ML spike probability")
+            alt="Ranked price alerts by ML spike probability and statistical anomaly")
         selected = int(event["selection"]["rows"][0]) \
             if event["selection"]["rows"] else 0
 
@@ -193,7 +244,7 @@ if selected is not None:
         with st.container(border=True):
             comm_series = dy[dy["commodity"] == row["item"]] \
                 .sort_values("week")[["week", "price"]]
-            hist = comm_series.tail(30)
+            hist = comm_series
             fig = go.Figure()
             MUTED = "#6B7A75"
             fig.add_trace(go.Scatter(
@@ -223,6 +274,11 @@ if selected is not None:
                 fig.add_trace(go.Scatter(
                     x=[next_wk], y=[hi_price], mode="lines",
                     line=dict(width=0), showlegend=False, hoverinfo="skip"))
+                fig.add_trace(go.Scatter(
+                    x=[next_wk], y=[med_price], mode="lines",
+                    line=dict(width=0), fill="tonexty",
+                    fillcolor="rgba(179,38,30,0.22)", showlegend=False,
+                    hoverinfo="skip"))
                 fig.add_trace(go.Scatter(
                     x=[next_wk], y=[lo_price], mode="lines",
                     line=dict(width=0), fill="tonexty",
@@ -276,7 +332,7 @@ if selected is not None:
                            showgrid=False, zeroline=False,
                            linecolor="#DDE5E1", tickformat="%d %b",
                            tickfont=dict(color=MUTED, size=11)),
-                yaxis=dict(gridcolor="#EEF2F0", zeroline=False,
+                yaxis=dict(autorange=True, gridcolor="#EEF2F0", zeroline=False,
                            tickprefix="Rs ",
                            tickfont=dict(color=MUTED, size=11),
                            tickformat=",.0f"))
@@ -301,6 +357,8 @@ if selected is not None:
                 st.markdown(
                     f"**ML spike probability:** **{al.proba_label(row['spike_prob'])}** "
                     f"(alert threshold {row['threshold']*100:.0f}%).", unsafe_allow_html=False)
+                st.markdown(
+                    f"**Statistical anomaly:** **{ANOMALY_LABELS.get(row['flag'], 'None')}**.")
                 st.markdown(
                     f"**Model expects next-week change:** "
                     f"**{al.move_label(row['pred_q50'] * 100.0)}** "
@@ -335,5 +393,10 @@ if selected is not None:
         st.markdown("")
 
 # ------------------------------------------------------------- footer
-st.caption("This is a decision-support system, your expertise remains "
-           "essential.")
+st.markdown(
+    "<div class='cb-footer'>"
+    "<strong>Powered By Co-Boost Engine</strong><br>"
+    "<span>Naive persistence baseline · ML spike classifier · "
+    "Quantile forecast range · Anomaly detector</span>"
+    "</div>",
+    unsafe_allow_html=True)
