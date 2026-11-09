@@ -36,22 +36,6 @@ flowchart TD
     App --> UI[Streamlit and Plotly dashboard]
 ```
 
-```text
-DCS weekly PDF reports
-        |
-        v
-Scripts/parse_wrp.py
-        |
-        v
-outputs/official_prices_wrp.csv
-        |
-        +--> baseline.py ----------------------+
-        |                                      |
-        +--> Scripts/spike_ml.py --------------+--> app.py
-        |                                      |    Streamlit dashboard
-        +--> outputs/spike_ml_bundle.joblib --+
-```
-
 `data.py` loads and date-normalizes the canonical dataset. `alerts.py`
 performs current-week inference and creates ranked spike alerts, confidence
 tiers, forecast bands, and monitoring-only rows. `Scripts/spike_ml.py` contains
