@@ -7,7 +7,7 @@ Colombo food-security or consumer-protection officer:
 > suggest for next week, and when is the evidence not current enough to trust?
 
 It is a decision-support system, not a guaranteed price predictor or household adviser. 
->Built for ModelX 2.0 by Team NRZB.
+<br>Built for ModelX 2.0 by Team NRZB.
 
 ## What is built
 
