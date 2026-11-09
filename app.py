@@ -244,7 +244,7 @@ if selected is not None:
         with st.container(border=True):
             comm_series = dy[dy["commodity"] == row["item"]] \
                 .sort_values("week")[["week", "price"]]
-            hist = comm_series
+            hist = comm_series.tail(30)
             fig = go.Figure()
             MUTED = "#6B7A75"
             fig.add_trace(go.Scatter(
@@ -274,11 +274,6 @@ if selected is not None:
                 fig.add_trace(go.Scatter(
                     x=[next_wk], y=[hi_price], mode="lines",
                     line=dict(width=0), showlegend=False, hoverinfo="skip"))
-                fig.add_trace(go.Scatter(
-                    x=[next_wk], y=[med_price], mode="lines",
-                    line=dict(width=0), fill="tonexty",
-                    fillcolor="rgba(179,38,30,0.22)", showlegend=False,
-                    hoverinfo="skip"))
                 fig.add_trace(go.Scatter(
                     x=[next_wk], y=[lo_price], mode="lines",
                     line=dict(width=0), fill="tonexty",
@@ -332,7 +327,7 @@ if selected is not None:
                            showgrid=False, zeroline=False,
                            linecolor="#DDE5E1", tickformat="%d %b",
                            tickfont=dict(color=MUTED, size=11)),
-                yaxis=dict(autorange=True, gridcolor="#EEF2F0", zeroline=False,
+                yaxis=dict(gridcolor="#EEF2F0", zeroline=False,
                            tickprefix="Rs ",
                            tickfont=dict(color=MUTED, size=11),
                            tickformat=",.0f"))
