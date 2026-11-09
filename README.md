@@ -37,7 +37,11 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-Legacy UIs remain available: `streamlit_app.py` and `Dash_APP/dash_app.py`.
+Submission documents:
+
+- `SUMMARY.md` — two-page implementation summary
+- `docs/TECHNICAL_REPORT.md` — architecture, data, evaluation, and limitations
+- `docs/DEMO_SCRIPT.md` — three-minute local demonstration storyboard
 
 ## Repository layout (by phase)
 
@@ -47,7 +51,7 @@ Legacy UIs remain available: `streamlit_app.py` and `Dash_APP/dash_app.py`.
 | 2 · Baselines | `c6065ae` | `Scripts/backtest_baselines.py`, `outputs/backtest_*` |
 | 3 · ML spike warning | `e3bdcea` | `Scripts/spike_ml.py`, `outputs/spike_ml_bundle.joblib`, leaderboards |
 | 4 · Dashboards | `ac17660` | `app.py`, `streamlit_app.py`, `data.py`, `alerts.py`, `Dash_APP/dash_app.py`, `.streamlit/config.toml`, `requirements.txt` |
-| 5 · Docs | (this commit) | `README.md`, `LICENSE`, `legacy/` |
+| 5 · Docs | (this commit) | `README.md`, `SUMMARY.md`, `docs/` |
 
 ## Data sources (credited)
 
@@ -62,7 +66,6 @@ Tool disclosure: Claude & Grok used for research, planning, drafting and coding,
 - Every excluded price is recorded with a reason; anomalies and exclusions are never silently dropped or imputed.
 - All reported metrics are out-of-sample, chronological holdouts — no leakage.
 - Dataset decisions and their evidence live in `outputs/DATASET_NOTES.md`.
-- Legacy stage-1/2 artifacts are archived under `legacy/`.
 
 ## License
 

@@ -43,13 +43,13 @@ TEST_START_YM = 202401
 FEATURES = ["r1", "r2", "r4", "z26", "dd26", "vol_ratio", "streak",
             "month_sin", "month_cos", "inflation"]
 
-SYMBOLS = {"spike": "⚡", "high": "🔺", "low": "🔻", "calm": "🧊", "move": "🌀"}
+SYMBOLS = {"spike": "⚡", "high": "", "low": "", "calm": "", "move": ""}
 TYPES = {
     "spike": "⚡ Spike predicted",
-    "high": "🔺 Unusual high",
-    "low": "🔻 Unusual low",
-    "calm": "🧊 Stable as never",
-    "move": "🌀 Unusual move",
+    "high": "Unusually high",
+    "low": "Unusually low",
+    "calm": "Stable",
+    "move": "Unusual move",
 }
 
 
