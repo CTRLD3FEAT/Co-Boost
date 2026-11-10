@@ -1,4 +1,4 @@
-![Co-Boost](assets/co-boost-github-cover.png)
+![Co-Boost](Assets/coboost-github-cover.png)
 # Co-Boost — Colombo food-price early warning
 
 Co-Boost turns official weekly retail-price reports into a ranked answer for a
