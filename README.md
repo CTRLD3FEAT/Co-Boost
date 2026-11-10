@@ -1,5 +1,7 @@
 # Co-Boost — Colombo food-price early warning
 
+![Co-Boost](assets/coboost-github-cover.png)
+
 Co-Boost turns official weekly retail-price reports into a ranked answer for a
 Colombo food-security or consumer-protection officer:
 
