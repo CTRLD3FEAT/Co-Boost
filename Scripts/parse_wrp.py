@@ -375,7 +375,7 @@ def collect_pdfs(paths):
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     ap.add_argument("pdfs", nargs="+", help="PDF files or folders")
-    ap.add_argument("-o", "--output", default="weekly_prices.csv")
+    ap.add_argument("-o", "--output", default="outputs/official_prices_dcs.csv")
     ap.add_argument("--excluded", help="CSV for excluded rows (default: <output>_excluded.csv)")
     args = ap.parse_args(argv)
 

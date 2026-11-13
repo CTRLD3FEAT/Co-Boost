@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Walk-forward (rolling-origin) backtest of baseline forecasters on
-outputs/official_prices_wrp.csv - one step ahead (next observation, ~1 week).
+outputs/official_prices_dcs.csv - one step ahead (next observation, ~1 week).
 
 Protocol
   * Series: price history per commodity, ordered by observation date

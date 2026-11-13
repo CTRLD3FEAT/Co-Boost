@@ -1,14 +1,14 @@
 """Data layer for the Food Price Early Warning dashboard.
 
 Source: official DCS weekly retail price reports (Colombo district),
-extracted into outputs/official_prices_wrp.csv by Scripts/parse_wrp.py.
+extracted into outputs/official_prices_dcs.csv by Scripts/parse_wrp.py.
 Cleaning/normalization/exclusions happen in baseline.load_prices - never
 duplicated here. No imputation: missing prices are missing.
 """
 import streamlit as st
 import pandas as pd
 
-WEEKLY_CSV = "outputs/official_prices_wrp.csv"
+WEEKLY_CSV = "outputs/official_prices_dcs.csv"
 
 _CACHED_LOADER = None
 

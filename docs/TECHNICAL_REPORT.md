@@ -61,7 +61,7 @@ without the UI.
 The primary data consists of 320 DCS weekly retail-price PDFs covering
 December 2019 through October 2026. Deterministic extraction produces
 34,099 usable rows across 146 canonical commodities in
-`outputs/official_prices_wrp.csv`. The filename is authoritative for the
+`outputs/official_prices_dcs.csv`. The filename is authoritative for the
 reporting week when a PDF title is stale, and extraction notes record
 title/filename mismatches.
 

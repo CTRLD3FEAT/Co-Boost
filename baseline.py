@@ -8,7 +8,7 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error, mean_absolute_error
 from datetime import datetime, timedelta
 
-MAIN_DATASET = "outputs/official_prices_wrp.csv"
+MAIN_DATASET = "outputs/official_prices_dcs.csv"
 INFLATION_DATASET = "Dataset/food_inflation.csv"
 
 

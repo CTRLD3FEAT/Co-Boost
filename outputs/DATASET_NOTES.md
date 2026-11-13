@@ -15,7 +15,7 @@ Removed commodity variants (6, 1,908 rows of the 36,008-row wrp dataset, ~5%):
 
 ### How this is implemented
 
-- The raw extraction `outputs/official_prices_wrp.csv` is **kept unchanged**
+- The raw extraction `outputs/official_prices_dcs.csv` is **kept unchanged**
   (auditability: every record traceable to its source PDF).
 - `outputs/commodity_exclusions.csv` is the single machine-readable filter table
   (pattern + reason). It is applied inside `baseline.load_prices()`, so every
