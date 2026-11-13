@@ -1,4 +1,7 @@
 ![Co-Boost](Assets/coboost-github-cover.png)
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://co-boost-dashboard.streamlit.app/)
+
 # Co-Boost — Colombo food-price early warning
 
 Co-Boost turns official weekly retail-price reports into a ranked answer for a
@@ -91,6 +94,8 @@ system is used to prioritize unusual risk and expose uncertainty, not to claim
 that a complex model always predicts exact prices better.
 
 ## Quickstart
+
+**Live demo:** https://co-boost-dashboard.streamlit.app/
 
 ```bash
 pip install -r requirements.txt
