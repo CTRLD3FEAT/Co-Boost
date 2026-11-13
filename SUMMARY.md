@@ -15,9 +15,9 @@ the officer's expertise remains essential.
 
 ## What the system delivers
 
-The dashboard turns 320 official Department of Census & Statistics weekly
-retail-price PDFs into a verified time series of 34,099 rows and 146
-commodities covering December 2019 to October 2026. It provides:
+The dashboard turns 324 official Department of Census & Statistics weekly
+retail-price PDFs into a verified time series of 34,535 rows and 146
+commodities covering December 2019 to November 2026. It provides:
 
 1. A ranked next-week spike-risk list.
 2. A p10/p50/p90 forecast range rather than a false-precision point estimate.

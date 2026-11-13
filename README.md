@@ -11,10 +11,10 @@ It is a decision-support system, not a guaranteed price predictor or household a
 
 ## What is built
 
-- 320 official Department of Census & Statistics (DCS) weekly retail-price
+- 324 official Department of Census & Statistics (DCS) weekly retail-price
   PDFs parsed into an auditable Colombo District dataset.
-- 34,099 usable observations covering 146 canonical commodities from December
-  2019 through October 2026.
+- 34,535 usable observations covering 146 canonical commodities from December
+  2019 through November 2026.
 - Current scoring only when a commodity has at least 27 observations and
   reports the dataset's latest week. Thin or outdated series are Monitoring
   only.

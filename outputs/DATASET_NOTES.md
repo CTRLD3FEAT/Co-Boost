@@ -66,3 +66,11 @@ file name as the canonical reporting week and logs any TITLE/FN MISMATCH
 in the extraction notes. Re-extraction: 320/320 files, dup keys in the
 merged view = 0; mislabeled weeks restored (Jan-2024-W4 re-attached to
 its true week). Backtest + spike-ML leaderboards refreshed against it.
+
+## 2026-11-13: Four new weekly reports added
+
+Added DCS-WRP-2026-10-W2, DCS-WRP-2026-10-W3, DCS-WRP-2026-10-W4, and
+DCS-WRP-2026-11-W1 to `Dataset/`. Re-extraction: 324/324 files,
+34,535 usable rows across 146 canonical commodities,
+December 2019 through November 2026. Backtest + spike-ML leaderboards
+refreshed against updated dataset.

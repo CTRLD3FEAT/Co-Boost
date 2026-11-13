@@ -10,7 +10,7 @@ Ship the ModelX 2.0 submission: a professional, branded Co-Boost Engine dashboar
 
 ### Built & verified (do not rebuild)
 
-- **Ingest:** 320 DCS-WRP PDFs → canonical panel `outputs/official_prices_dcs.csv` (34,099 rows × 146 commodities, Dec 2019–Oct 2026). Parser: `Scripts/parse_wrp.py`. Exclusions auditable in `outputs/commodity_exclusions.csv` (betel leaves/arecanuts removed, ~5%).
+- **Ingest:** 324 DCS-WRP PDFs → canonical panel `outputs/official_prices_dcs.csv` (34,535 rows × 146 commodities, Dec 2019–Nov 2026). Parser: `Scripts/parse_wrp.py`. Exclusions auditable in `outputs/commodity_exclusions.csv` (betel leaves/arecanuts removed, ~5%).
 
 - **Baseline:** naive last-price wins 121/121, median MAPE 2.71% (`outputs/backtest_leaderboard.csv`, `Scripts/backtest_baselines.py`).
 
@@ -82,7 +82,7 @@ Page 1: problem + Co-Boost Engine 4-model architecture + Calibration Gate (G1–
 
 Screen recording of `streamlit run app.py`. Script (~180s):
 
-- 0:00–0:15 title + data context (320 DCS PDFs, 2019–2026)
+- 0:00–0:15 title + data context (324 DCS PDFs, 2019–2026)
 
 - 0:15–0:40 KPI cards + ranked list
 
@@ -134,6 +134,6 @@ Expand `docs/architecture/README.md` + README into report: problem & users, arch
 
 - Direction regressor hist\_gb: MAE 0.0427, dir\_acc 0.500 (`direction_leaderboard.csv`)
 
-- 320 DCS PDFs → 34,099 rows × 146 commodities, Dec 2019 → Oct 2026 (`DATASET_NOTES.md`)
+- 324 DCS PDFs → 34,535 rows × 146 commodities, Dec 2019 → Nov 2026 (`DATASET_NOTES.md`)
 
 
