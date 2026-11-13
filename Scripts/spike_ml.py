@@ -15,10 +15,10 @@ Spike ML
     outputs/spike_ml_bundle.joblib together with a calibrated alert threshold.
 
 Anomaly engine (statistical, per commodity, explainable)
-  🔺 Unusual high   z-score of latest price vs trailing 26 weeks  >  +2
-  🔻 Unusual low    z-score < -2
-  🧊 Stable as never current 4-week std at its lowest ~5% ever
-  🌀 Unusual move   latest one-week |change| >= its historical 95th percentile
+  Unusual high   z-score of latest price vs trailing 26 weeks  >  +2
+  Unusual low    z-score < -2
+  Stable         current 4-week std at its lowest ~5% ever
+  Unusual move   latest one-week |change| >= its historical 95th percentile
 
 Usage
   python3 Scripts/spike_ml.py            # train + save bundle + current predictions
